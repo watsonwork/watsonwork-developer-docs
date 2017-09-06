@@ -1,0 +1,51 @@
+swagger: '2.0'
+info:
+  x-copyright: 'Copyright IBM Corp. 2017'
+  title: Authorization Code Grant
+  description: "Authenticate as a user or an application"
+  version: 1.0.0
+host: api.watsonwork.ibm.com
+schemes:
+  - https
+paths:
+  '/oauth/authorize':
+    get:
+      summary: Authorize a user or an application with a code grant
+      description: "Standard OAuth2 endpoint for authorizing users via OAuth2. Returning an Authorization Code\n\n More Information in [Section 4.1 of RFC 6749](https://tools.ietf.org/html/rfc6749#section-4.1)\n\nExample: https://api.watsonwork.ibm.com/oauth/authorize?response_type=code&client_id=123456789&redirect_uri=example.mybluemix.net/callback&state=123456789"
+      parameters:
+        - name: client_id
+          in: query
+          description: "Your application's id (appId)"
+          required: true
+          type: string
+        - name: response_type
+          in: query
+          description: "Desired response type. Code grant uses `code`."
+          required: true
+          type: string
+          enum:
+            - code
+          default: "code"
+        - name: redirect_uri
+          in: query
+          description: "Redirect after completing interaction with IdP (Identity Provider)."
+          required: true
+          type: string
+        - name: state
+          in: query
+          description: "An opaque value to prevent Cross-Site request forgery. Apps should use the following guidelines https://tools.ietf.org/html/rfc6749#section-10.12"
+          required: true
+          type: string
+        - name: scope
+          in: query
+          description: "Level of access that the app wants the user to authorize. If not specified, the default scopes on app creations will be used."
+          required: false
+          type: string
+      responses:
+        302:
+          description: "If we grant the access request, the authorization server issues an authorization code and delivers it to the client by adding that code and the state to the query component of the redirection URI. Example: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA&state=xyz\n\nError Response: If we deny the access request, we will add error=access_denied to the query component of the redirection URI."
+          headers:
+            Location:
+              type: string
+            Set-Cookie:
+              type: string

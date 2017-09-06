@@ -1,0 +1,120 @@
+swagger: '2.0'
+info:
+    x-copyright: 'Copyright IBM Corp. 2017'
+    title: GraphQL
+    description: ""
+    version: "1.0.0"
+host: api.watsonwork.ibm.com
+schemes:
+    - https
+definitions:
+    GraphQLQuery:
+        type: object
+        description: "GraphQL Query to be executed"
+    GraphQLResponse:
+        type: object
+        properties:
+            data:
+                type: object
+            errors:
+                type: array
+                items:
+                    $ref: '#/definitions/GraphQLError'
+    GraphQLError:
+        type: object
+        properties:
+            message:
+                type: string
+                description: Message explaining why did the field failed to be resolved
+            field:
+                type: object
+                properties:
+                   name:
+                      description: Name of the field that produced the error
+                      type: string
+                   type:
+                      description: Type of error
+                      type: string
+    HttpError:
+        type: object
+        description: "Additional information for an error when a GraphQL query could not be processed"
+        properties:
+            status:
+                type: integer
+                description: HTTP Status Code of the error
+            message:
+                type: string
+                description: Description of the error
+parameters:
+    Authorization:
+        name: Authorization
+        in: header
+        type: string
+        description: "Authorization header, in form of `Bearer {access_token}` where `{access_token}` is a JWT token"
+        required: true
+    RequestId:
+        name: X-RequestId
+        in: header
+        type: string
+        description: "Optional header to be able to replay requests in an idempotent way"
+        required: false
+paths:
+    /graphql:
+        get:
+          summary: GraphiQL schema exploration tool
+          description: GraphiQL tool that allows to navigate the GraphQL schema, command completion to build GraphQL queries and query execution
+          produces:
+              - text/html
+          parameters:
+              - name: query
+                in: query
+                description: The query to be executed
+                required: false
+                type: string
+          responses:
+              '200':
+                  description: GraphiQL HTML Tool
+        post:
+          summary: This endpoint allows to execute a GraphQL query
+          description: This endpoint allows to execute a GraphQL query
+          consumes:
+              - application/graphql
+          produces:
+              - application/json
+          parameters:
+              - name: Authorization
+                $ref: '#/parameters/Authorization'
+              - name: X-RequestId
+                $ref: '#/parameters/RequestId'
+              - name: query
+                in: body
+                description: Raw graphql query to be executed. The query is mandatory, but it can be as a url parameter or in the body.
+                required: false
+                schema:
+                    $ref: '#/definitions/GraphQLQuery'
+              - name: query
+                in: query
+                description: The query to be executed. The query is mandatory, but it can be as a url parameter or in the body.
+                required: false
+                type: string
+              - name: variables
+                in: query
+                description: The variables to be used with the query.
+                required: false
+                type: array
+                items:
+                    type: string
+              - name: operationName
+                in: query
+                description: The name of the operation
+                required: false
+                type: string
+          responses:
+              '200':
+                  description: "Response of the execution of the GraphQL query"
+                  schema:
+                      $ref: '#/definitions/GraphQLResponse'
+              '400':
+                  description: "Additional information on a field in the GraphQL query that failed to be resolved"
+                  schema:
+                      $ref: '#/definitions/HttpError'
