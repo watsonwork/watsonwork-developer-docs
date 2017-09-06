@@ -1,0 +1,456 @@
+swagger: '2.0'
+info:
+  x-copyright: 'Copyright IBM Corp. 2017'
+  title: Webhooks
+  description: |
+    This API has to be implemented by the callbacks implementing outbound webhooks.
+
+    - Changes in version 1.3.0:
+      - Fields of input and output entities are correctly marked as required.
+    - Changes in version 1.2.0:
+      - New event types and notification formats for `message-annotation-added`, `message-annotation-edited`, and `message-annotation-removed`.
+      - Changed type of `time` fields to 64 bit (long) integers.
+    - Changes in version 1.1.0:
+      - The verification process of outbound webhooks has changed.
+      - The `GET` endpoint has been removed.  The `POST` endpoint is now used for the verification of outbound webhooks.
+  version: 1.2.0
+host: api.watsonwork.ibm.com
+schemes:
+  - https
+
+definitions:
+  InputBody:
+    type: object
+    description: One of (ignore that the next line says 'all of')
+    allOf:
+      - $ref: '#/definitions/VerificationInputBody'
+      - $ref: '#/definitions/MessageCreatedBody'
+      - $ref: '#/definitions/SpaceMembersAddedBody'
+      - $ref: '#/definitions/SpaceMembersRemovedBody'
+      - $ref: '#/definitions/MessageAnnotationAddedBody'
+      - $ref: '#/definitions/MessageAnnotationEditedBody'
+      - $ref: '#/definitions/MessageAnnotationRemovedBody'
+  VerificationInputBody:
+    type: object
+    description: |
+      Contains a challenge that the callback has to send back in order to show that it supports this callback API.
+    properties:
+      type:
+        description: The event type is `verification`.
+        type: string
+      challenge:
+        description: A random string that is used only once.
+        type: string
+    required:
+      - type
+      - challenge
+  VerificationOutputBody:
+    type: object
+    description: |
+      Only used for verification requests.
+
+      Send back the verification challenge to show that the webhook supports this callback API.
+    properties:
+      response:
+        description: The challenge that was provided in the request body of the verification request.
+        type: string
+    required:
+      - response
+  MessageCreatedBody:
+    type: object
+    description: |
+      Notifies the creation of a new message in a space.
+
+      This event is only sent to webhooks that
+      - have been added for the message-created event
+      - and belong to an app that is a member of the space.
+    properties:
+      type:
+        description: The event type is `message-created`.
+        type: string
+      userId:
+        description: Id of the user who created the message.
+        type: string
+      userName:
+        description: Name of the user who created the message.
+        type: string
+      spaceId:
+        description: Id of the space in which the message was created.
+        type: string
+      spaceName:
+        description: Name of the space in which the message was created.
+        type: string
+      messageId:
+        description: Unique id of the message.
+        type: string
+      content:
+        description: Message content.
+        type: string
+      contentType:
+        description: Mime type of the message content.
+        type: string
+      time:
+        description: "Time and date of app creation, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+    required:
+      - type
+      - userId
+      - userName
+      - spaceId
+      - spaceName
+      - messageId
+      - content
+      - contentType
+      - time
+  SpaceMembersAddedBody:
+    type: object
+    description: |
+      Notifies that one or more members (users or apps) have been added to a space.
+
+      This event is sent only to webhooks that
+      - have been added for the space-members-added event
+      - and belong to an app that is a member of the space.
+    properties:
+      type:
+        description: The event type is `space-members-added`.
+        type: string
+      spaceId:
+        description: Id of the space to which members where added.
+        type: string
+      spaceName:
+        description: Name of the space to which members where added.
+        type: string
+      memberIds:
+        description: List of ids of the members that where added.
+        type: array
+        items:
+          description: Id of a member that is added to the space.
+          type: string
+      time:
+        description: "Time and date of app creation, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+    required:
+      - type
+      - spaceId
+      - spaceName
+      - memberIds
+      - time
+  SpaceMembersRemovedBody:
+    type: object
+    description: |
+      Notifies that one or more members (users or apps) have been removed from a space.
+
+      This event is sent only to webhooks that
+      - have been added for the space-members-removed event
+      - and belong to an app that is a member of the space or which has just been removed from the space, i.e. is one of the items in the memberIds list.
+    properties:
+      type:
+        description: The event type is `space-members-removed`.
+        type: string
+      spaceId:
+        description: Id of the space from which members where removed.
+        type: string
+      spaceName:
+        description: Name of the space from which members where removed.
+        type: string
+      memberIds:
+        type: array
+        description: List of ids of the members that where added.
+        items:
+          description: Id of a member that is removed from the space.
+          type: string
+      time:
+        description: "Time and date of app creation, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+    required:
+      - type
+      - spaceId
+      - spaceName
+      - memberIds
+      - time
+  MessageAnnotationAddedBody:
+    type: object
+    description: |
+      Notifies that an annotation has been added to a message.
+    properties:
+      type:
+        description: The event type is `message-annotation-added`.
+        type: string
+      userId:
+        description: Id of the user who added the annotation.
+        type: string
+      userName:
+        description: Name of the user who added the annotation.
+        type: string
+      spaceId:
+        description: Id of the space to which the message belongs.
+        type: string
+      spaceName:
+        description: Name of the space to which the message belongs.
+        type: string
+      messageId:
+        description: Id of the message to which the annotation has been added.
+        type: string
+      annotationId:
+        description: Id of the new annotation.
+        type: string
+      annotationType:
+        description: Type of the new annotation.
+        type: string
+      annotationPayload:
+        description: Content of the annotation.  The format is JSON converted to a string.
+        type: string
+      time:
+        description: "Time and date of app creation, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+    required:
+      - type
+      - userId
+      - userName
+      - spaceId
+      - spaceName
+      - messageId
+      - annotationId
+      - annotationType
+      - annotationPayload
+      - time
+  MessageAnnotationEditedBody:
+    type: object
+    description: |
+      Notifies that an annotation that is bound to a message has been edited.
+    properties:
+      type:
+        description: The event type is `message-annotation-edited`.
+        type: string
+      userId:
+        description: Id of the user who modified the annotation.
+        type: string
+      userName:
+        description: Name of the user who modified the annotation.
+        type: string
+      spaceId:
+        description: Id of the space to which the message belongs.
+        type: string
+      spaceName:
+        description: Name of the space to which the message belongs.
+        type: string
+      messageId:
+        description: Id of the message to which the modified annotation belongs.
+        type: string
+      annotationId:
+        description: Id of the modified annotation
+        type: string
+      annotationType:
+        description: Type of the edited annotation.
+        type: string
+      annotationPayload:
+        description: Content of the edited annotation.  The format is JSON converted to a string.
+        type: string
+      time:
+        description: "Time and date of app creation, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+    required:
+      - type
+      - userId
+      - userName
+      - spaceId
+      - spaceName
+      - messageId
+      - annotationId
+      - annotationType
+      - annotationPayload
+      - time
+  MessageAnnotationRemovedBody:
+    type: object
+    description: |
+      Notifies that an annotation has been removed from a message.
+    properties:
+      type:
+        description: The event type is `message-annotation-removed`.
+        type: string
+      userId:
+        description: Id of the user who removed the annotation.
+        type: string
+      userName:
+        description: Name of the user who removed the annotation.
+        type: string
+      spaceId:
+        description: Id of the space to which the message belongs from which the annotation has been removed.
+        type: string
+      spaceName:
+        description: Name of the space to which the message belongs from which the annotation has been removed.
+        type: string
+      messageId:
+        description: Id of the message from which the annotation has been removed.
+        type: string
+      annotationId:
+        description: Id of the annotation that has been removed.
+        type: string
+      time:
+        description: Time and date of app creation, in milliseconds since January 1st, 00:00, 1970 UTC
+        type: integer
+        format: int64
+    required:
+      - type
+      - userId
+      - userName
+      - spaceId
+      - spaceName
+      - messageId
+      - annotationId
+      - time
+
+parameters:
+  callbackUrl:
+    name: callbackUrl
+    description: |
+      **General Description:**
+      The URL as specified on webhook creation.
+      It is the **url** field of the webhook entity that is provided with the **POST** or **PUT** request to **/v1/apps**, that adds the webhook.
+      See App Registry API for details.
+
+      **Requirements to URL:** The following requirements are checked by webhook registration (even if the webhook is disabled):
+        - only **https** protocol is supported
+        - the usage of IP addresses in host name is not allowed, only domain names are allowed.
+        - _localhost_ as hostname is not allowed
+        - the host name should be resolvable, the resulting IP address must **not** take following values:
+
+        **for IPv4 protocol:**
+        **0.\*.\*.\***                  - local network
+        **10.\*.\*.\***                 - private network
+        **172.16.\*.\***                - private network
+        **192.168.\*.\***               - private network
+        **127.\*.\*.\***                - loopback
+        **169.254.\*.\***               - link local
+        **192.0.0.8-255**               - IETF Protocol Assignments
+        **192.0.2.\***                  - TEST-NET-1
+        **198.51.100.\***               - TEST-NET-2
+        **203.0.113.\***                - TEST-NET-3
+        **223.255.255.\***              - Reserved
+        **224.0.0.0 - 239.255.255.255** - Multicast
+        **240.0.0.0 - 255.255.255.254** - Reserved
+        **255.255.255.255**             - Broadcast
+
+        **for IPv6 protocol:**
+        **::**                             - Unspecified address
+        **::1**                            - Loopback
+        **::ffff:\*:\***                   - IPv4, please see table above for the range of restricted IPv4 addresses
+        **2001:db8:\*:\*:\*:\*:\*:\***     - Documentation
+        **fe80-febf:\*:\*:\*:\*:\*:\*:\*** - Link Local
+        **:ff00:\*:\*:\*:\*:\*:\*:\***     - Multicast
+
+      **HTTPS handshake:** The webhook server has to support the TLSv1.2 protocol. The trust chain of a certificate must connect to a known and trusted root certificate. In case self-signed certificates should be supported (certificates with no trust chain), isSelfSignedAllowed url parameter must be specified when enabling the webhook. The callback server must support at least one of the following ciphers (IBM JDK notation):
+
+          SSL_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+          SSL_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+          SSL_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+          SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+          SSL_DHE_RSA_WITH_AES_256_GCM_SHA384
+          SSL_DHE_RSA_WITH_AES_128_GCM_SHA256
+          SSL_DHE_RSA_WITH_AES_128_CBC_SHA256
+    in: path
+    type: string
+    required: true
+  XOutboundToken:
+    name: X-OUTBOUND-TOKEN
+    description: |
+      Used for webhook verification and event notification.
+
+      An `HMAC-SHA256` hash of the JSON request body.
+      The hash is generated with the `webhookSecret` of the webhook as key.
+      This key is returned during registration of app and webhook.
+
+      This token can be used by the receiver to verify that the request really comes from Watson Work Services.
+
+      Note that this token is used primarily in request headers.  For verification requests it is additionally expected in the
+      response header.  In this case it has to hash the response body.  That means that for verification requests the `X-OUTBOUND-TOKEN` is
+      part of the request and of the response header and typically has different values in each.
+    type: string
+    in: header
+    required: true
+  XOutboundIndex:
+    name: X-OUTBOUND-INDEX
+    description: |
+      Only used for event notifications.
+
+      An index that is increased with each successful event notification.  Each combination of app and space have their own counter.
+      Allows detection of missed events, e.g. because the receiving callback was offline for an extended period of time.
+    type: integer
+    in: header
+    required: true
+  XOutboundRetryCount:
+    name: X-OUTBOUND-RETRY-COUNT
+    description: |
+      Only used for event notifications.
+
+      An index that is increased with each failed event notification and that is reset to 0 with the next successful notification.
+      Allows the callback to be idempotent.
+      A value of 0 (the default) indicates a regular notification, the first retry has a count of 1.
+    type: integer
+    in: header
+    default: 0
+    required: false
+  JsonContentType:
+    name: Content-Type
+    description: "has to be `application/json;charset=UTF-8`"
+    in: header
+    type: string
+    required: true
+
+paths:
+  '/{callbackUrl}':
+    post:
+      summary: Send an event to the webhook callback or verify a webhook callback.
+      description: |
+        Callbacks of outbound webhooks are called in two situations:
+        - Webhook verification: Verify that the webhook is under the control of the person who added it to an app.
+        For verifications the `type` value in the body is `verification`.  A verification is successful if these conditions are met:
+          - The response status is 200.
+          - The JSON response body contains the verification challenge in the `response` value.
+          - The header field `X-OUTBOUND-TOKEN` contains the `HMAC-SHA256` hash of the body with the `webhookSecret` as key.
+        - Event notification:  Each webhook callback is only notified about events for which it has been added to an app.
+        For notifications the `type` value in the body is the type of the event.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - $ref: '#/parameters/callbackUrl'
+        - $ref: '#/parameters/XOutboundToken'
+        - $ref: '#/parameters/XOutboundIndex'
+        - $ref: '#/parameters/XOutboundRetryCount'
+        - $ref: '#/parameters/JsonContentType'
+        - name: body
+          description: "message body"
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/InputBody'
+      responses:
+        '200':
+          description: |
+            Successfully received request.  Supported for event notification and webhook verification.
+          schema:
+            $ref: '#/definitions/VerificationOutputBody'
+        '201':
+          description: |
+            Successfully received request.  Only supported for event notification.
+        '203':
+          description: |
+            Successfully received request.  Only supported for event notification.
+        '204':
+          description: |
+            Successfully received request.  Only supported for event notification.
+        'default':
+          description: |
+            Any other status including redirect (3xx) is interpreted as failed notification.
+            Also, when a timeout of 3s is triggered then the notification failed.
+            In either case the event notification is scheduled for retry.
+            Retries are made at time intervals of every 30s during the first 2 hours and then at 3h, 6h, 12h, 24h, 36h, 72h after the first failed notification.
+            After this, the event will be discarded.
+            This retry is tied to the space for the event in question.
