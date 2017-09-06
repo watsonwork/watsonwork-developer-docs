@@ -1,0 +1,114 @@
+swagger: '2.0'
+info:
+  x-copyright: 'Copyright IBM Corp. 2017'
+  title: Files
+  description: "Upload a file, create a message with the file and add the file to the Resource Drawer of a space."
+  version: 1.0.0
+host: api.watsonwork.ibm.com
+schemes:
+  - https
+definitions:
+  Response:
+    type: object
+    description: "Complete response entity resulting from successful API call."
+    properties:
+      id:
+        type: string
+        description: "ID generated for file."
+      created:
+        type: string
+        description: "Date and time when was was created, as milliseconds since January 1, 1970 00:00:00 UTC."
+      createdBy:
+        type: string
+        description: "ID of the creator of the file."
+      name:
+        type: string
+        description: "The name of the file."
+      size:
+        type: integer
+        description: "The size of the file in bytes, uploads are capped at 20 megabytes."
+      urls:
+        type: string
+        description: "File access URLs (require Authorization token to invoke.)  metadata, link to file info.  noredirect_download, link to file contents in X-CONTENT-LOCATION header.  redirect_download, link to file contents via 302 redirect."
+  Error:
+    type: object
+    description: "Response entity resulting from failed API call."
+    properties:
+      timestamp:
+        type: string
+        description: "The time at which the error occurred."
+      status:
+        type: string
+        description: "The HTTP response code."
+      error:
+        type: string
+        description: "The HTTP response message."
+      message:
+        type: string
+        description: "Service defined description of error."
+      path:
+        type: string
+        description: "The HTTP request path."
+parameters:
+  Authorization:
+    name: Authorization
+    in: header
+    type: string
+    description: "Authorization header, in form of `Bearer {access_token}`"
+    required: true
+responses:
+  BadRequest:
+    description: "Improperly formed message body."
+    schema:
+      $ref: '#/definitions/Error'
+  Unauthorized:
+    description: "Unauthorized."
+    schema:
+      $ref: '#/definitions/Error'
+  Forbidden:
+    description: "Forbidden."
+    schema:
+      $ref: '#/definitions/Error'
+  InternalServerError:
+    description: "Internal server error."
+    schema:
+      $ref: '#/definitions/Error'
+paths:
+  '/v1/spaces/{spaceId}/files':
+    post:
+      summary: Share a file with a space.
+      description: Upload a file, create a message with the file and add the file to the Resource Drawer of a space.
+      consumes:
+        - multipart/form-data
+      produces:
+        - application/json
+      parameters:
+        - $ref: '#/parameters/Authorization'
+        - name: spaceId
+          in: path
+          type: string
+          description: The space id to share the file with.
+          required: true
+        - name: file
+          in: formData
+          type: file
+          description: The content of the file.
+          required: true
+        - name: dim
+          in: query
+          type: string
+          description: Renders an image in the transcript with given dimensions (WIDTH)x(HEIGHT) in pixels, example ?dim=400x300
+          required: false
+      responses:
+        '201':
+          description: "File was shared successfully."
+          schema:
+            $ref: '#/definitions/Response'
+        '400':
+          $ref: '#/responses/BadRequest'
+        '401':
+          $ref: '#/responses/Unauthorized'
+        '403':
+          $ref: '#/responses/Forbidden'
+        '500':
+          $ref: '#/responses/InternalServerError'

@@ -1,0 +1,49 @@
+swagger: '2.0'
+info:
+  x-copyright: 'Copyright IBM Corp. 2017'
+  title: Photos
+  description: "The Photo microservice API supports the storage and retrieval of photos in IBM Watson Workspace. When working with photos in Watson Work Services, the Photo microservice provides the following endpoint:
+
+      *  POST endpoint to upload a custom image to Watson Work Services.
+
+      *  To retrieve a URL for a user's photo please see details for getting their Person object and its PhotoURL at [IBM Watson Work Services People Service Documentation](../guides/V1_people_main)."
+  version: 1.0.0
+host: api.watsonwork.ibm.com
+schemes:
+     - https
+parameters:
+  Authorization:
+    name: Authorization
+    in: header
+    type: string
+    description: "Authorization header, in the form of `Bearer {access_token}`"
+    required: true
+paths:
+  '/photos/':
+    post:
+      summary: Upload a photo.  This endpoint will allow the caller to update its own photo or icon. Updating someone else's photo is not allowed.
+      consumes:
+       - "multipart/form-data"
+      produces:
+       - "application/json"
+      operationId: updatePhoto
+      description: Upload a photo to the current account.
+      parameters:
+        - name: file
+          in: formData
+          required: true
+          type: file
+          description: JPG photo file being uploaded, with a size of 300kb or less.
+        - $ref: '#/parameters/Authorization'
+        - name: Accept
+          in: header
+          required: true
+          type: string
+          description: must be set to `application/json`
+      responses:
+        '200':
+          description: Photo successfully uploaded.
+        '415':
+          description: Unsupported file media type.
+        '500':
+          description: Server error occurred on POST attempt.

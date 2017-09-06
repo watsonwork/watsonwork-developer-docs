@@ -1,0 +1,129 @@
+swagger: '2.0'
+info:
+  x-copyright: 'Copyright IBM Corp. 2017'
+  title: OAuth
+  description: "Authenticate as a user or an application"
+  version: 1.0.0
+host: api.watsonwork.ibm.com
+schemes:
+  - https
+definitions:
+  AuthorizationCodeGrantRequest:
+    type: object
+    description: "Entity for requesting tokens using an authorization code grant."
+    properties:
+      grant_type:
+        type: string
+        default: authorization_code
+        description: "Authorization code grant"
+      code:
+        type: string
+        description: "Authorization code previously received from the /oauth/authorize response."
+      redirect_uri:
+        type: string
+        description: "Must match the value that was previously sent to the /oauth/authorize request."
+  TokenResponse:
+    type: object
+    description: "Client credentials authentication object"
+    properties:
+      access_token:
+        type: string
+        description: "Access token for application, in the form of a JWT token."
+      token_type:
+        type: string
+        description: "Defaults to `bearer` to express the type of access token being returned."
+      refresh_token:
+        type: string
+        description: "Refresh token for application, in the form of a JWT token."
+      expires_in:
+        type: integer
+        description: "Time, in seconds, before the access token expires."
+      scope:
+        type: string
+        description: "Access scopes granted to the returned access token."
+      id:
+        type: string
+        description: "UUID for the app or user whose access token is returned."
+      displayName:
+        type: string
+        description: "Name of the app or user whose access token is returned."
+      jti:
+        type: string
+        description: "UUID for the JWT token itself."
+      providerId:
+        type: string
+        description: "ID provider of the JWT token"
+      permissions:
+        type: string
+        description: "The user's permission associated with the JWT token"
+  Error:
+    type: object
+    description: "Response entity resulting from a failed API call."
+    required: [error]
+    properties:
+      error:
+        type: string
+        description: "Type of error that occurred."
+      error_description:
+        type: string
+        description: "(optional) Additional details about the resulting error."
+      timestamp:
+        type: string
+        description: "(optional) Time at which the error occurred, in the following format: yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+      status:
+        type: string
+        description: "(optional) HTTP response code."
+      message:
+        type: string
+        description: "(optional) Service-defined description of error."
+      path:
+        type: string
+        description: "(optional) HTTP request path."
+parameters:
+  Authorization:
+    name: Authorization
+    in: header
+    type: string
+    description: "Authorization header where the appId and the appSecret are base64 encoded, and are sent via `Basic base64(appId:appSecret)`; e.g. `Basic YXBwOnNlY3JldA==` "
+    required: true
+responses:
+  BadRequest:
+    description: "Improperly formed authentication body."
+    schema:
+      $ref: '#/definitions/Error'
+  Unauthorized:
+    description: "Unauthorized."
+    schema:
+      $ref: '#/definitions/Error'
+  InternalServerError:
+    description: "Internal server error."
+    schema:
+      $ref: '#/definitions/Error'
+paths:
+  '/oauth/token':
+    post:
+      summary: Authenticate OAuth2 code grant.
+      description: "Standard OAuth2 endpoint for authenticating users or apps via OAuth2 authorization code. \n\nMore Information in [Section 4.1.3 of RFC 6749](https://tools.ietf.org/html/rfc6749#section-4.1.3)"
+      consumes:
+        - application/x-www-form-urlencoded
+      produces:
+        - application/json
+      parameters:
+        - $ref: '#/parameters/Authorization'
+        - name: body
+          in: body
+          description: "Request Body"
+          required: true
+          schema:
+            $ref: '#/definitions/AuthorizationCodeGrantRequest'
+      responses:
+        '200':
+          description: "Authentication successful"
+          schema:
+            $ref: '#/definitions/TokenResponse'
+        '400':
+          $ref: '#/responses/BadRequest'
+        '401':
+          $ref: '#/responses/Unauthorized'
+        '500':
+          $ref: '#/responses/InternalServerError'
