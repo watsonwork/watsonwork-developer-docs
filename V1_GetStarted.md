@@ -120,7 +120,6 @@ request(authenticationOptions, function(err, response, body){
   }
 });
 
-}
 ```
 
 To run the file, open a command line.
