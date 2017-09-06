@@ -1,5 +1,5 @@
 * [Get Started](./V1_GetStarted.md)
-<br/>
+
 Guide
 * [Developer's Guide to Watson Work Services](./guides/V1_wwsg_DevelopersGuide.md)
 * [Space](./guides/V1_spaces_main.md)
@@ -36,11 +36,11 @@ Guide
 * [Make your App cognitive](./guides/V1_cognitive_app.md)
 * [Share an App](./guides/V1_ShareAnApp.md)
 * [Troubleshooting Apps](./guides/V1_app_errors.md)
-<br/>
+
 Tutorials
 * [Action Fulfillment](./guides/V1_Action_Fulfillment.md)
 * [Slash Commands](./guides/slash_commands.md)
-<br/>
+
 API Reference
 * [Spaces](./references/V1_Spaces.yml)
 * [Webhooks](./references/V1_OutboundCallback.yml)
@@ -53,10 +53,10 @@ API Reference
 * [Authorization Endpoint](./references/V1_oauth_authorize_code.yml)
 * [Authorization Code Grant](./references/V1_oauth_token_code.yml)
 * [Refresh Token Grant](./references/V1_oauth_token_refresh.yml)
-<br/>
+
 Tools
 * <a href="https://developer.watsonwork.ibm.com/tools/graphql" target="\_blank">GraphQL Tool</a>
-<br/>
+
 * <a href="https://developer.watsonwork.ibm.com/whatsnew" target="\_blank">What's New</a>
 * <a href="https://github.com/watsonwork" target="\_blank">Sample Apps</a>
 * <a href="https://help.workspace.ibm.com/hc/en-us/community/topics/201192468-Developer" target="\_blank">Dev Forums</a>
