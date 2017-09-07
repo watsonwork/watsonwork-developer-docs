@@ -22,21 +22,13 @@ Our labels are;
 
 **request** - if there’s something that you think we’re missing, please use this label to let us know that you want or need to have this’
 
-**bug** - and if there’s errors in wording, spelling, code examples or functionality that just doesn’t cut it, please use this label to call our attention to bugs
+**defect** - and if there’s errors in wording, spelling, code examples or functionality that just doesn’t cut it, please use this label to call our attention to bugs
 
 
 ## Making a Pull Request
 
 If you’ve got some changes, updates, feedback or bugs you are itching to provide a fix for yourself, please make a Pull Request so our team can review and merge. 
 
-We use the fork-and-pull GitHub flow. You should fork this repository, configure a remote for your fork, and keep your fork in sync. This is all documented in the Working with forks GitHub documentation.
+We use the fork-and-pull GitHub flow. You should fork this repository, configure a remote for your fork, and keep your fork in sync. This is all documented in the [Working with forks GitHub](https://help.github.com/articles/working-with-forks/) documentation.
 
 Once your fork is configured and synced with the latest, you should make your changes on a topic branch, commit those changes, and push the branch to make a Pull Request.
-
-## Style guide
-
-**TBD**
-	
-## Contact info
-
-The best way to contact us is to create an issue here in the repository. 
