@@ -39,14 +39,6 @@ You can also make apps that use cognitive capabilities to understand users' conv
   <td><a href="http://www.rocketsoftware.com/products/rocket-discover">Rocket Discover</a>, self-service data discovery for business users and executives.</td>
  </tr>
  <tr height="64">
-  <td><img src="../images/redbooth-color-342x87.png" style="width:64px;text-align:center;" /></td>
-  <td><a href="http://redbooth.com">Redbooth</a>, easy-to-use online task and project management software for busy teams.</td>
- </tr>
- <tr height="64">
-  <td><img src="../images/Sapho_logo.png" style="width:64px;text-align:center;" /></td>
-  <td><a href="https://www.sapho.com/">Sapho</a>, the future of work. Delivered today.</td>
- </tr>
- <tr height="64">
   <td><img src="../images/opentopic-Logo.png" style="width:64px;text-align:center;" /></td>
   <td><a href="http://opentopic.com/ibm-workspaces/">Opentopic</a>, personalize your digital marketing campaigns using cognitive technology.
  </td>
