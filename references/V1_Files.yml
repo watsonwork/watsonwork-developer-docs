@@ -29,7 +29,7 @@ definitions:
         description: "The size of the file in bytes, uploads are capped at 20 megabytes."
       urls:
         type: string
-        description: "File access URLs (require Authorization token to invoke.)  metadata, link to file info.  noredirect_download, link to file contents in X-CONTENT-LOCATION header.  redirect_download, link to file contents via 302 redirect."
+        description: "File access URLs (require Authorization token to invoke.)  metadata, link to file info.  noredirect_download, link to file contents in X-CONTENT-LOCATION header.  redirect_download, link to file contents via 302 redirect.  If the file is flagged as potential malware, attempts to download the file will result in 404."
   Error:
     type: object
     description: "Response entity resulting from failed API call."
