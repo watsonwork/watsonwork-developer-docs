@@ -4,8 +4,10 @@
   * [Next steps](./V1_NextSteps.md)
   * <a href="https://developer.watsonwork.ibm.com/whatsnew" target="\_blank">What's New</a>
 
-Guide
-* [Developer's Guide to Watson Work Services](./guides/V1_wwsg_DevelopersGuide.md)
+
+* ## [Developer's Guide](./guides/V1_wwsg_DevelopersGuide.md)
+  * [GraphQL API](V1_wwsg_GraphQLAPIIntro.md)
+  
 * [Space](./guides/V1_spaces_main.md)
   * [Create a space](./guides/V1_create_space.md)
   * [Get space details](./guides/V1_get_space.md)
