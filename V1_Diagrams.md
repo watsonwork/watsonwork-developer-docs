@@ -17,8 +17,8 @@ Annotations can be added to messages by apps or by processes internal to Watson 
 - Annotation
 - Actor
 
-![IBM Watson Work Services Object Model](../images/MessageObjectModel.001.jpeg)
+![IBM Watson Work Services Object Model](./images/MessageObjectModel.001.jpeg)
 
 # Watson Work Services App Model
 
-![IBM Watson Work Services Object Model](../images/AppModel.jpeg)
+![IBM Watson Work Services Object Model](./images/AppModel.jpeg)
