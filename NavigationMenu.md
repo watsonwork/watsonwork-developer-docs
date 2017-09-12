@@ -41,14 +41,14 @@
   * [Information extraction annotations](./guides/V1_Annotation_Message_Information_Extraction.md)
 
 * ## [Apps](./guides/V1_Apps.md)
- * [Prepare your App to run](./guides/V1_PreparingYourApp.md)
- * [Make your App configurable](./guides/V1_MakeAppsConfigurable.md)
- * [App configuration callback](./guides/V1_App_Configuration_Callback.md)
- * [Access configuration data](./guides/V1_Access_Configuration_Data.md)
- * [Authorize an App](./guides/V1_wwsg_AuthorizeApp.md)
- * [Make your App cognitive](./guides/V1_cognitive_app.md)
- * [Share an App](./guides/V1_ShareAnApp.md)
- * [Troubleshooting Apps](./guides/V1_app_errors.md)
+  * [Prepare your App to run](./guides/V1_PreparingYourApp.md)
+  * [Make your App configurable](./guides/V1_MakeAppsConfigurable.md)
+  * [App configuration callback](./guides/V1_App_Configuration_Callback.md)
+  * [Access configuration data](./guides/V1_Access_Configuration_Data.md)
+  * [Authorize an App](./guides/V1_wwsg_AuthorizeApp.md)
+  * [Make your App cognitive](./guides/V1_cognitive_app.md)
+  * [Share an App](./guides/V1_ShareAnApp.md)
+  * [Troubleshooting Apps](./guides/V1_app_errors.md)
 
 Tutorials
 * [Action Fulfillment](./guides/V1_Action_Fulfillment.md)
