@@ -31,14 +31,15 @@
   * [Update space membership](./guides/V1_update_space.md)
   
 
-* [Annotations](./guides/V1_annotations.md)
-* [Moments](./guides/V1_wwsg_MomentIdentification.md)
+* ## [Annotations](./guides/V1_annotations.md)
+  * [Moments](./guides/V1_wwsg_MomentIdentification.md)
   * [Moment annotation](./guides/V5_Annotation_Message_Moment.md)
-* [Focus](./guides/V1_wwsg_ActionIdentification.md)
+  * [Focus](./guides/V1_wwsg_ActionIdentification.md)
   * [Focus annotation](./guides/V2_Annotation_Message_Action_Identification.md)
   * [Add a message focus](./guides/Add_Message_Focus.md)
-* [Information extraction](./guides/V1_wwsg_InformationExtraction.md)
+  * [Information extraction](./guides/V1_wwsg_InformationExtraction.md)
   * [Information extraction annotations](./guides/V1_Annotation_Message_Information_Extraction.md)
+
 * [Prepare your App to run](./guides/V1_PreparingYourApp.md)
 * [Make your App configurable](./guides/V1_MakeAppsConfigurable.md)
   * [App configuration callback](./guides/V1_App_Configuration_Callback.md)
