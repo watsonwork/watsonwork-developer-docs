@@ -6,12 +6,12 @@ is: 'published'
 # Watson Work Services Object Model
 
 The following images depict the Watson Work Services object model.  Refer to our guide for a complete explanation of each object.
-- [Space](../guides/V1_spaces_main.md)
-- [Person](../guides/V1_people_main.md)
-- [Conversation](../guides/V1_conversation_main.md)
-- [Message](../guides/V1_message_main.md)
+- [Space](./guides/V1_spaces_main.md)
+- [Person](./guides/V1_people_main.md)
+- [Conversation](./guides/V1_conversation_main.md)
+- [Message](./guides/V1_message_main.md)
 
-![IBM Watson Work Services Object Model](../images/ObjModel.001.jpeg)
+![IBM Watson Work Services Object Model](./guides/images/ObjModel.001.jpeg)
 
 Annotations can be added to messages by apps or by processes internal to Watson Work Services. Check out these sections of our guide to learn more.
 - Annotation
