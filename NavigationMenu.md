@@ -1,7 +1,7 @@
 * ## [Get Started](./V1_GetStarted.md)
-  * [What can you build?] (./V1_WhatYouCanBuild.md)
-  * [Start coding now!] (./V1_StartCodingNow.md)
-  * [Next steps] (./V1_NextSteps.md)
+  * [What can you build?](./V1_WhatYouCanBuild.md)
+  * [Start coding now!](./V1_StartCodingNow.md)
+  * [Next steps](./V1_NextSteps.md)
 
 Guide
 * [Developer's Guide to Watson Work Services](./guides/V1_wwsg_DevelopersGuide.md)
