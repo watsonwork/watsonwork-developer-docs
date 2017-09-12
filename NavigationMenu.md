@@ -6,7 +6,7 @@
 
 
 * ## [Developer's Guide](./guides/V1_wwsg_DevelopersGuide.md)
-  * [GraphQL API](V1_wwsg_GraphQLAPIIntro.md)
+  * [GraphQL API](./guides/V1_wwsg_GraphQLAPIIntro.md)
   
 * [Space](./guides/V1_spaces_main.md)
   * [Create a space](./guides/V1_create_space.md)
