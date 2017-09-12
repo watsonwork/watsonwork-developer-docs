@@ -1,5 +1,6 @@
 * ## [Get Started](./V1_GetStarted.md)
   * [What can you build?](./V1_WhatCanYouBuild.md)
+  * [Watson Work Services object model](./V1_wwsg_Diagrams.md)  
   * [Start coding now!](./V1_StartCodingNow.md)
   * [Next steps](./V1_NextSteps.md)
   * <a href="https://developer.watsonwork.ibm.com/whatsnew" target="\_blank">What's New</a>
@@ -8,24 +9,28 @@
 * ## [Developer's Guide](./guides/V1_wwsg_DevelopersGuide.md)
   * [GraphQL API](./guides/V1_wwsg_GraphQLAPIIntro.md)
   
-* [Space](./guides/V1_spaces_main.md)
+* ## [Space](./guides/V1_spaces_main.md)
   * [Create a space](./guides/V1_create_space.md)
   * [Get space details](./guides/V1_get_space.md)
   * [Update space details](./guides/V1_update_space.md)
   * [Get a list of spaces](./guides/V1_get_spaces.md)
   * [Delete a space](./guides/V1_delete_space.md)
-* [Conversation](./guides/V1_conversation_main.md)
+  * [Listen to events in a space](./guides/V1_wwsg_Webhooks.md)
+  
+* ## [Conversation](./guides/V1_conversation_main.md)
   * [View the conversation in a space](./guides/V1_get_conversation.md)
-* [Message](./guides/V1_message_main.md)
+  
+* ## [Message](./guides/V1_message_main.md)
   * [Send a message into a conversation](./guides/V1_wwsg_Spaces.md)
   * [View a message from a conversation](./guides/V1_get_message.md)
-* [People](./guides/V1_people_main.md)
+
+* ## [People](./guides/V1_people_main.md)
   * [Get user information](./guides/V1_get_user.md)
   * [Get a list of users](./guides/V1_get_users.md)
   * [Get my user information](./guides/V1_get_me.md)
   * [Update space membership](./guides/V1_update_space.md)
-* [Listen to events in a space](./guides/V1_wwsg_Webhooks.md)
-* [Watson Work Services object model](./guides/V1_wwsg_Diagrams.md)
+  
+
 * [Annotations](./guides/V1_annotations.md)
 * [Moments](./guides/V1_wwsg_MomentIdentification.md)
   * [Moment annotation](./guides/V5_Annotation_Message_Moment.md)
