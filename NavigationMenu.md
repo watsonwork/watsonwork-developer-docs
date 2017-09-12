@@ -50,22 +50,22 @@
   * [Share an App](./guides/V1_ShareAnApp.md)
   * [Troubleshooting Apps](./guides/V1_app_errors.md)
 
-Tutorials
-* [Action Fulfillment](./guides/V1_Action_Fulfillment.md)
-* [Slash Commands](./guides/slash_commands.md)
+* ## [Tutorials](./guides/V1_Tutorials.md)
+  * [Action Fulfillment](./guides/V1_Action_Fulfillment.md)
+  * [Slash Commands](./guides/slash_commands.md)
 
-API Reference
-* [Spaces](./references/V1_Spaces.yml)
-* [Webhooks](./references/V1_OutboundCallback.yml)
-* [Focus](./references/V1_Focus.yml)
-* [Photos](./references/V1_PhotoService.yml)
-* [GraphQL](./references/V1_graphql_raw.yml)
-* [GraphQL with JSON](./references/V1_graphql_json.yml)
-* [Files](./references/V1_Files.yml)
-* [Authenticate as an application](./references/V1_oauth_token_client_credentials.yml)
-* [Authorization Endpoint](./references/V1_oauth_authorize_code.yml)
-* [Authorization Code Grant](./references/V1_oauth_token_code.yml)
-* [Refresh Token Grant](./references/V1_oauth_token_refresh.yml)
+* ## [API Reference](./guides/V1_APIReference.md)
+  * [Spaces](./references/V1_Spaces.yml)
+  * [Webhooks](./references/V1_OutboundCallback.yml)
+  * [Focus](./references/V1_Focus.yml)
+  * [Photos](./references/V1_PhotoService.yml)
+  * [GraphQL](./references/V1_graphql_raw.yml)
+  * [GraphQL with JSON](./references/V1_graphql_json.yml)
+  * [Files](./references/V1_Files.yml)
+  * [Authenticate as an application](./references/V1_oauth_token_client_credentials.yml)
+  * [Authorization Endpoint](./references/V1_oauth_authorize_code.yml)
+  * [Authorization Code Grant](./references/V1_oauth_token_code.yml)
+  * [Refresh Token Grant](./references/V1_oauth_token_refresh.yml)
 
 Tools
 * <a href="https://developer.watsonwork.ibm.com/tools/graphql" target="\_blank">GraphQL Tool</a>
