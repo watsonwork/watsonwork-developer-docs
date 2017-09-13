@@ -10,7 +10,7 @@ This is a sample GraphQL query to retrieve all members of a space in paginated f
 (`memberType: "user"`, as opposed to `"app"`) who are members of the specified space, sorted alphabetically. Successive pages of
 members may be obtained using `pageInfo` (i.e., to get the next page, pass the `endCursor` from `pageInfo` as the `after`
 parameter on the next request). An additional boolean parameter may optionally be added to `includeRequester`, who is otherwise
-omitted by default.
+omitted by default. Total is the number of hits found in the search.
 
 ```
 {
@@ -26,6 +26,7 @@ omitted by default.
       hasPreviousPage
       hasNextPage
     }
+    total
   }
 }
 ```
