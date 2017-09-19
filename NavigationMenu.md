@@ -67,7 +67,7 @@
   * [Authorization Code Grant](./references/V1_oauth_token_code.yml)
   * [Refresh Token Grant](./references/V1_oauth_token_refresh.yml)
 
-Tools
+* ## Tools
 * <a href="https://developer.watsonwork.ibm.com/tools/graphql" target="\_blank">GraphQL Tool</a>
 
 * <a href="https://github.com/watsonwork" target="\_blank">Sample Apps</a>
