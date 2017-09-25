@@ -1,3 +1,7 @@
+---
+is: 'published'
+link: 'whats-new'
+---
 # What's New
 
 Keep up to date on what's new in IBM Watson Work Services. We'll list the latest news here, stay tuned!

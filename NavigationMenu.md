@@ -3,7 +3,7 @@
   * [Watson Work Services object model](./V1_Diagrams.md)  
   * [Start coding now!](./V1_StartCodingNow.md)
   * [Next steps](./V1_NextSteps.md)
-  * <a href="https://developer.watsonwork.ibm.com/whatsnew" target="\_blank">What's New</a>
+  * [What's New](./Whats_New.md)
 
 
 * ## [Developer's Guide](./guides/V1_wwsg_DevelopersGuide.md)
