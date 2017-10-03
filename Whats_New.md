@@ -1,4 +1,5 @@
 ---
+copyright: 'Copyright IBM Corp. 2017'
 is: 'published'
 link: 'whats-new'
 ---
