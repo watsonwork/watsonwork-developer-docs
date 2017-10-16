@@ -3,7 +3,7 @@ copyright: 'Copyright IBM Corp. 2017'
 link: 'share-an-app'
 is: 'published'
 ---
-# Share an App
+## Share an App
 
 Once you get an app working and you want to share it with others so they can start using it and give you feedback, you can easily do this with the share button. We will generate an HTML snippet you can add to a page or email. You'll get a URL and also, with the snippet, an image button.
 

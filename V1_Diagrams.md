@@ -3,7 +3,7 @@ copyright: 'Copyright IBM Corp. 2017'
 link: 'watson-work-services-object-model'
 is: 'published'
 ---
-# Watson Work Services Object Model
+## Watson Work Services Object Model
 
 The following images depict the Watson Work Services object model.  Refer to our guide for a complete explanation of each object.
 - [Space](./guides/V1_spaces_main.md)

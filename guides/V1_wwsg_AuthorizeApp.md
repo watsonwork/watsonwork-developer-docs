@@ -3,7 +3,7 @@ copyright: 'Copyright IBM Corp. 2017'
 link: 'authorize-an-app'
 is: 'published'
 ---
-# Authorize an App
+## Authorize an App
 
 After you register an app in Watson Work Services, it can either act on behalf of any Watson Work Services user (via OAuth2) and thus do what such user has authorized the app to do and/or it can also act on its own identity.  Acting on its own identity requires that the app first be added to a space by the owner of the app implicitly authorizing the app to perform three capabilities:
 

@@ -4,7 +4,8 @@ link: get-started
 is: 'published'
 ---
 # Get Started
-### Welcome to Watson Work Services
+
+## Welcome to Watson Work Services
 
 Hi!  Thanks for checking out Watson Work Services.  You've come to the right place if you want to build apps that take advantage of conversational + cognitive services, powered by Watson.   With Watson Work Services, you can build capabilities to customize your team's use of Watson Workspace, and create apps that will integrate with Watson Workspace for anyone to add to their spaces, and you can also develop apps for other business tools.  
 

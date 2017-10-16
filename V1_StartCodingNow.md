@@ -4,12 +4,12 @@ link: start-coding-now
 is: 'published'
 ---
 
-### Start coding now!
+## Start coding now!
 
 So let's get started and create an app.  When you create an app you are effectively registering your app in our environment so it can take action using Watson Work Services.   Your new app is automatically assigned an **App ID**, a unique number that Watson Work Services uses to identify your app and an **App secret**, used to authenticate your App so that it can work in our environment.
 
 1. Click **Apps** in the main navigation at the top of this page, or click [this link](https://developer.watsonwork.ibm.com/apps) to take you to Your Apps page.
-2. Click **Create new app** to register a new app and obtain its App ID and an App Secret. 
+2. Click **Create new app** to register a new app and obtain its App ID and an App Secret.
 3. Give your app a name and description and click **Create**.  Save both, the App ID and the App Secret. Your app uses these to obtain an access token which is needed every time you need to connect to the API. If you lose your App Secret, you can go back to your app registration page in and generate a new one.
 
 Once you have your ID and secret, use this simple Node.js code fragment to make your first Watson Work Services API call and make sure your App ID and App Secret work. If this is a brand new app, you can use it as a stub to start coding.  The code is very simple, but illustrates the means to obtain an access token to use in making subsequent API calls.

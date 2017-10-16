@@ -4,7 +4,7 @@ link: next-steps
 is: 'published'
 ---
 
-### Next steps
+## Next steps
 
 Great!  You're off and running!  
 

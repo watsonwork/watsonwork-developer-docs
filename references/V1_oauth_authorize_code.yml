@@ -1,8 +1,8 @@
 swagger: '2.0'
 info:
   x-copyright: 'Copyright IBM Corp. 2017'
-  title: Authorization Code Grant
-  description: "Authenticate as a user or an application"
+  title: Authorize on behalf of a user
+  description: "Request authorization code to authorize on behalf of a user."
   version: 1.0.0
 host: api.watsonwork.ibm.com
 schemes:
@@ -10,8 +10,8 @@ schemes:
 paths:
   '/oauth/authorize':
     get:
-      summary: Authorize a user or an application with a code grant
-      description: "Standard OAuth2 endpoint for authorizing users via OAuth2. Returning an Authorization Code\n\n More Information in [Section 4.1 of RFC 6749](https://tools.ietf.org/html/rfc6749#section-4.1)\n\nExample: https://api.watsonwork.ibm.com/oauth/authorize?response_type=code&client_id=123456789&redirect_uri=example.mybluemix.net/callback&state=123456789"
+      summary: Authorize as a user with the authorization code grant flow
+      description: "Standard OAuth2 endpoint for authorizing users via OAuth2. This endpoint returns an Authorization Code\n\n More Information in [Section 4.1 of RFC 6749](https://tools.ietf.org/html/rfc6749#section-4.1)\n\nExample: https://api.watsonwork.ibm.com/oauth/authorize?response_type=code&client_id=123456789&redirect_uri=example.mybluemix.net/callback&state=123456789"
       parameters:
         - name: client_id
           in: query
