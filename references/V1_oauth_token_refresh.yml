@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   x-copyright: 'Copyright IBM Corp. 2017'
-  title: OAuth
+  title: Refresh User Access Token
   description: "Refresh access token using refresh token"
   version: 1.0.0
 host: api.watsonwork.ibm.com
@@ -102,7 +102,7 @@ responses:
 paths:
   '/oauth/token':
     post:
-      summary: OAuth2 refresh token grant.
+      summary: OAuth2 flow for refreshing an access token for a user
       description: "Standard OAuth2 endpoint for authenticating users via OAuth2 refresh token. \n\nMore Information in [Section 6 of RFC 6749](https://tools.ietf.org/html/rfc6749#section-6)"
       consumes:
         - application/x-www-form-urlencoded

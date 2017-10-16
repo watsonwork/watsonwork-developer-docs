@@ -3,7 +3,7 @@ copyright: 'Copyright IBM Corp. 2017'
 link: 'make-your-app-configurable'
 is: 'published'
 ---
-# Make your App configurable
+## Make your App configurable
 
 User-specific configurations can benefit your App in many ways. For example, a scheduling app might need calendar access. Having the user's authorization or credentials is essential for coordinating with third-party services.  
 

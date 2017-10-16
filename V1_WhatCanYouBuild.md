@@ -4,7 +4,7 @@ link: what-can-you-build
 is: 'published'
 ---
 
-### What can you build?
+## What can you build?
 
 The Watson Work Services platform can support apps in Watson Workspace, or you can make them available on their own. That's great, but what's that mean? You can build apps that can:
 
@@ -41,4 +41,3 @@ You can also make apps that use cognitive capabilities to understand users' conv
 - Analyze and extract key information such as keywords, sentiment, dates, and more with [Information Extraction annotations](guides/V1_Annotation_Message_Information_Extraction.md)
 
 - Identify [focuses](guides/V1_wwsg_ActionIdentification.md) (key phrases) within the conversation and suggest actions users can take inline with [Action Fulfillment](guides/V1_Action_Fulfillment.md).
-
