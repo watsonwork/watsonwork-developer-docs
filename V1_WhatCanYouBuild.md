@@ -6,7 +6,7 @@ is: 'published'
 
 ## What can you build?
 
-With the Watson Work Services platform, you can build apps that can:
+With the Watson Work Services platform, you can build apps for Watson Workspace, or apps that stand on their own. Here are some of the things your apps will be able to do.
 
 - Send interactive [messages into a space](guides/V1_wwsg_Spaces.md)
 
