@@ -3,7 +3,7 @@ copyright: 'Copyright IBM Corp. 2017'
 link: 'prepare-your-app-to-run'
 is: 'published'
 ---
-# Prepare your App to run
+## Prepare your App to run
 
 This guide will help you to prepare your code to work, once you have registered with Watson Work Services.
 If you haven't registered yet, you can do so here, [Create your App](https://developer.watsonwork.ibm.com/apps).

@@ -7,7 +7,7 @@ is: 'published'
 
 If you need info for more than one space work smarter, not harder. You can get information on a list of spaces with the _getSpaces_ GraphQL query.
 
-```
+```graphql
 query getSpaces {
   spaces(first: 50) {
     items {

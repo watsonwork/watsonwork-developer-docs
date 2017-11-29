@@ -3,7 +3,7 @@ copyright: 'Copyright IBM Corp. 2017'
 link: 'send-a-message-into-a-conversation'
 is: 'published'
 ---
-# Send a message into a conversation
+## Send a message into a conversation
 
 Watson Work Services provides a **space** object as a context for people to interact with its **conversation** object and post / send **messages** to it.
 
