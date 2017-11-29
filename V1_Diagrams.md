@@ -13,9 +13,7 @@ The following images depict the Watson Work Services object model. Refer to our 
 
 ![IBM Watson Work Services Object Model](./images/ObjModel.001.jpeg)
 
-Annotations can be added to messages by apps or by processes internal to Watson Work Services. Check out these sections of our guide to learn more.
-- Annotation
-- Actor
+Annotations can be added to messages by apps or by processes internal to Watson Work Services. [Check out this guide](V1_wwsg_Spaces.md) to learn more about annotations and actors.
 
 ![IBM Watson Work Services Object Model](./images/MessageObjectModel.001.jpeg)
 
