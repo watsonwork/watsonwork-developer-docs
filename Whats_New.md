@@ -10,6 +10,7 @@ Keep up to date on what's new in IBM Watson Work Services. We'll list the latest
 | Date          | What's new       |
 | ------------- |:-------------|
 | 25-Sep-2017   | Added the Survey for **you** to help us make this developer experience great, please check it out on the main page or click [Take the Survey](https://www.surveygizmo.com/s3/3792857/IBM-Watson-Work-Services-Feedback) now. |
+| 05-Sep-2017   | Added tutorial for slash commands which are now in `Beta` |
 | 05-Sep-2017   | Moved documentation to github.com.  Exposed a number of documents not yet in web based developer experience to engage early with developers via github issues and PRs |
 | 24-July-2017  | Introduced new concept of adding attachments in targeted messages via GraphQL. Attachments are rendered in the User Experience as Cards. Attachments are still `BETA` features. We are still actively developing them. |
 | 08-May-2017   | Introduced new concept of `Beta` APIs. <br/><br>The developer documentation section will now include some APIs that we are still actively developing, but are stable and ready for initial evaluation. These API signatures may slightly change, though the underlying functionality will be released. The documentation will have a <sup class="badge badge-beta">BETA</sup> label for any API that is considered `beta`. |
