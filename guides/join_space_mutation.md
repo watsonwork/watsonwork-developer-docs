@@ -8,7 +8,7 @@ is: 'experimental'
 
 ## Concepts
 
-The _joinSpace_ mutation allows the user to join a space. Currently this is only applicable to spaces the user is invited to already. The mutation accepts a Space ID as an argument and makes the request on behalf of the calling user.
+The _joinSpace_ mutation allows the user to join a space. Currently this is only applicable to spaces to which the user has already been invited. The mutation accepts a Space ID as an argument and makes the request on behalf of the calling user.
 
 ## Schema
 
