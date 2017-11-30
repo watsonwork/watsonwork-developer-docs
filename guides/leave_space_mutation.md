@@ -8,7 +8,7 @@ is: 'experimental'
 
 ## Concepts
 
-The leaveSpace mutation allows the user to leave a space. The mutation accepts a Space ID as an argument and makes the request on behalf of the calling user. Currently this API can only be used to reject an invitation to a space. Otherwise it will return an error.
+The _leaveSpace_ mutation allows the user to leave a space. The mutation accepts a Space ID as an argument and makes the request on behalf of the calling user. Currently this API can only be used to reject an invitation to a space. Otherwise it will return an error.
 
 ## Schema
 
