@@ -40,7 +40,7 @@ Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIME
 Body:
 {
   mutation {
-    joinSpace(input: {id: "4aefed18-0dc0-4314-ab73-7cffeef903f1"}) {
+    joinSpace(input: {id: "4aefed180dc04314ab737cffeef903f1"}) {
       successful
   }
 }
