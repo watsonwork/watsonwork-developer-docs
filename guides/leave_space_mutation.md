@@ -8,8 +8,7 @@ is: 'experimental'
 
 ## Concepts
 
-The _leaveSpace_ mutation allows you to leave a workspace, where applicable, with the Space ID. Currently this only applicable to spaces you are currently invited to.
-In this scenario _leaveSpace_ is used to reject the invite. 
+Currently this API only supports invited space members, for other members it will return an error message. The _leaveSpace_ mutation allows you to leave a workspace. The mutation accepts a Space ID as an argument and makes the request on behalf of the calling user.
 
 ## Schema
 
