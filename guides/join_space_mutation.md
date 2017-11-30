@@ -8,8 +8,7 @@ is: 'experimental'
 
 ## Concepts
 
-The _joinSpace_ mutation allows you to join a workspace, where applicable, with the space ID. Currently this only applicable to spaces you are currently invited to.
-In this scenario _joinSpace_ is used to accept the invite.
+The _joinSpace_ mutation allows the user to join a space. Currently this is only applicable to spaces the user is invited to already.
 
 ## Schema
 
