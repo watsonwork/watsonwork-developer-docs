@@ -8,8 +8,8 @@ is: 'experimental'
 
 ## Concepts
 
-The leave mutation allows you to leave a workspace, where applicable, with the Space ID. Currently this only applicable to spaces you are currently invited to.
-In this scenario, leaveSpace is used to leave the invite. 
+The _leaveSpace_ mutation allows you to leave a workspace, where applicable, with the Space ID. Currently this only applicable to spaces you are currently invited to.
+In this scenario _leaveSpace_ is used to reject the invite. 
 
 ## Schema
 
