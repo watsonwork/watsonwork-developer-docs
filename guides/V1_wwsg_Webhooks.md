@@ -30,6 +30,8 @@ Available events are:
 
 **message-created**: each time a new message is created in the space
 
+**message-deleted**: each time a message is deleted from the space
+
 **space-members-added**: each time a member is added to the space
 
 **space-members-removed**: each time a member is removed from the space

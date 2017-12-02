@@ -5,6 +5,8 @@ info:
   description: |
     This API has to be implemented by the callbacks implementing outbound webhooks.
 
+    - Changes in version 1.4.0:
+      - New event type and notification format for `message-deleted`
     - Changes in version 1.3.0:
       - Fields of input and output entities are correctly marked as required.
     - Changes in version 1.2.0:
@@ -25,6 +27,7 @@ definitions:
     allOf:
       - $ref: '#/definitions/VerificationInputBody'
       - $ref: '#/definitions/MessageCreatedBody'
+      - $ref: '#/definitions/MessageDeletedBody'
       - $ref: '#/definitions/SpaceMembersAddedBody'
       - $ref: '#/definitions/SpaceMembersRemovedBody'
       - $ref: '#/definitions/MessageAnnotationAddedBody'
@@ -102,6 +105,33 @@ definitions:
       - messageId
       - content
       - contentType
+      - time
+  MessageDeletedBody:
+    type: object
+    description: |
+      Notifies the deletion of a message from a space.
+
+      This event is only sent to webhooks that
+      - have been added for the message-deleted event
+      - and belong to an app that is a member of the space.
+    properties:
+      type:
+        description: The event type is `message-deleted`.
+        type: string
+      spaceId:
+        description: Id of the space in which the message was deleted.
+        type: string
+      messageId:
+        description: Unique id of the message.
+        type: string
+      time:
+        description: "Time and date of message deletion, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+    required:
+      - type
+      - spaceId
+      - messageId
       - time
   SpaceMembersAddedBody:
     type: object
