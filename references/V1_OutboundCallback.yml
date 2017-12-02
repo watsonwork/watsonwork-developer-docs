@@ -6,7 +6,7 @@ info:
     This API has to be implemented by the callbacks implementing outbound webhooks.
 
     - Changes in version 1.4.0:
-      - New event type and notification format for `message-deleted`
+      - New event type and notification format for `message-deleted`.
     - Changes in version 1.3.0:
       - Fields of input and output entities are correctly marked as required.
     - Changes in version 1.2.0:
