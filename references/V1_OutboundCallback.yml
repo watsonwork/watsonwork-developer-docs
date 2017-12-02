@@ -93,7 +93,7 @@ definitions:
         description: Mime type of the message content.
         type: string
       time:
-        description: "Time and date of app creation, in milliseconds since January 1st, 00:00, 1970 UTC"
+        description: "Time and date of message creation, in milliseconds since January 1st, 00:00, 1970 UTC"
         type: integer
         format: int64
     required:
@@ -158,7 +158,7 @@ definitions:
           description: Id of a member that is added to the space.
           type: string
       time:
-        description: "Time and date of app creation, in milliseconds since January 1st, 00:00, 1970 UTC"
+        description: "Time and date of member addition, in milliseconds since January 1st, 00:00, 1970 UTC"
         type: integer
         format: int64
     required:
@@ -192,7 +192,7 @@ definitions:
           description: Id of a member that is removed from the space.
           type: string
       time:
-        description: "Time and date of app creation, in milliseconds since January 1st, 00:00, 1970 UTC"
+        description: "Time and date of member removal, in milliseconds since January 1st, 00:00, 1970 UTC"
         type: integer
         format: int64
     required:
@@ -234,7 +234,7 @@ definitions:
         description: Content of the annotation.  The format is JSON converted to a string.
         type: string
       time:
-        description: "Time and date of app creation, in milliseconds since January 1st, 00:00, 1970 UTC"
+        description: "Time and date of annotation added, in milliseconds since January 1st, 00:00, 1970 UTC"
         type: integer
         format: int64
     required:
@@ -281,7 +281,7 @@ definitions:
         description: Content of the edited annotation.  The format is JSON converted to a string.
         type: string
       time:
-        description: "Time and date of app creation, in milliseconds since January 1st, 00:00, 1970 UTC"
+        description: "Time and date of annotation edited, in milliseconds since January 1st, 00:00, 1970 UTC"
         type: integer
         format: int64
     required:
@@ -322,7 +322,7 @@ definitions:
         description: Id of the annotation that has been removed.
         type: string
       time:
-        description: Time and date of app creation, in milliseconds since January 1st, 00:00, 1970 UTC
+        description: Time and date of annotation removed, in milliseconds since January 1st, 00:00, 1970 UTC
         type: integer
         format: int64
     required:
