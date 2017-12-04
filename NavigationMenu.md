@@ -1,5 +1,6 @@
 * ## [Get Started](./V1_GetStarted.md)
   * [What can you build?](./V1_WhatCanYouBuild.md)
+  * [Here's how it works](./V1_HeresHowItWorks.md)
   * [Watson Work Services object model](./V1_Diagrams.md)  
   * [Start coding now!](./V1_StartCodingNow.md)
   * [Next steps](./V1_NextSteps.md)
