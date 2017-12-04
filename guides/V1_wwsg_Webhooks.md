@@ -30,7 +30,7 @@ Available events are:
 
 **message-created**: each time a new message is created in the space
 
-**message-deleted**: each time a message is deleted from the space
+**message-deleted**: each time a message is deleted from the space. Please note that the **message-deleted** event API is currently `experimental` and subject to change. It is being included here to engage developers early with this API.
 
 **space-members-added**: each time a member is added to the space
 
