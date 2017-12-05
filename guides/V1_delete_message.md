@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2017'
 link: 'delete-a-message'
-is: 'experimental'
+is: 'future'
 ---
 
 # Delete a message
@@ -45,4 +45,3 @@ Body:
   }
 }
 ~~~~
-
