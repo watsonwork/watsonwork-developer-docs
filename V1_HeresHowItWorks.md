@@ -12,6 +12,7 @@ If you want to see how things work here, let's start with the basics. In this se
 
 ![IBM Watson Work Services collaboration flow](./images/WWSDiagrams_Basic_1.png)
 ![IBM Watson Work Services collaboration flow](./images/WWSDiagrams_Basic_2.png)
+
 ![IBM Watson Work Services collaboration flow](./images/WWSDiagrams_Basic_3.png)
 ![IBM Watson Work Services collaboration flow](./images/WWSDiagrams_Basic_4.png)
 
