@@ -11,9 +11,9 @@ If you want to see how things work here, let's start with the basics. In this se
 
 
 ![IBM Watson Work Services collaboration flow](./images/WWSDiagrams_Basic_1_Border_8.png)
-![IBM Watson Work Services collaboration flow](./images/WWSDiagrams_Basic_2_Border.png)
-![IBM Watson Work Services collaboration flow](./images/WWSDiagrams_Basic_3_Border.png)
-![IBM Watson Work Services collaboration flow](./images/WWSDiagrams_Basic_4_Border.png)
+![IBM Watson Work Services collaboration flow](./images/WWSDiagrams_Basic_2_Border_8.png)
+![IBM Watson Work Services collaboration flow](./images/WWSDiagrams_Basic_3_Border_8.png)
+![IBM Watson Work Services collaboration flow](./images/WWSDiagrams_Basic_4_Border_8.png)
 
 
 How Watson contributes
