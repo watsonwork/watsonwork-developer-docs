@@ -25,7 +25,9 @@ query  {
     statusHistory {
       id
       updated
-      updatedBy
+      updatedBy {
+        id
+      }
     }
   }
 }
@@ -43,7 +45,9 @@ query  {
     statusHistory {
       id
       updated
-      updatedBy
+      updatedBy {
+        id
+      }
     }
   }
 }
