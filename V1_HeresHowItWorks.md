@@ -1,6 +1,6 @@
 ---
 copyright: 'Copyright IBM Corp. 2017'
-link: 'watson-work-services-object-model'
+link: 'heres-how-it-works'
 is: 'published'
 ---
 ## Here's how it works
