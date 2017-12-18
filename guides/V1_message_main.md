@@ -18,7 +18,7 @@ Watson Work Services represents a Message with this object.
 | createdBy   | Person    | Person who created this message |
 | updated     | Date    | Date this message  was updated |
 | updatedBy   | Person | Person who updated this message  |
-| softDeleted | Boolean | Indicates whether this message is soft-deleted. Soft-deleted messages will return null content and empty annotations. |
+| softDeleted | Boolean | Indicates whether this message is soft-deleted. Soft-deleted messages will return null content and empty annotations. This requires the `EXPERIMENTAL` value in `x-graphql-view header`. |
 | content   | String | The body of the message |
 | contentType | String | Mime type of the message content  |
-| annotations | [String] | A set of optional objects/attachments that are added to a message, called annotations. Each annotation represents meta data that are related to the message. An annotation is represented by a structured format, which can be viewed as a template. There are different annotation types, some are used to store results of cognitive analysys to a message for example. An annotation can be added at message create time or later, as an update.  Apps are currently limited to create only one type of annotation called `generic` |
+| annotations | [String] | A set of optional objects/attachments that are added to a message, called annotations. Each annotation represents meta data that are related to the message. An annotation is represented by a structured format, which can be viewed as a template. There are different annotation types, some are used to store results of cognitive analysis to a message for example. An annotation can be added at message create time or later, as an update.  Apps are currently limited to create only one type of annotation called `generic` |
