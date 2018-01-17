@@ -5,7 +5,7 @@
   * [Start coding now!](./V1_StartCodingNow.md)
   * [Next steps](./V1_NextSteps.md)
   * [What's New](./Whats_New.md)
-  * [Engaging with us](./V!_EngagingWithUs.md)
+  * [Engaging with us](./V1_EngagingWithUs.md)
 
 
 * ## [Developer's Guide](./guides/V1_wwsg_DevelopersGuide.md)
