@@ -11,7 +11,7 @@ The following images depict the Watson Work Services object model. Refer to our 
 - [Conversation](./guides/V1_conversation_main.md)
 - [Message](./guides/V1_message_main.md)
 
-![IBM Watson Work Services Object Model](./images/ObjModel.001.jpeg)
+![IBM Watson Work Services Object Model](./images/WWSObjectModel_Core.png)
 
 Annotations can be added to messages by apps or by processes internal to Watson Work Services. [Check out this guide](guides/V1_annotations.md) to learn more about annotations and actors.
 
