@@ -22,7 +22,7 @@ You will see these various categories called out on those specific APIs. All oth
 considered published and are fully supported. 
 
 To provide more transparency in how we’re working and what we’re building, we will surface our content in markdown files in 
-the github repo - [github.com/watsonwork/watsonwork-developer-docs](httpa://github.com/watsonwork/watsonwork-developer-docs) so that you can engage with us through github to inform 
+the github repo - [github.com/watsonwork/watsonwork-developer-docs](https://github.com/watsonwork/watsonwork-developer-docs) so that you can engage with us through github to inform 
 and provide feedback to help make and design great APIs.
 
 ### How we make our developer experience
