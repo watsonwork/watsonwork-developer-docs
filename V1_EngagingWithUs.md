@@ -56,9 +56,8 @@ To see all three of these, just use this URL [https://developer.watsonwork.ibm.c
 **Folder Structure**
 
 Root: 
-- [Navigation Menu](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/NavigationMenu.md)
-- [Get Started](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/V1_GetStarted.md)
-- [What's New](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/Whats_New.md)
+- [Navigation Menu](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/NavigationMenu.md) where we keep the structure of the entire experience.
+- general getting started information, direction and also a list of what's new as we add it to the experience [What's New](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/Whats_New.md)
 
 Guides:
 - all the developer guide and get started content
