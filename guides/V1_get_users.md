@@ -5,7 +5,7 @@ is: 'published'
 ---
 ## Get a list of users
 
-Now that you can [get information for one person](./docs#get-user-information), here is the GraphQL query to get information about a list of people.   In this example, we are specifying an array of user IDs to get information for these specific users.
+Now that you can [get information for one person](https://developer.watsonwork.ibm.com/docs/people/get-user-information), here is the GraphQL query to get information about a list of people.   In this example, we are specifying an array of user IDs to get information for these specific users.
 
 ```
 query getProfiles {
