@@ -3,7 +3,7 @@ copyright: 'Copyright IBM Corp. 2017'
 link: 'listen-to-events-in-a-space'
 is: 'published'
 ---
-# Listen to events in a space (Outbound Webhooks)
+## Listen to events in a space (Outbound Webhooks)
 
 Using Outgoing Webhooks, your App can provide an automated response to messages that members post in a space.  For example, you could have an app that listens for a trigger word such as "weather" in the conversation and every time it records this event, it responds with a message in the conversation that displays the current weather.  Basically, your app receives an HTTP POST from Watson Work Services when specific events occur in the space, such as the trigger word "weather", and then automatically responds.  
 
@@ -29,6 +29,8 @@ To register your callback URL follow these steps:
 Available events are:
 
 **message-created**: each time a new message is created in the space
+
+**message-deleted**: each time a message is deleted from the space. Please note that the **message-deleted** event API is currently `future` and subject to change. It is being included here to engage developers early with this API.
 
 **space-members-added**: each time a member is added to the space
 

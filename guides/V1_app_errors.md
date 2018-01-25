@@ -3,7 +3,7 @@ copyright: 'Copyright IBM Corp. 2017'
 link: 'troubleshooting-apps'
 is: 'published'
 ---
-# Troubleshooting Apps
+## Troubleshooting Apps
 
 An App, its fields and its registered outbound webhooks need to fulfill certain requirements. When creating or editing an App Watson Work Services will respond with an error, if the requirements are not met. Error messages will be shown.
 

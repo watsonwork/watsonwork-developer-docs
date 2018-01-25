@@ -1,8 +1,8 @@
 swagger: '2.0'
 info:
   x-copyright: 'Copyright IBM Corp. 2017'
-  title: OAuth
-  description: "Authenticate as a user or an application"
+  title: Get User Access Token
+  description: "Request an access token for a user"
   version: 1.0.0
 host: api.watsonwork.ibm.com
 schemes:
@@ -102,8 +102,8 @@ responses:
 paths:
   '/oauth/token':
     post:
-      summary: Authenticate OAuth2 code grant.
-      description: "Standard OAuth2 endpoint for authenticating users or apps via OAuth2 authorization code. \n\nMore Information in [Section 4.1.3 of RFC 6749](https://tools.ietf.org/html/rfc6749#section-4.1.3)"
+      summary: OAuth2 Authorization Code flow for requesting an access token for a user
+      description: "Standard OAuth2 endpoint for authenticating users via OAuth2 authorization code. \n\nMore Information in [Section 4.1.3 of RFC 6749](https://tools.ietf.org/html/rfc6749#section-4.1.3)"
       consumes:
         - application/x-www-form-urlencoded
       produces:

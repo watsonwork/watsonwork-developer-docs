@@ -3,7 +3,7 @@ copyright: 'Copyright IBM Corp. 2017'
 link: 'moments'
 is: 'published'
 ---
-# Moments
+## Moments
 
 Moments is a smart tool using the power of Watson to help you determine when to jump into fast moving conversations. Moments also help you understand the significance of activity that has transpired since your last time in the space. Moments are visualized as summaries of the conversation broken down by moments in time.  
 

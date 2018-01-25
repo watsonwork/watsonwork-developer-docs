@@ -25,7 +25,7 @@ definitions:
           - appMessage
       annotations:
         type: array
-        description: "Array of annotations to append to message."
+        description: "For appMessage, provide array with a single annotation entry of type:generic."
         items:
           $ref: '#/definitions/GenericAnnotation'
   GenericAnnotation:

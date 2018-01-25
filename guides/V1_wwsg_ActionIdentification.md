@@ -3,7 +3,7 @@ copyright: 'Copyright IBM Corp. 2017'
 link: 'focus'
 is: 'published'
 ---
-# Focus
+## Focus
 
 When it comes to Focuses, there are two concepts you need to understand.  A `lens`, which is a way a user interprets or understands a message, and a `focus`, which helps the user understand what to pay attention to in that message.  In other words, lenses help the user focus on different parts of the conversation.  
 

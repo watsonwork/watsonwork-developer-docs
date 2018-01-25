@@ -3,7 +3,7 @@ copyright: 'Copyright IBM Corp. 2017'
 link: 'app-configuration-callback'
 is: 'published'
 ---
-# App Configuration Callback
+## App Configuration Callback
 This callback has to be implemented to provide the user-specific configuration service of an app. The request is triggered when a user clicks on the **Configure** button of an app.
 
 Changes in version 1.1.0
