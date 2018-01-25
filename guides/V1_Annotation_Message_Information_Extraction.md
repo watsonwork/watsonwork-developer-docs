@@ -109,7 +109,7 @@ Here is the annotation structure for `doc-sentiment`.
 ````
 
 ### Relations
-`Relations` are the subject, action and object relations within a sentence. `Relations` can help with identifying events or for [triggering actions](./docs#action-fulfillment).
+`Relations` are the subject, action and object relations within a sentence. `Relations` can help with identifying events or for [triggering actions](https://developer.watsonwork.ibm.com/docs/tutorials/action-fulfillment).
 
 Let's review a simple `relations` annotation structure:
 ````json

@@ -23,7 +23,7 @@ NOTE: All members of a space have access to configure an app in the space regard
 
 ## Implementing the configuration page
 
-First, you need to implement your configuration page for your App. Read the [Configuration Callback API](../guides/V1_App_Configuration_Callback.md) for more information.
+First, you need to implement your configuration page for your App. Read the [Configuration Callback API](https://developer.watsonwork.ibm.com/docs/apps/app-configuration-callback) for more information.
 
 
 ## Registering the configuration URL of your app
@@ -60,7 +60,7 @@ Making an endpoint publicly available has security risks; for example, your conf
 ### Verify the call
 
 Use url parameter `configurationToken` and utilize Watson Work Services to verify the call.
-Authorize your app [as an App](../references/V1_oauth_token_client_credentials.yml) and access the configuration data with the `configurationToken` - see [Access configuration data](./docs#access-configuration-data).
+Authorize your app [as an App](../references/V1_oauth_token_client_credentials.yml) and access the configuration data with the `configurationToken` - see [Access configuration data](https://developer.watsonwork.ibm.com/docs/apps/access-configuration-data).
 If the access to the configuration data is successful, then you can be sure that the call has been triggered by Watson Workspace.
 You will also get the configuration data, which includes `spaceId` and `userId`.  `spaceId` is the unique ID of the space for which the configuration of your app has been triggered.  `userId` is the unique ID of the user who triggers the configuration of your app.
 
@@ -69,21 +69,21 @@ You will also get the configuration data, which includes `spaceId` and `userId`.
 
 ### Protect the user's sensitive data
 
-You can utilize Watson Work Services to authorize the user as a valid Watson Work Services user by [getting the user details](./docs#get-the-user-id-and-name) and / or you can also authorize the user against your own credential store of users authorized to use your app.
+You can utilize Watson Work Services to authorize the user as a valid Watson Work Services user by [getting the user details](https://developer.watsonwork.ibm.com/docs/people/get-user-information) and / or you can also authorize the user against your own credential store of users authorized to use your app.
 
 
 ### Authorizing the app
 
 Your app must be authorized to request services from Watson Work Services. There are two ways to authorize an app; both require the App ID and App Secret:
-- [as an App](../references/V1_oauth_token_client_credentials.yml) can retrieve details from the app perspective (for example, the names of spaces that the app was added to)
-- [on behalf of a User](./docs#access-details-on-behalf-of-a-user) can retrieve details from the user perspective (for example, the names of spaces that the user is a member of)
+- [as an App](https://developer.watsonwork.ibm.com/docs/api-reference/authenticate-as-an-app) can retrieve details from the app perspective (for example, the names of spaces that the app was added to)
+- [on behalf of a User](https://developer.watsonwork.ibm.com/docs/api-reference/authorize-on-behalf-of-a-user) can retrieve details from the user perspective (for example, the names of spaces that the user is a member of)
 
 
 <a id="get-the-user-id-and-name"></a>
 
 ### Get the user ID and name
 
-If your app is configurable per user, then you must verify the user's identity before showing, or allowing updates to, the user's sensitive data. Verify the user with Watson Work Services by requesting the [user entity](./docs#get-my-user-information) on [behalf of the user](./docs#access-details-on-behalf-of-a-user). The resulting object contains the user ID in its `id` field and the user name in its `displayName` field.
+If your app is configurable per user, then you must verify the user's identity before showing, or allowing updates to, the user's sensitive data. Verify the user with Watson Work Services by requesting the [user entity](https://developer.watsonwork.ibm.com/docs/people/get-user-information) on [behalf of the user](https://developer.watsonwork.ibm.com/docs/api-reference/authorize-on-behalf-of-a-user). The resulting object contains the user ID in its `id` field and the user name in its `displayName` field.
 
 
 <a id="access-details-on-behalf-of-a-user"></a>
@@ -95,11 +95,11 @@ If your app is going to make requests to Watson Work Services on behalf of a use
 
 ### Get the space name
 
-If your app is configurable per space, then it is good practice to ensure that the user is aware of which space the app is being configured for.  To get the space name, request the [Space Details](./docs#get-space-details) in Watson Work Services.  The resulting object contains the space name in its `title` field.
+If your app is configurable per space, then it is good practice to ensure that the user is aware of which space the app is being configured for.  To get the space name, request the [Space Details](https://developer.watsonwork.ibm.com/docs/space/get-space-details) in Watson Work Services.  The resulting object contains the space name in its `title` field.
 
 NOTE: You can only get information for spaces that you are authorized for. In particular, this means:
 - The authorization [as an App](../references/V1_oauth_token_client_credentials.yml) can access information for spaces that the app was added to.
-- The authorization [on behalf of a User](./docs#access-details-on-behalf-of-a-user) can access details of spaces that the user is a member of.
+- The authorization [on behalf of a User](https://developer.watsonwork.ibm.com/docs/api-reference/authorize-on-behalf-of-a-user) can access details of spaces that the user is a member of.
 
 
 ### Continue to the space
