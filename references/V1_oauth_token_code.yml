@@ -28,34 +28,19 @@ definitions:
     properties:
       access_token:
         type: string
-        description: "Access token for application, in the form of a JWT token."
+        description: "Access token."
       token_type:
         type: string
-        description: "Defaults to `bearer` to express the type of access token being returned."
+        description: "Type of the token returned. Currently always set to `bearer`."
       refresh_token:
         type: string
-        description: "Refresh token for application, in the form of a JWT token."
+        description: "Refresh token."
       expires_in:
         type: integer
         description: "Time, in seconds, before the access token expires."
       scope:
         type: string
         description: "Access scopes granted to the returned access token."
-      id:
-        type: string
-        description: "UUID for the app or user whose access token is returned."
-      displayName:
-        type: string
-        description: "Name of the app or user whose access token is returned."
-      jti:
-        type: string
-        description: "UUID for the JWT token itself."
-      providerId:
-        type: string
-        description: "ID provider of the JWT token"
-      permissions:
-        type: string
-        description: "The user's permission associated with the JWT token"
   Error:
     type: object
     description: "Response entity resulting from a failed API call."
