@@ -7,7 +7,7 @@ is: 'published'
 
 Now that you are familiar with [Annotations](../guides/V1_annotations.md) let's dig deeper and take a look at what sort of information can be extracted from a Message's Annotation list.
 
-For each message, the entire text gets processed using [Alchemy Language services](https://www.ibm.com/watson/developercloud/alchemy-language.html): **entities**, **keywords**, **doc-sentiment**, **relations**, **concepts**, **taxonomy**, and **dates**. Annotations are created if the results are not empty.
+For each message, the entire text gets processed using [Alchemy Language services](https://www.ibm.com/watson/developercloud/alchemy-language.html): **entities**, **keywords**, **doc-sentiment**, **concepts**, and **taxonomy**. Annotations are created if the results are not empty.
 
 See [Annotation](../guides/V1_annotations.md) if you need a refresher on the common annotation fields.
 
@@ -102,66 +102,10 @@ Here is the annotation structure for `doc-sentiment`.
 	"tokenClientId": "toscana-aip-nlc-consumer-client-id",
 	"language": "english",
 	"docSentiment": {
-					"score":0.717351,
-					"type":"positive"
+		"score":0.717351,
+		"type":"positive"
 	}
 }
-````
-
-### Relations
-`Relations` are the subject, action and object relations within a sentence. `Relations` can help with identifying events or for [triggering actions](https://developer.watsonwork.ibm.com/docs/tutorials/action-fulfillment).
-
-Let's review a simple `relations` annotation structure:
-````json
-{
-	"type": "message-nlp-relations",
-	"annotationId": "581cc054e4b0855fa7b3ba61",
-	"created": 1478279252054,
-	"createdBy": "toscana-aip-nlc-consumer-client-id",
-	"tokenClientId": null,
-	"language": "english",
-	"relations": [
-		{
-			"sentence": "Thank you Bob! ( it's midnight there )",
-			"subject": {
-						"keywords": [{ "text": "Bob" }],
-						"text": "Bob"
-			},
-			"action": {
-						"lemmatized": "Thank",
-						"text": "Thank",
-						"verb": {
-									"tense": "present",
-									"text": "Thank"
-						}
-			},
-			"object": {
-						"text": "you"
-			}
-		},
-		{
-			"sentence": "Thank you Bob! ( it's midnight there )",
-			"subject": {
-						"text": "it"
-			},
-			"action": {
-						"lemmatized": "has",
-						"text": "has",
-						"verb": {
-									"tense": "present",
-									"text": "has"
-						}
-			},
-			"object": {
-						"keywords": [
-							  { "text": "midnight" }
-						  ],
-						"text": "midnight there"
-			}
-		}
-	]
-}
-
 ````
 
 ### Concepts
@@ -216,27 +160,6 @@ Here is a sample annotation structure that contains a `taxonomy` example.
 			"confident": false,
 			"label": "/technology and computing/mp3 and midi",
 			"score": 0.165545
-		}
-	]
-}
-````
-
-### Dates
-When a date is identified in a message an annotation is created and an array of `dates` extracted with the related text, date, time and time zone.
-
-Take a look at this annotation structure that contains a `dates` example.
-````json
-{
-	"type": "message-nlp-dates",
-	"annotationId": "58416b57e4b092a88ef362bb",
-	"created": 1480682327734,
-	"createdBy": "toscana-aip-nlc-consumer-client-id",
-	"tokenClientId": "toscana-aip-nlc-consumer-client-id",
-	"language": "english",
-	"dates": [
-		{
-			"date": "2016-12-04T00:00:00.000",
-			"text": "on the 4th december at 4"
 		}
 	]
 }
