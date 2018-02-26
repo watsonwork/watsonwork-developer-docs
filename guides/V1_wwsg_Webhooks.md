@@ -16,7 +16,8 @@ A callback occurs in these two situations:
 
 Each event must be acknowledged as being processed by returning an http status, such as 200, back to Watson Work Services
 
-![Webhooks Sequence Diagram](../images/SequenceWebhooks.jpeg)
+![Webhooks Sequence Diagram 1](../images/WWSWebhooksDiagram1.png)
+![Webhooks Sequence Diagram 2](../images/WWSWebhooksDiagram2.png)
 
 To register your callback URL follow these steps:
 1. Go to **Your Apps** in the top navigation of this site
