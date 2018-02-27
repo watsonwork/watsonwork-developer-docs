@@ -26,8 +26,8 @@ We want to make sure apps fit in with the our design principles. Also, please do
 
 **Deliverables**
 
-- [] Provide access to video, click-through or live demonstrations with narrative for us to evaluate. Note, the descriptions, screenshots and demos must depict the app accurately. The app should not include hidden, undocumented or overlooked features. Demos should show actual use.
-- [] Also if authentication is required, give a set of test credentials to access the app directly. 
+* Provide access to video, click-through or live demonstrations with narrative for us to evaluate. Note, the descriptions, screenshots and demos must depict the app accurately. The app should not include hidden, undocumented or overlooked features. Demos should show actual use.
+* Also if authentication is required, give a set of test credentials to access the app directly. 
 
 ## Business Value
 
@@ -69,9 +69,9 @@ to the user and secure their consent.
 
 **Deliverables**
 
-- [] Provide proof you have secured the rights to your app’s assets including names, icons, screenshots, etc. 
-- [] Provide links to terms-of-use and privacy documentation.
-- [] Provide the flow of how the app allows the user to consent to allow the app to gather user or usage data. 
+* Provide proof you have secured the rights to your app’s assets including names, icons, screenshots, etc. 
+* Provide links to terms-of-use and privacy documentation.
+* Provide the flow of how the app allows the user to consent to allow the app to gather user or usage data. 
 
 ## Security
 
@@ -79,14 +79,14 @@ Your app needs to provide measures to protect user and usage data.
 
 **Deliverables**
 
-- [] Provide a description of the app’s security architecture and user flow.
+* Provide a description of the app’s security architecture and user flow.
 
 ## Support
 
 You need to provide an easy way for users to understand the available functionality in your app, and it must be 
 accurate, easy to navigate and easy to digest.
 
-- [] Provide a link to your app’s help center and user documentation. Also call out any “in app” content or guidance 
+* Provide a link to your app’s help center and user documentation. Also call out any “in app” content or guidance 
 that is included. 
 
 ## Sustainability
@@ -99,6 +99,6 @@ functionality or content.
 
 **Deliverables**
 
-- [] Provide short-term delivery plan and description of how users will access your delivery plan and roadmap.
-- [] Provide a statement of commitment that you will inform us of any changes to the app that will impact its lifecycle, functionality or content. 
+* Provide short-term delivery plan and description of how users will access your delivery plan and roadmap.
+* Provide a statement of commitment that you will inform us of any changes to the app that will impact its lifecycle, functionality or content. 
 
