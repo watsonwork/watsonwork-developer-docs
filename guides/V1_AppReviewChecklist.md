@@ -17,8 +17,8 @@ We want to make sure your app follows best practices and uses our API’s as we�
 
 **Deliverables**
 
--[] Provide detailed description of the app architecture including a bill of materials and integration points with our services. 
--[] Provide expected (or observed) scalability and performance benchmarks and estimates.
+* Provide detailed description of the app architecture including a bill of materials and integration points with our services. 
+* Provide expected (or observed) scalability and performance benchmarks and estimates.
 
 ## Design quality
 
