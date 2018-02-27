@@ -50,6 +50,8 @@
   * [Authorize an App](./guides/V1_wwsg_AuthorizeApp.md)
   * [Make your App cognitive](./guides/V1_cognitive_app.md)
   * [Share an App](./guides/V1_ShareAnApp.md)
+  * [Publish in the catalog](./guides/V1_PublishInTheCatalog.md)
+  * [App review checklist](./guides/V1_AppReviewChecklist.md)
   * [Troubleshooting Apps](./guides/V1_app_errors.md)
 
 * ## [Tutorials](./guides/V1_Tutorials.md)
