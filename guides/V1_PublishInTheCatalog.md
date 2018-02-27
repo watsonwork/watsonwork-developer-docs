@@ -25,7 +25,7 @@ Then you click *Submit for review*.
 ![Apps Page](./images/MyAppPageSubmitAfter.png)
 
 Once you submit it, our review team will need to go through the review process, and they will work with you giving you feedback 
-so that your app can get approved. The review process makes use of the [App review checklist](./), please use this checklist to prepare 
+so that your app can get approved. The review process makes use of the [App review checklist](./V1_AppReviewChecklist.md), please use this checklist to prepare 
 your app for review. You will be contacted via email to provide the outlined items.
 
 Once it’s approved then it will appear in the catalog.
