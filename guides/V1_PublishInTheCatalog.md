@@ -12,8 +12,7 @@ When you do that, your app will be exposed to users of applications based on Wor
 
 ## The publishing process
 
-For your app to get into the catalog, you have to Submit it for review. You can do this by going to 
-[Your Apps](https://developer.watsonwork.ibm.com/apps), then selecting your app 
+For your app to get into the catalog, you have to first submit it for review by IBM. You can do this by going to [Your Apps](https://developer.watsonwork.ibm.com/apps), then selecting your app 
 
 ![Apps Page](../images/MyAppPageBasic.png)
 
