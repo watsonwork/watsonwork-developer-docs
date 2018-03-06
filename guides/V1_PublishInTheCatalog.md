@@ -6,8 +6,7 @@ is: 'published'
 ## Publish in the catalog
 
 Once you’ve built your app, and tested it out with a few colleagues, you may want to get your app published in the catalog. 
-When you do that, it will appear on the Apps page for every person using Watson Workspace. They can then get your app and 
-starting enjoying your hard work.
+When you do that, your app will be exposed to users of applications based on Work Services via their presentation of the Catalog. For example, IBM Watson Workspace presents the catalog in the Apps section of a space settings page. Note that in some cases involving paid organizations, administrators may still block your app from being displayed as they can pick and choose which apps are utilized.
 
 ![Apps Page](../images/YourAppWWS.png)
 
