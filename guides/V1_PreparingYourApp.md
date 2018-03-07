@@ -48,7 +48,8 @@ And then you have to call the [Authorization Code Grant](../references/V1_oauth_
 If you've added Webhooks, you will need
 to enable Webhooks to work. Here's a diagram of what has to occur.
 
-![Webhooks Sequence Diagram](../images/SequenceWebhooks.jpeg)
+![Webhooks Sequence Diagram 1](../images/WWSWebhooksDiagram1.png) 
+![Webhooks Sequence Diagram 2](../images/WWSWebhooksDiagram2.png)
 
 Let's break this down.  
 1.  Create your App
