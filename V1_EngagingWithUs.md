@@ -78,7 +78,7 @@ In order to have access to APIs beyond the published ones, you must pass specifi
 x-graphql-view: PUBLIC, BETA, EXPERIMENTAL, FUTURE
 ```
 
-So either pass none (as currently the default), or pass any combination of the above so long as you always have PUBLIC present (e.g., `x-graphql-view: PUBLIC, BETA`). 
+So either pass none (as currently the default), or pass any combination of the above so long as you always have `PUBLIC` present (e.g., `x-graphql-view: PUBLIC, BETA`). 
 
 Once you do that, you can make use of those additional APIs we’re working on.
 
