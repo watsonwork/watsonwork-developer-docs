@@ -7,7 +7,7 @@ is: 'published'
 
 Now that you are familiar with [Annotations](../guides/V1_annotations.md) let's dig deeper and take a look at what sort of information can be extracted from a Message's Annotation list.
 
-For each message, the entire text gets processed using [Alchemy Language services](https://www.ibm.com/watson/developercloud/alchemy-language.html): **entities**, **keywords**, **doc-sentiment**, **concepts**, and **taxonomy**. Annotations are created if the results are not empty.
+For each message, the entire text gets processed using [IBM Watson Natural Language Understanding](https://www.ibm.com/watson/services/natural-language-understanding/): **entities**, **keywords**, **doc-sentiment**, **concepts**, and **taxonomy**. Annotations are created if the results are not empty.
 
 See [Annotation](../guides/V1_annotations.md) if you need a refresher on the common annotation fields.
 
