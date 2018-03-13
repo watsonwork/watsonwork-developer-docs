@@ -112,7 +112,7 @@ type SpaceRequiredAppInput {
 
 ## Example request
 
-Below is an example request to create a space template, including sample space status values, a custom list property and a required app.
+Below is an example request to create a space template, including sample space status values, a custom list property and required apps.
 
 ~~~~
 Method: POST
@@ -122,16 +122,16 @@ Body:
 {
   mutation {
     createSpaceTemplate(input: {
-      name: "My Space Template"
-      description: "A space template created by me"
+      name: "Template 1"
+      description: "A test template."
       spaceStatus: {
         acceptableValues: [
           {
-            displayName: "Open"
+            displayName: "New"
             defaultValue: true
           },
           {
-            displayName: "Closed"
+            displayName: "Close"
           }
         ]
       }
@@ -139,14 +139,14 @@ Body:
         properties: [
           {
             listProperty: {
-              displayName: "Color"
+              displayName: "Area",
               acceptableValues: [
                 {
-                  displayName:"Green"
+                  displayName: "Supply",
                   defaultValue: true
                 },
                 {
-                  displayName:"Red"
+                  displayName: "Inventory"
                 }
               ]
             }
@@ -156,7 +156,10 @@ Body:
       requiredApps: {
         apps: [
           {
-            id: "94ef1972-5898-4609-96cb-7ddb252d1142"
+            id: "d0c246a0-bced-4bf4-a29d-99cc6ad1ad53"
+          },
+          {
+            id: "e8c0e8ae-49cf-448d-a845-bb453f0bf94a"
           }
         ]
       }
