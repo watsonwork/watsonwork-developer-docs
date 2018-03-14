@@ -14,6 +14,7 @@ query getMessage {
     content
     contentType
     annotations
+    reactions
   }
 }
 ```

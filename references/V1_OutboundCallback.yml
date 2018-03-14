@@ -5,6 +5,8 @@ info:
   description: |
     This API has to be implemented by the callbacks implementing outbound webhooks.
 
+      Changes in version 1.5.0:
+      - New event type and notification format for `reaction-added` and `reaction-removed`.
     - Changes in version 1.4.0:
       - New event type and notification format for `message-deleted`.
     - Changes in version 1.3.0:
@@ -33,6 +35,8 @@ definitions:
       - $ref: '#/definitions/MessageAnnotationAddedBody'
       - $ref: '#/definitions/MessageAnnotationEditedBody'
       - $ref: '#/definitions/MessageAnnotationRemovedBody'
+      - $ref: '#/definitions/AddReactionBody'
+      - $ref: '#/definitions/RemoveReactionBody'
   VerificationInputBody:
     type: object
     description: |
@@ -334,6 +338,84 @@ definitions:
       - messageId
       - annotationId
       - time
+  AddReactionBody:
+    type: object
+    description: |
+      Notifies the addition of an emoji reaction to a message.
+
+      This event is only sent to webhooks that
+      - have been added for the reaction-added event
+      - and belong to an app that is a member of the space.
+    properties:
+      type:
+        description: The event type is `reaction-added`.
+        type: string
+      spaceId:
+        description: Id of the space in which the reaction was added.
+        type: string
+      objectId:
+        description: Id of the object being reacted to. Currently, only messages can be reacted to.
+        type: string
+      objectType:
+        description: The type of object in the space being reacted to. Currently, the only supported objectType is MESSAGE.
+        type: string
+      time:
+        description: "Time and date of the reaction being added, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+      reaction:
+        description: "The reaction that was added."
+        type: string
+      userId:
+        description: "Id of the user that added the reaction."
+        type: string
+    required:
+      - type
+      - spaceId
+      - objectId
+      - objectType
+      - time
+      - reaction
+      - userId
+  RemoveReactionBody:
+    type: object
+    description: |
+      Notifies the removal of an emoji reaction from a message.
+
+      This event is only sent to webhooks that
+      - have been added for the reaction-removed event
+      - and belong to an app that is a member of the space.
+    properties:
+      type:
+        description: The event type is `reaction-removed`.
+        type: string
+      spaceId:
+        description: Id of the space in which the reaction was removed.
+        type: string
+      objectId:
+        description: Id of the object being reacted to. Currently, only messages can be reacted to..
+        type: string
+      objectType:
+        description: The type of object in the space being reacted to. Currently, the only supported objectType is MESSAGE.
+        type: string
+      time:
+        description: "Time and date of the reaction being removed, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+      reaction:
+        description: "The reaction that was removed."
+        type: string
+      userId:
+        description: "Id of the user that removed the reaction."
+        type: string
+    required:
+      - type
+      - spaceId
+      - objectId
+      - objectType
+      - time
+      - reaction
+      - userId
 
 parameters:
   callbackUrl:
@@ -484,3 +566,4 @@ paths:
             Retries are made at time intervals of every 30s during the first 2 hours and then at 3h, 6h, 12h, 24h, 36h, 72h after the first failed notification.
             After this, the event will be discarded.
             This retry is tied to the space for the event in question.
+            
