@@ -15,7 +15,7 @@ A user can delete a custom space template with the _deleteSpaceTemplate_ mutatio
 ```graphql
 type MutationRoot {
   ...
-  deleteSpaceTemplate(input: DeleteSpaceTemplateInput!): DeleteSpaceTemplateMutation!
+  deleteSpaceTemplate(input: DeleteSpaceTemplateInput!): DeleteSpaceTemplateMutation
 }
 ```
 
