@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'remove-a-reaction'
-is: 'future'
+is: 'experimental'
 ---
 
 # Remove a Reaction
