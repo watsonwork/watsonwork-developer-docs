@@ -393,7 +393,7 @@ definitions:
         description: Id of the space in which the reaction was removed.
         type: string
       objectId:
-        description: Id of the object being reacted to. Currently, only messages can be reacted to..
+        description: Id of the object being reacted to. Currently, only messages can be reacted to.
         type: string
       objectType:
         description: The type of object in the space being reacted to. Currently, the only supported objectType is MESSAGE.
