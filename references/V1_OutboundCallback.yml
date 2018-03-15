@@ -360,14 +360,14 @@ definitions:
         description: The type of object in the space being reacted to. Currently, the only supported objectType is MESSAGE.
         type: string
       time:
-        description: "Time and date of the reaction being added, in milliseconds since January 1st, 00:00, 1970 UTC"
+        description: Time and date of the reaction being added, in milliseconds since January 1st, 00:00, 1970 UTC
         type: integer
         format: int64
       reaction:
-        description: "The reaction that was added."
+        description: The reaction that was added.
         type: string
       userId:
-        description: "Id of the user that added the reaction."
+        description: Id of the user that added the reaction.
         type: string
     required:
       - type
@@ -399,14 +399,14 @@ definitions:
         description: The type of object in the space being reacted to. Currently, the only supported objectType is MESSAGE.
         type: string
       time:
-        description: "Time and date of the reaction being removed, in milliseconds since January 1st, 00:00, 1970 UTC"
+        description: Time and date of the reaction being removed, in milliseconds since January 1st, 00:00, 1970 UTC
         type: integer
         format: int64
       reaction:
-        description: "The reaction that was removed."
+        description: The reaction that was removed.
         type: string
       userId:
-        description: "Id of the user that removed the reaction."
+        description: Id of the user that removed the reaction.
         type: string
     required:
       - type
