@@ -8,7 +8,7 @@ is: 'experimental'
 
 ## Concepts
 
-The _addReaction_ mutation allows the user to add a reaction to a message.  The mutation accepts a Message ID (targetId) and a reaction as arguments, and makes the request on behalf of the calling user, adding the specified reaction to the message.
+The _addReaction_ mutation allows the user to add a reaction to a message.  The mutation accepts a Message ID (targetId) and a reaction as arguments, and makes the request on behalf of the calling user, adding the specified reaction to the message.  The result will reflect the current **count** of users that reacted with the same **reaction** (emoji), and **viewerHasReacted** as to whether the calling user has reacted (true).
 
 ## Schema
 

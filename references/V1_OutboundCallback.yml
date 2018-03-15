@@ -566,4 +566,4 @@ paths:
             Retries are made at time intervals of every 30s during the first 2 hours and then at 3h, 6h, 12h, 24h, 36h, 72h after the first failed notification.
             After this, the event will be discarded.
             This retry is tied to the space for the event in question.
-            
+
