@@ -33,6 +33,12 @@
   * [Update space membership](./guides/V1_update_space.md)
 
 
+* ## [Reactions](./guides/V1_wwsg_Reactions.md)
+  * [Add a reaction to a message](./guides/V1_Add_Reaction.md)
+  * [Remove a reaction to a message](./guides/V1_Remove_Reaction.md)
+  * [Get users who reacted to a message](./guides/V1_Reacting_Users.md)
+
+
 * ## [Annotations](./guides/V1_annotations.md)
   * [Moments](./guides/V1_wwsg_MomentIdentification.md)
   * [Moment annotation](./guides/V5_Annotation_Message_Moment.md)

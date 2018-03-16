@@ -8,7 +8,7 @@ is: 'experimental'
 
 ## Concepts
 
-The _removeReaction_ mutation allows the user to remove a reaction from a message.  The mutation accepts a Message ID (targetId) and a reaction as arguments, and makes the request on behalf of the calling user, removing the specified reaction from the message.  The result will reflect the current **count** of users that reacted with the same **reaction** (emoji), and **viewerHasReacted** as to whether the calling user has reacted (false).
+The _removeReaction_ mutation allows the API caller to remove a reaction from a message.  The mutation accepts a Message ID (targetId) and a reaction as arguments, and makes the request on behalf of the caller, removing the specified reaction from the message.  The result will reflect the current **count** of users that reacted with the same **reaction** (string/emoji), and **viewerHasReacted** as to whether the caller has reacted (false).
 
 ## Schema
 
@@ -47,7 +47,7 @@ Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIME
 Body:
 {
   mutation {
-    removeReaction(input: {targetId: "5a209f74e4b0faa757ac1afd", reaction: "?"}) {
+    removeReaction(input: {targetId: "5a209f74e4b0faa757ac1afd", reaction: ":-)"}) {
       reaction {
         reaction
         count
@@ -56,3 +56,19 @@ Body:
   }
 }
 ~~~~
+## Example Result
+
+~~~~
+{
+  "data": {
+    "removeReaction": {
+      "reaction": {
+        "reaction": ":-)",
+        "count": 0,
+        "viewerHasReacted": false
+      }
+    }
+  }
+}
+~~~~
+

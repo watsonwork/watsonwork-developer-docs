@@ -8,7 +8,7 @@ is: 'experimental'
 
 ## Concepts
 
-The _reactingUsers_ query allows the user to get all users who reacted to a message with a specified reaction.  The query accepts a Message ID (targetId) and a reaction as arguments, and optional paging information.
+The _reactingUsers_ query allows the API caller to get all reactors that reacted to a message with a specified reaction.  The query accepts a Message ID (targetId) and a reaction as arguments, and optional paging information.
 
 
 ## Schema
@@ -44,7 +44,7 @@ Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIME
 Body:
 {
   query {
-    reactingUsers(targetId: "5a9ee86ee4b0cb1ca3dfef33", reaction: "?") {
+    reactingUsers(targetId: "5a9ee86ee4b0cb1ca3dfef33", reaction: ":-)") {
       totalCount
       items {
         user {
@@ -64,3 +64,31 @@ Body:
   }
 }
 ~~~~
+## Example Result
+
+~~~~
+{
+  "data": {
+    "reactingUsers": {
+      "totalCount": 1,
+      "items": [
+        {
+          "user": {
+            "email": "jsmith@us.ibm.com",
+            "displayName": "John Smith",
+            "id": "557657e7-29f9-4b31-8f08-dd385e230816"
+          },
+          "reacted": "2018-03-12T15:14:24.829+0000"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "hasPreviousPage": false,
+        "endCursor": "1521213264829",
+        "startCursor": "1521213264829"
+      }
+    }
+  }
+}
+~~~~
+
