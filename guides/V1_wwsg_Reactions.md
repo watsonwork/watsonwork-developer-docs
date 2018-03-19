@@ -7,7 +7,7 @@ is: 'experimental'
 
 Watson Work Services provides a set of **reaction** APIs for callers to interact with **messages**, adding and removing reactions associated with a message.
 
-Reaction APIs allow for the association of "reactions" to objects such as "messages". A "reaction" is represented simply by a String. The Workspace application utilizes a particular set of emojis to represent the reactions. This separation of emoji from reactions allow for future implementations and for other clients to choose different set of emojis or their own custom set of Strings. The main requirement is the reaction is a String.
+Reaction APIs allow for the association of "reactions" to objects such as "messages". A "reaction" is represented simply by a String. The Workspace application utilizes a particular set of emojis to represent the reactions. This separation of emoji from reactions allow for future implementations and for other clients to choose different set of emojis or their own custom set of Strings.
 
 ![Image](../images/reaction.png)
 
