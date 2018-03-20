@@ -16,7 +16,7 @@ Reactions are a quick way to respond to someone's message.  The caller can selec
 ### External APIs
 
  * GraphQL mutation for adding reaction
-    * addReaction [Add a reaction to a message](./guides/V1_Add_Reaction.md)
+    * **addReaction** [Add a reaction to a message](./guides/V1_Add_Reaction.md)
     <br>
  * GraphQL mutation for removing reaction
     * **removeReaction** [Remove a reaction to a message](./guides/V1_Remove_Reaction.md)

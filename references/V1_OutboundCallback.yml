@@ -341,7 +341,7 @@ definitions:
   AddReactionBody:
     type: object
     description: |
-      Notifies the addition of an emoji reaction to a message.
+      Notifies the addition of an emoji reaction to a message.  Note that this event is currently classified as an EXPERIMENTAL API.
 
       This event is only sent to webhooks that
       - have been added for the reaction-added event
@@ -380,7 +380,7 @@ definitions:
   RemoveReactionBody:
     type: object
     description: |
-      Notifies the removal of an emoji reaction from a message.
+      Notifies the removal of an emoji reaction from a message.  Note that this event is currently classified as an EXPERIMENTAL API.
 
       This event is only sent to webhooks that
       - have been added for the reaction-removed event
