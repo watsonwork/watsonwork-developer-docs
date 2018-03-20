@@ -75,4 +75,3 @@
   * <a href="https://developer.watsonwork.ibm.com/tools/graphql" target="\_blank">GraphQL Tool</a>
   * <a href="https://github.com/watsonwork" target="\_blank">Sample Apps</a>
   * <a href="https://help.workspace.ibm.com/hc/en-us/community/topics/201192468-Developer" target="\_blank">Dev Forums</a>
-
