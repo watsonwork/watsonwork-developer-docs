@@ -43,6 +43,10 @@ Available events are:
 
 **message-annotation-removed**: each time an annotation is removed from a message
 
+**reaction_added**: each time a reaction is added to a message (API is EXPERIMENTAL)
+
+**reaction_removed**: each time a reaction is removed from a message (API is EXPERIMENTAL)
+
 Details about event notification requests are described in the [Webhooks API Reference](../references/V1_OutboundCallback.yml).
 
 Note: It's important that your App carries out the proper handshake sequence.  To learn more, read [Preparing your App](../guides/V1_PreparingYourApp.md).

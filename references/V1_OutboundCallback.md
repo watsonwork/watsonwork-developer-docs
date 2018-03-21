@@ -5,6 +5,8 @@
 ## Overview
 This API has to be implemented by the callbacks implementing outbound webhooks.
 
+- Changes in version 1.5.0:
+  - New event type and notification format for `reaction-added` and `reaction-removed`.
 - Changes in version 1.4.0:
   - New event type and notification format for `message-deleted`.
 - Changes in version 1.3.0:
@@ -263,6 +265,24 @@ Send back the verification challenge to show that the webhook supports this call
 |Name|Description|Schema|
 |---|---|---|
 |**response**  <br>*required*|The challenge that was provided in the request body of the verification request.|string|
+
+
+<a name="addreactionbody"></a>
+### AddReactionBody
+Notifies the addition of an emoji reaction to a message.
+
+This event is only sent to webhooks that
+- have been added for the reaction-added event
+- and belong to an app that is a member of the space.
+
+
+<a name="removereactionbody"></a>
+### RemoveReactionBody
+Notifies the removal of an emoji reaction from a message.
+
+This event is only sent to webhooks that
+- have been added for the reaction-removed event
+- and belong to an app that is a member of the space.
 
 
 
