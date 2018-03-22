@@ -1,8 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
-link: 'delete-space-template'
+link: 'space-template-main'
 is: 'experimental'
----
 ---
 
 # Space Template

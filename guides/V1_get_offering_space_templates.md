@@ -1,6 +1,6 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
-link: 'delete-space-template'
+link: 'offering-space-templates'
 is: 'experimental'
 ---
 
