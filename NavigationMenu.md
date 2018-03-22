@@ -6,7 +6,7 @@
   * [Next steps](./V1_NextSteps.md)
   * [Engaging with us](./V1_EngagingWithUs.md)
   * [What's New](./Whats_New.md)
-  * [Coming Next](./ComingNext.md)
+  * [Coming Next](./Coming_Next.md)
 
 
 * ## [Developer's Guide](./guides/V1_wwsg_DevelopersGuide.md)
