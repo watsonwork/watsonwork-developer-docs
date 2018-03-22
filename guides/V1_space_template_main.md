@@ -14,8 +14,8 @@ as well as a set of required apps that are automatically added to the space on c
 
 | property      | type          | description  |
 | ------------- |:------------- |:-----|
-| properties |:SpacePropertyCollection |:There are three types of properties in a space template: List, Boolean, and Text.|
-| status |:SpaceStatus |:Status is a special list style attribute on the template. Status consists of a list of values that can be used to describe the state of the space; for example, open, closed, archived.|
-| requiredApps |:SpaceRequiredApplicationCollection |:Required apps define a set of applications (by ID) that are added to each new space on creation.|
-| teamId |:String |:teamId and offeringCollaborationType describe the team in which the space will be created. These values are derived either from the offering with which the template is associated (in the case of an offering template) or from the user who created the template (in the case of a user-created custom template).|
-| offeringCollaborationType |:OfferingCollaborationType |:See teamId description|
+| properties |SpacePropertyCollection |There are three types of properties in a space template: List, Boolean, and Text.|
+| status |SpaceStatus |Status is a special list style attribute on the template. Status consists of a list of values that can be used to describe the state of the space; for example, open, closed, archived.|
+| requiredApps |SpaceRequiredApplicationCollection |Required apps define a set of applications (by ID) that are added to each new space on creation.|
+| teamId |String |teamId and offeringCollaborationType describe the team in which the space will be created. These values are derived either from the offering with which the template is associated (in the case of an offering template) or from the user who created the template (in the case of a user-created custom template).|
+| offeringCollaborationType |OfferingCollaborationType |See teamId description|
