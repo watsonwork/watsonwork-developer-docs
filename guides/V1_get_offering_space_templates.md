@@ -6,7 +6,8 @@ is: 'experimental'
 
 # Get Offering Space Templates
 
-A user can fetch their offering space templates. These are the templates associated with the offerings the user has.
+Some space templates are associated with particular product offerings. 
+Using the offeringSpaceTemplates query, a user can fetch a collection of the templates to which they have access by virtue of the offerings to which they are subscribed.
 
 ## Schema
 
