@@ -9,6 +9,6 @@ Here’s the stuff we’re working on next for you and IBM Watson Work Services.
 
 | Coming Next   |
 | :-------------|
-| Working with Reactions. It's `EXPERIMENTAL` but you can check it out here, [Reactions Overview](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_wwsg_Reactions.md). We have [Adding Reactions](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_Add_Reaction.md), [Removing Reactions](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_Remove_Reaction.md), [Query for who's Reacting](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_Reacting_Users.md), and additions to [Messages](./guides/V1_message_main.md) and [Listening for Events](./guides/V1_wwsg_Webhooks.md).              |
+| **Working with Reactions.** It's `EXPERIMENTAL` but you can check it out here, [Reactions Overview](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_wwsg_Reactions.md). We have [Adding Reactions](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_Add_Reaction.md), [Removing Reactions](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_Remove_Reaction.md), [Query for who's Reacting](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_Reacting_Users.md), and additions to [Messages](./guides/V1_message_main.md) and [Listening for Events](./guides/V1_wwsg_Webhooks.md).              |
 
 
