@@ -47,7 +47,7 @@ Available events are:
 
 **reaction_removed**: each time a reaction is removed from a message (API is EXPERIMENTAL)
 
-_Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [Reactions Overview](./guides/V1_wwsg_Reactions.md), [Adding Reactions](./guides/V1_Add_Reaction.md), [Removing Reactions](./guides/V1_Remove_Reaction.md), and [Query for who's Reacting](./guides/V1_Reacting_Users.md)_.
+_Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../Coming_Next.md) for more info_.
 
 Details about event notification requests are described in the [Webhooks API Reference](../references/V1_OutboundCallback.yml).
 
