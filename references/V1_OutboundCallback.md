@@ -269,7 +269,7 @@ Send back the verification challenge to show that the webhook supports this call
 
 <a name="addreactionbody"></a>
 ### AddReactionBody
-Notifies the addition of an emoji reaction to a message.
+Notifies the addition of a reaction to a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
 - have been added for the reaction-added event
@@ -278,7 +278,7 @@ This event is only sent to webhooks that
 
 <a name="removereactionbody"></a>
 ### RemoveReactionBody
-Notifies the removal of an emoji reaction from a message.
+Notifies the removal of a reaction from a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
 - have been added for the reaction-removed event
