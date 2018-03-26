@@ -75,7 +75,7 @@ Entity that represents a single focus found for the analyzed text
 |Name|Description|Schema|
 |---|---|---|
 |**applicationId**  <br>*optional*|ID of the registered application with which the custom lens is associated.|string|
-|**category**  <br>*optional*|The particular type of focus that was identified by the lens.  This field may not exist for some lens types.|enum (Add, Create, Delete, Modify, Schedule, Share, View)|
+|**category**  <br>*optional*|The particular type of focus that was identified by the lens.  This field may not exist for some lens types.|enum (Schedule, Share)|
 |**confidence**  <br>*optional*|The level of confidence for this focus, on a scale from 0 to 1.|number|
 |**end**  <br>*optional*|In the provided text, the index after the last character of this phrase.|integer|
 |**focusVersion**  <br>*optional*|The version of the Focus object.|number|
@@ -104,8 +104,3 @@ Entity that represents the text to be analyzed
 |Name|Description|Schema|
 |---|---|---|
 |**text**  <br>*optional*|The text to be analyzed.  May contain multiple sentences.  <br>**Maximal length** : `10000`|string|
-
-
-
-
-
