@@ -40,9 +40,19 @@ Body:
         id
         type
         displayName
-        ...listProperty
-        ...textProperty
-        ...booleanProperty
+        ... on SpaceListProperty {
+          defaultValue
+          acceptableValues {
+            id
+            displayName
+          }
+        }
+        ... on SpaceTextProperty {
+          defaultValue
+        }
+        ... on SpaceBooleanProperty {
+          defaultStringValue
+        }
       }
     }
     spaceStatus {
@@ -53,22 +63,6 @@ Body:
       }
     }
   }
-}
-
-fragment listProperty on SpaceListProperty {
-  defaultValue
-  acceptableValues {
-    id
-    displayName
-  }
-}
-
-fragment textProperty on SpaceTextProperty {
-  defaultValue
-}
-
-fragment booleanProperty on SpaceBooleanProperty {
-  defaultStringValue
 }
 ~~~~
 
