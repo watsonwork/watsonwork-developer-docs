@@ -250,7 +250,7 @@ This event is sent only to webhooks that
 Notifies that a space has been updated.
 
 This event is sent only to webhooks that
-- have been added for the message-updated event
+- have been added for the space-updated event
 - and belong to an app that is a member of the space.
 
 
@@ -261,18 +261,18 @@ This event is sent only to webhooks that
 |**type**  <br>*required*|The event type is `space-updated`.|string|
 |**time**  <br>*required*|Time and date of the space being updated, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
 |**title**  <br>*optional*|The new title of the space.|string|
-|**description**  <br>*optional*|The new title of the space.|string|
+|**description**  <br>*optional*|The new description of the space.|string|
 |**visibility**  <br>*optional*|The new visibility of the space.|string|
 |**allowGuests**  <br>*optional*|The new allow guests setting of the space.|string|
 |**statusValue**  <br>*optional*|The new status value of the space.|string|
 |**spaceProperties**  <br>*optional*|The new space property values of the space.|Map<String, Object>|
 
-<a name="spaceupdatedbody"></a>
+<a name="spacedeletedbody"></a>
 ### SpaceDeletedBody
 Notifies that a space has been deleted.
 
 This event is sent only to webhooks that
-- have been added for the message-deleted event
+- have been added for the space-deleted event
 - and belong to an app that was a member of the space at the time of deletion.
 
 
@@ -281,7 +281,7 @@ This event is sent only to webhooks that
 |**spaceId**  <br>*required*|Id of the space which was deleted.|string|
 |**userId**  <br>*required*|Id of the user that deleted the space.|string|
 |**type**  <br>*required*|The event type is `space-deleted`.|string|
-|**time**  <br>*required*|Time and date of the space being deleted, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
+|**time**  <br>*required*|Time and date of the space deletion, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
 
 <a name="verificationinputbody"></a>
 ### VerificationInputBody
