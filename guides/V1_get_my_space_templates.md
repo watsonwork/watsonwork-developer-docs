@@ -6,7 +6,7 @@ is: 'experimental'
 
 # Get My Space Templates
 
-Using the _mySpaceTemplates_ query, a user can fetch a collection of the custom space templates that they have created.
+Using the _mySpaceTemplates_ query, a user can fetch a collection of the space templates that they have created.
 
 ## Schema
 

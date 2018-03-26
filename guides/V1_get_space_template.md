@@ -66,4 +66,71 @@ Body:
 }
 ~~~~
 
+Sample output for the above request:
+```json
+{
+  "data": {
+    "spaceTemplate": {
+      "name": "Template 1",
+      "requiredApps": {
+        "items": [
+          {
+            "id": "d0c246a0-bced-4bf4-a29d-99cc6ad1ad53"
+          }
+        ]
+      },
+      "properties": {
+        "items": [
+          {
+            "id": "area-property",
+            "type": "LIST",
+            "displayName": "Area",
+            "defaultValue": "other-bundle",
+            "acceptableValues": [
+              {
+                "id": "supply-bundle",
+                "displayName": "Supply"
+              },
+              {
+                "id": "inventory-bundle",
+                "displayName": "Inventory"
+              },
+              {
+                "id": "other-bundle",
+                "displayName": "Other"
+              }
+            ]
+          },
+          {
+            "id": "public-property",
+            "type": "BOOLEAN",
+            "displayName": "Public",
+            "defaultStringValue": "TRUE"
+          },
+          {
+            "id": "summary-property",
+            "type": "TEXT",
+            "displayName": "Summary",
+            "defaultValue": ""
+          }
+        ]
+      },
+      "spaceStatus": {
+        "defaultValue": "new-bundle",
+        "acceptableValues": [
+          {
+            "id": "new-bundle",
+            "displayName": "New"
+          },
+          {
+            "id": "close-bundle",
+            "displayName": "Close"
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
 For more information see [Space Templates](../guides/V1_space_template_main.md)
