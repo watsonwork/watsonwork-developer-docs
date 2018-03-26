@@ -5,7 +5,7 @@ info:
   description: |
     This API has to be implemented by the callbacks implementing outbound webhooks.
 
-      Changes in version 1.5.0:
+    - Changes in version 1.5.0:
       - New event type and notification format for `reaction-added` and `reaction-removed`.
     - Changes in version 1.4.0:
       - New event type and notification format for `message-deleted`.
