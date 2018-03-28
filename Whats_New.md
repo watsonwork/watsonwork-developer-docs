@@ -9,6 +9,7 @@ Keep up to date on what's new in IBM Watson Work Services. We'll list the latest
 
 | Date          | What's new       |
 | ------------- |:-------------|
+| 27.Mar.2018   | Added `space-updated` and `space-deleted` webhook events. |
 | 27.Feb.2018   | Added guide for [Publish in the Catalog](./guides/V1_PublishInTheCatalog.md) and also the [App review checklist](./guides/V1_AppReviewChecklist.md). |
 | 15.Feb.2018   | Simplifications made to [Information Extraction](./guides/V1_Annotation_Message_Information_Extraction.md) based on the Watson Natural Language Understanding API |
 | 07.Feb.2018   | Marked the property __emailAddresses: [String]__ on the [Person](https://developer.watsonwork.ibm.com/docs/people/) object **DEPRECATED** |

@@ -32,6 +32,8 @@ definitions:
       - $ref: '#/definitions/MessageDeletedBody'
       - $ref: '#/definitions/SpaceMembersAddedBody'
       - $ref: '#/definitions/SpaceMembersRemovedBody'
+      - $ref: '#/definitions/SpaceUpdatedBody'
+      - $ref: '#/definitions/SpaceDeletedBody'
       - $ref: '#/definitions/MessageAnnotationAddedBody'
       - $ref: '#/definitions/MessageAnnotationEditedBody'
       - $ref: '#/definitions/MessageAnnotationRemovedBody'
@@ -204,6 +206,85 @@ definitions:
       - spaceId
       - spaceName
       - memberIds
+      - time
+  SpaceUpdatedBody:
+    type: object
+    description: |
+      Notifies that a space has been updated.
+
+      This event is sent only to webhooks that
+      - have been added for the space-updated event
+      - and belong to an app that is a member of the space.
+    properties:
+      spaceId:
+        description: Id of the space which was updated.
+        type: string
+      userId:
+        description: Id of the user who updated the space.
+        type: string
+      type:
+        description: The event type is `space-updated`.
+        type: string
+      time:
+        description: "Time and date of the space being updated, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+      title:
+        description: The new title of the space.
+        type: string
+      description:
+        description: The new description of the space.
+        type: string
+      visibility:
+        description: The new visibility of the space.
+        type: string
+      allowGuests:
+        description: The new allow guests setting of the space.
+        type: string
+      statusValue:
+        description: The new status value of the space.
+        type: string
+      spaceProperties:
+        description: The new space property values of the space
+        type: Map<String, Object>
+    required:
+      - spaceId
+      - userId
+      - type
+      - time
+    optional:
+      - title
+      - description
+      - visibility
+      - allowGuests
+      - statusValue
+      - spaceProperties
+  SpaceDeletedBody:
+    type: object
+    description: |
+      Notifies that a space has been deleted.
+
+      This event is sent only to webhooks that
+      - have been added for the space-deleted event
+      - and belong to an app that was a member of the space at the time of deletion.
+    properties:
+      spaceId:
+        description: Id of the space which was deleted.
+        type: string
+      userId:
+        description: Id of the user that deleted the space.
+        type: string
+      type:
+        description: The event type is `space-deleted`.
+        type: string
+      time:
+        description: "Time and date of the space deletion, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+    required:
+      - spaceId
+      - userId
+      - type
       - time
   MessageAnnotationAddedBody:
     type: object
