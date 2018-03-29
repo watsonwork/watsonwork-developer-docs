@@ -5,6 +5,8 @@
 ## Overview
 This API has to be implemented by the callbacks implementing outbound webhooks.
 
+- Changes in version 1.6.0:
+  - New event type and notification format for `space-updated` and `space-deleted`.
 - Changes in version 1.5.0:
   - New event type and notification format for `reaction-added` and `reaction-removed`.
 - Changes in version 1.4.0:
@@ -243,6 +245,43 @@ This event is sent only to webhooks that
 |**time**  <br>*required*|Time and date of member removal, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
 |**type**  <br>*required*|The event type is `space-members-removed`.|string|
 
+<a name="spaceupdatedbody"></a>
+### SpaceUpdatedBody
+Notifies that a space has been updated.
+
+This event is sent only to webhooks that
+- have been added for the space-updated event
+- and belong to an app that is a member of the space.
+
+
+|Name|Description|Schema|
+|---|---|---|
+|**spaceId**  <br>*required*|Id of the space which was updated|string|
+|**userId**  <br>*required*|Id of the user who updated the space.|string|
+|**type**  <br>*required*|The event type is `space-updated`.|string|
+|**time**  <br>*required*|Time and date of the space being updated, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
+|**title**  <br>*optional*|The new title of the space.|string|
+|**description**  <br>*optional*|The new description of the space.|string|
+|**visibility**  <br>*optional*|The new visibility of the space.|string|
+|**allowGuests**  <br>*optional*|The new allow guests setting of the space.|string|
+|**statusValue**  <br>*optional*|The new status value of the space.|string|
+|**spaceProperties**  <br>*optional*|The new space property values of the space.|Map<String, Object>|
+
+<a name="spacedeletedbody"></a>
+### SpaceDeletedBody
+Notifies that a space has been deleted.
+
+This event is sent only to webhooks that
+- have been added for the space-deleted event
+- and belong to an app that was a member of the space at the time of deletion.
+
+
+|Name|Description|Schema|
+|---|---|---|
+|**spaceId**  <br>*required*|Id of the space which was deleted.|string|
+|**userId**  <br>*required*|Id of the user that deleted the space.|string|
+|**type**  <br>*required*|The event type is `space-deleted`.|string|
+|**time**  <br>*required*|Time and date of the space deletion, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
 
 <a name="verificationinputbody"></a>
 ### VerificationInputBody
