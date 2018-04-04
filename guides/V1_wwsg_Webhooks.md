@@ -37,6 +37,10 @@ Available events are:
 
 **space-members-removed**: each time a member is removed from the space
 
+**space-updated**: each time the space is modified
+
+**space-deleted**: on space deletion
+
 **message-annotation-added**: each time an annotation is added to a message
 
 **message-annotation-edited**: each time an annotation that is bound to a message is modified
