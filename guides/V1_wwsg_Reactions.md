@@ -16,20 +16,20 @@ Reactions are a quick way to respond to someone's message.  The caller can selec
 ### External APIs
 
  * GraphQL mutation for adding reaction
-    * **addReaction** [Add a reaction to a message](./guides/V1_Add_Reaction.md)
+    * **addReaction** [Add a reaction to a message](../guides/V1_Add_Reaction.md)
     <br>
  * GraphQL mutation for removing reaction
-    * **removeReaction** [Remove a reaction to a message](./guides/V1_Remove_Reaction.md)
+    * **removeReaction** [Remove a reaction to a message](../guides/V1_Remove_Reaction.md)
     <br>
  * GraphQL query for users reacting with a reaction
-    * **reactingUsers** [Get users who reacted to a message](./guides/V1_Reacting_Users.md)
+    * **reactingUsers** [Get users who reacted to a message](../guides/V1_Reacting_Users.md)
     <br>
- * Outbound webhooks [Events for reactions](./guides/V1_wwsg_Webhooks.md)
+ * Outbound webhooks [Events for reactions](../guides/V1_wwsg_Webhooks.md)
     * **reaction-added**
     * **reaction-removed**
     <br>
  * GraphQL query for getting reaction along with messages
-    * [Optional inclusion of reactions with message retrieval](./guides/V1_message_main.md)
+    * [Optional inclusion of reactions with message retrieval](../guides/V1_message_main.md)
 <br><br>
 
 
