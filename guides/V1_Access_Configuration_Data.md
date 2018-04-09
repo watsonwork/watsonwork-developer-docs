@@ -4,7 +4,7 @@ link: 'access-configuration-data'
 is: 'beta'
 ---
 # Access configuration data
-The configuration data is generated via Watson Work Services by Watson Workspace clients when a user triggers the configuration of your app. It contains the needed data for the configuration of the app - see [ConfigurationData](./docs#configurationdata).
+The configuration data is generated via Watson Work Services by Watson Workspace clients when a user triggers the configuration of your app. It contains the needed data for the configuration of the app.
 It can be accessed with a configuration token which had been generated before and is exposed via an url parameter for the [App Configuration Callback](../guides/V1_App_Configuration_Callback.md). Only when the app is authorized [as an App](../references/V1_oauth_token_client_credentials.yml) it can access the configuration data.
 The configuration data is not directly sent to the App Configuration Callback in order to allow the direct verification of the call to the App Configuration Callback.
 
@@ -28,7 +28,7 @@ GET v1/apps/<appId>/configurationData/<configurationToken>
 
 |HTTP Code|Description|Schema|
 |---|---|---|
-|**200**|The configuration data is returned and deleted successfully.|[ConfigurationData](./docs#configurationdata)|
+|**200**|The configuration data is returned and deleted successfully.|ConfigurationData(see below)|
 |**401**|Unauthorized.||
 |**403**|Forbidden.||
 |**404**|Not Found. The app with the given `appId` or the configuration data for the given `configurationToken` could not be found.||

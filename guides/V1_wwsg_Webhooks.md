@@ -16,7 +16,8 @@ A callback occurs in these two situations:
 
 Each event must be acknowledged as being processed by returning an http status, such as 200, back to Watson Work Services
 
-![Webhooks Sequence Diagram](../images/SequenceWebhooks.jpeg)
+![Webhooks Sequence Diagram 1](../images/WWSWebhooksDiagram1.png)
+![Webhooks Sequence Diagram 2](../images/WWSWebhooksDiagram2.png)
 
 To register your callback URL follow these steps:
 1. Go to **Your Apps** in the top navigation of this site
@@ -30,15 +31,27 @@ Available events are:
 
 **message-created**: each time a new message is created in the space
 
+**message-deleted**: each time a message is deleted from the space. Please note that the **message-deleted** event API is currently `experimental` and subject to change. It is being included here to engage developers early with this API.
+
 **space-members-added**: each time a member is added to the space
 
 **space-members-removed**: each time a member is removed from the space
+
+**space-updated**: each time the space is modified
+
+**space-deleted**: on space deletion
 
 **message-annotation-added**: each time an annotation is added to a message
 
 **message-annotation-edited**: each time an annotation that is bound to a message is modified
 
 **message-annotation-removed**: each time an annotation is removed from a message
+
+**reaction_added**: each time a reaction is added to a message (API is EXPERIMENTAL)
+
+**reaction_removed**: each time a reaction is removed from a message (API is EXPERIMENTAL)
+
+_Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 Details about event notification requests are described in the [Webhooks API Reference](../references/V1_OutboundCallback.yml).
 

@@ -45,7 +45,7 @@ To register a new command, select the **Add an action** button. When the new act
  Now when you add your app to a space, the commands you've registered will surface for users! In Workspace, this means the users will be able to type `/` and see your newly added command.
 
  #### Respond to a command
- Now that we've registered our commands, we need our app to respond if a user triggers the command. The process for responding to commands is similar to the process for responding to actions that are triggered during the [Action Fulfillment](./V1_Action_Fulfillment.md) workflow.
+ Now that we've registered our commands, we need our app to respond if a user triggers the command. The process for responding to commands is similar to the process for responding to actions that are triggered during the [Action Fulfillment](../guides/V1_Action_Fulfillment.md) workflow.
 
  When a user triggers an action ( for example, in Workspace if a user selects a slash command and presses enter ), the app will receive an `actionSelected` annotation.
 

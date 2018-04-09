@@ -22,7 +22,7 @@ Interacting with the user takes place in isolation of the other participants in 
 
 ### Create your App
 
-* Follow the instructions for creating your app with the [Prepare your App to Run](https://developer.watsonwork.ibm.com/docs#prepare-your-app-to-run) instructions.
+* Follow the instructions for creating your app with the [Prepare your App to Run](https://developer.watsonwork.ibm.com/docs/apps/prepare-your-app-to-run) instructions.
 * When configuring the webhook select to receive `message-annotation-added` events.
 * Configure a Watson Conversation through Bluemix following the steps below.
 

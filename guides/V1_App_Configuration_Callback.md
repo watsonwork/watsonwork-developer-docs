@@ -24,7 +24,7 @@ GET <configurationURL>?configurationToken=<configurationToken>
 
 The **configurationURL** is the one that was registered for the app. It is required to be a fully qualified URL using the **https** protocol.
 
-The **configurationToken** url parameter contains the configuration token which has to be used to access the configuration data via Watson Work Services - see [Access configuration data](./docs#access-configuration-data). This configuration token is generated via Watson Work Services together with corresponding configuration data when the user triggers the configuration of an app for a specific space. The Watson Workspace client triggers its generation and appends this url parameter before the **configurationURL** is called by the Watson Workspace client.
+The **configurationToken** url parameter contains the configuration token which has to be used to access the configuration data via Watson Work Services - see [Access configuration data](https://developer.watsonwork.ibm.com/docs/apps/access-configuration-data). This configuration token is generated via Watson Work Services together with corresponding configuration data when the user triggers the configuration of an app for a specific space. The Watson Workspace client triggers its generation and appends this url parameter before the **configurationURL** is called by the Watson Workspace client.
 
 The _deprecated_ **spaceId** url parameter gets appended when the configurationURL is loaded and it contains the **ID** of the space for which the configuration of the app should take place.
 This url parameter will be removed in the near future and shall no longer be used.

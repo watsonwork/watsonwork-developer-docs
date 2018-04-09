@@ -1,9 +1,12 @@
 * ## [Get Started](./V1_GetStarted.md)
   * [What can you build?](./V1_WhatCanYouBuild.md)
+  * [Here's how it works](./V1_HeresHowItWorks.md)
   * [Watson Work Services object model](./V1_Diagrams.md)  
   * [Start coding now!](./V1_StartCodingNow.md)
   * [Next steps](./V1_NextSteps.md)
+  * [Engaging with us](./V1_EngagingWithUs.md)
   * [What's New](./Whats_New.md)
+  * [Coming Next](./Coming_Next.md)
 
 
 * ## [Developer's Guide](./guides/V1_wwsg_DevelopersGuide.md)
@@ -48,6 +51,8 @@
   * [Authorize an App](./guides/V1_wwsg_AuthorizeApp.md)
   * [Make your App cognitive](./guides/V1_cognitive_app.md)
   * [Share an App](./guides/V1_ShareAnApp.md)
+  * [Publish in the catalog](./guides/V1_PublishInTheCatalog.md)
+  * [App review checklist](./guides/V1_AppReviewChecklist.md)
   * [Troubleshooting Apps](./guides/V1_app_errors.md)
 
 * ## [Tutorials](./guides/V1_Tutorials.md)

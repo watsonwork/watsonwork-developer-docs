@@ -21,7 +21,7 @@ The Person object is defined as follows.
 | displayName   | String        | Name of the user as it displays in the user experience |
 | extId         | String        | External id for the user, this is a unique identifier |
 | email         | String        | The primary email address for the user |
-| emailAddresses | [String]     | The array of additional email addresses for the user |
+| emailAddresses **DEPRECATED** | [String]     | The array of additional email addresses for the user |
 | photoUrl    | String        | The URL for the photo of the user, intended for display in the user experience |
 | customerId  | String        | The organization for the user |
 | presence  | PresenceStatus        | The user's current status, either 'online' or 'offline' |
