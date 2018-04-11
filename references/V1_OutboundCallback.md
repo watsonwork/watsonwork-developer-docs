@@ -212,7 +212,7 @@ This event is only sent to webhooks that
 
 <a name="messageeditedbody"></a>
 ### MessageEditedBody
-Notifies that an administrator has updated the contents of a message in a space.
+Notifies the subscribed app that a message has been edited.
 
 This event is only sent to webhooks that
 - have been added for the message-edited event
