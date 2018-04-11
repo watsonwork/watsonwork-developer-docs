@@ -175,6 +175,45 @@ definitions:
       - spaceName
       - memberIds
       - time
+  MessageEditedBody:
+    type: object
+    description: |
+      Notifies that an administrator has updated the contents of a message in a space.
+
+      This event is only sent to webhooks that
+      - have been added for the message-edited event
+      - and belong to an app that is a member of the space.
+    properties:
+      type:
+        description: The event type is `message-edited`.
+        type: string
+      userId:
+        description: Id of the user who edited the message.
+        type: string
+      spaceId:
+        description: Id of the space in which the message was edited.
+        type: string
+      messageId:
+        description: Unique id of the message.
+        type: string
+      content:
+        description: NEW Message content.
+        type: string
+      contentType:
+        description: Mime type of the message content.
+        type: string
+      time:
+        description: "Time and date of message update, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+    required:
+      - type
+      - userId
+      - spaceId
+      - messageId
+      - content
+      - contentType
+      - time
   SpaceMembersRemovedBody:
     type: object
     description: |
