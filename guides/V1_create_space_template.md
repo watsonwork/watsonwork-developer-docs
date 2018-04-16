@@ -31,7 +31,7 @@ type SpaceTemplateMutation {
 
 The input object has three required properties: template _name_ and _description_ strings, and a _spaceStatus_ input object.
 
-The _SpaceStatusInput_ contains a list of acceptable statuses for spaces created using the template. Each _SpaceStatusAcceptableValueInput_ has a _displayName_ value and a boolean flag (defaulting to false) indicating whether this value should be the default status. If no default space status is specified then the first value provided will be taken as the default.
+The _SpaceStatusInput_ contains a list of acceptable statuses for spaces created using the template. Each _SpaceStatusAcceptableValueInput_ has a single property, _displayName_. Note that the first space status value provided will be taken as the default.
 
 ```graphql
 type CreateSpaceTemplateInput {
@@ -48,7 +48,6 @@ type SpaceStatusInput {
 
 type SpaceStatusAcceptableValueInput {
   displayName: String!
-  defaultValue: Boolean
 }
 
 ```
@@ -69,7 +68,7 @@ type SpacePropertyWrapperInput {
 }
 ```
 
-The _SpaceListPropertyInput_ object contains a _displayName_ for the property and a list of the _acceptableValues_. Each _SpaceListPropertyAcceptableValueInput_ has a _displayName_ for the value and a boolean flag (defaulting to false) indicating whether this value should be the default for the property. If no default value is specified then the first entry in the list will be taken as the default.
+The _SpaceListPropertyInput_ object contains a _displayName_ for the property and a list of the _acceptableValues_. Each _SpaceListPropertyAcceptableValueInput_ has a _displayName_ for the value. Note that the first entry in the list will be taken as the default value for the property.
 
 ```graphql
 type SpaceListPropertyInput {
@@ -79,7 +78,6 @@ type SpaceListPropertyInput {
 
 type SpaceListPropertyAcceptableValueInput {
   displayName: String!
-  defaultValue: Boolean
 }
 
 ```
@@ -128,7 +126,6 @@ Body:
         acceptableValues: [
           {
             displayName: "New"
-            defaultValue: true
           },
           {
             displayName: "Close"
@@ -143,7 +140,6 @@ Body:
               acceptableValues: [
                 {
                   displayName: "Supply",
-                  defaultValue: true
                 },
                 {
                   displayName: "Inventory"
