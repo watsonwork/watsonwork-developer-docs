@@ -31,7 +31,7 @@ type SpaceTemplateMutation {
 
 The input object has three required properties: template _name_ and _description_ strings, and a _spaceStatus_ input object.
 
-The _SpaceStatusInput_ contains a list of acceptable statuses for spaces created using the template. Each _SpaceStatusAcceptableValueInput_ has a single property, _displayName_. Note that the first space status value provided will be taken as the default.
+The _SpaceStatusInput_ contains a list of acceptable statuses for spaces created using the template. Each _SpaceStatusAcceptableValueInput_ has a single property, _displayName_. Note that the order in which space status values are supplied is significant. They should be added to the template in the logical sequence through which you would expect a space to progress, e.g., from "New" to "Closed".
 
 ```graphql
 type CreateSpaceTemplateInput {
