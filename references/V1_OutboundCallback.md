@@ -210,6 +210,25 @@ This event is only sent to webhooks that
 |**type**  <br>*required*|The event type is `message-deleted`.|string|
 
 
+<a name="messageeditedbody"></a>
+### MessageEditedBody
+Notifies the subscribed app that a message has been edited.
+
+This event is only sent to webhooks that
+- have been added for the message-edited event
+- and belong to an app that is a member of the space.
+
+
+|Name|Description|Schema|
+|---|---|---|
+|**content**  <br>*required*|NEW Message content.|string|
+|**contentType**  <br>*required*|Mime type of the message content.|string|
+|**messageId**  <br>*required*|Unique id of the message.|string|
+|**spaceId**  <br>*required*|Id of the space in which the message was edited.|string|
+|**time**  <br>*required*|Time and date of message edit, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
+|**type**  <br>*required*|The event type is `message-edited`.|string|
+|**userId**  <br>*required*|Id of the user who edited the message.|string|
+
 <a name="spacemembersaddedbody"></a>
 ### SpaceMembersAddedBody
 Notifies that one or more members (users or apps) have been added to a space.
