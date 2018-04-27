@@ -34,7 +34,7 @@ The _propertyId_ of the object identifies the property whose value is to be set 
 
 Space properties may similarly be updated by adding a _propertyValues_ field as above to the input object passed to the _updateSpace_ mutation. Only those properties which you actually want to update need be included in this case. Properties for which no new values are specified will retain the values previously assigned.
 
-When a space is created from a template it will be assigned the default status value defined in the template. The status of the space may subsequently be updated by adding a _statusValue_ field to the input object passed to the _updateSpace_ mutation. This field takes a _SpaceStatusValueInput_ object with a single _statusValueId_ property.
+When a space is created from a template it will automatically be assigned the initial status value defined for all spaces created from that template. The status of the space may subsequently be updated by adding a _statusValue_ field to the input object passed to the _updateSpace_ mutation. This field takes a _SpaceStatusValueInput_ object with a single _statusValueId_ property.
 
 ```graphql
 input SpaceStatusValueInput {
