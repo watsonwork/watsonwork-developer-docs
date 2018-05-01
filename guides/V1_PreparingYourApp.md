@@ -32,7 +32,7 @@ If your app is going to make calls to Watson Work Services under its own identit
 
 You have to pass the JWT token to Watson Work Services in order to make secure API calls.  To authenticate you will need to add a call to the Authentication API in your App (See [Authenticate as an application](../references/V1_oauth_token_client_credentials.yml)). You need to do this because the JWT token expires, but your App ID and Secret do not and once the token expires it's no longer valid and calls will fail.   
 
-TIP:  Track the expiration time and then make another call to the authentication API to get a new token with the new expiration time.
+<p class="tip"><strong>TIP:</strong> Track the expiration time and then make another call to the authentication API to get a new token with the new expiration time.</p>
 
 ## Calling Watson Work Services from your App on behalf of a user
 
@@ -48,7 +48,7 @@ And then you have to call the [Authorization Code Grant](../references/V1_oauth_
 If you've added Webhooks, you will need
 to enable Webhooks to work. Here's a diagram of what has to occur.
 
-![Webhooks Sequence Diagram 1](../images/WWSWebhooksDiagram1.png) 
+![Webhooks Sequence Diagram 1](../images/WWSWebhooksDiagram1.png)
 ![Webhooks Sequence Diagram 2](../images/WWSWebhooksDiagram2.png)
 
 Let's break this down.  
