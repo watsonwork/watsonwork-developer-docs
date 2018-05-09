@@ -19,5 +19,8 @@ Watson Work Services provides a set of **meeting** APIs for callers to start and
     * **meeting** [Get information about the meeting](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_Meeting.md)
     <br>
  * GraphQL query for getting an active meeting within a space
-    * [Optional inclusion of activeMeeting on a space](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_spaces_main.md)
-<br><br>
+    * **Space.activeMeeting** [Optional inclusion of activeMeeting on a space](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_spaces_main.md)
+    <br>
+ * REST request for getting details of a public meeting
+    * **/api/v1/publicMeeting/bySpaceId/** [Get information about a public meeting](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_Get_Public_Meeting.md)
+<br>
