@@ -1,3 +1,9 @@
+---
+copyright: 'Copyright IBM Corp. 2018'
+link: 'creating-solutions'
+is: 'experimental'
+---
+
 ## Creating solutions - Concepts
 
 Watson Work Services introduce several ingredients that can be combined with other ones to create a particular "solution" to challenges faced by users when executing business processes.
