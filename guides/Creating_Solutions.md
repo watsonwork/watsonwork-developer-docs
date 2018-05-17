@@ -46,7 +46,7 @@ A **Deal Room** has a **timeline**, that tracks the state of the deal. The **tim
 
 And it indicates where the opportunity is, helps folks who are trying to gauge near term and long term pipeline of sales. Also, the team wants to make sure the deal stays on track, and if it gets derailed, they want to let everyone know, so they keep a **Deal Temperature** - when it goes HOT (at risk) they need to step it up.
 
-![Deal Room Model](./WWSDealRoomDesign.png)
+![Deal Room Model](../images/WWSDealRoomDesign.png)
 
 And keeping track of a simple rule of thumb, the number of times they make contact with the client around this deal, is a good metric to make everyone aware of.
 
@@ -72,7 +72,7 @@ Also, as part of the behavior of the template (once it is instantiated), any cha
 
 Right now you can use our API and GraphQL tool to design and create your Template, (soon we’ll add this to the Developer Experience in Your Apps too!). You’ll need to build your own App and grab that App’s ID to use for required Apps…don’t use the id I have here, it’s bogus!
 
-```
+```GraphQL
 mutation {
   createSpaceTemplate(input:
     {
@@ -162,7 +162,7 @@ mutation {
 Now, here’s the output for running this GraphQL mutation - which created the Template!
 
 
-```
+```GraphQL
 {
   "data": {
     "createSpaceTemplate": {
@@ -257,7 +257,7 @@ Now, here’s the output for running this GraphQL mutation - which created the T
 
 Once you’ve created your template - you have a the means to create spaces of this type. We need to use the mutation to create a space,  and include that we want Watson Work Services to use our definition , so we use the template ID (you can grab that from the create template results above). Also you need to make sure you set **all** property values.
 
-```
+``` GraphQL
 mutation createSpace {
   createSpace(input: {
     title: "Acme Super Deal",  
@@ -330,7 +330,7 @@ mutation createSpace {
 
 And when we run this mutation, we get this result, the space is created.
 
-```
+```GraphQL
 {
   "data": {
     "createSpace": {
@@ -426,11 +426,11 @@ And when we run this mutation, we get this result, the space is created.
 
 And here it is
 
-![The Deal Room Space](./DealRoomSpace.png)
+![The Deal Room Space](../images/DealRoomSpace.png)
 
 Now that you have created this template definition, you can allow others to use it to create spaces. Users will see this when they go to create a new space, they can select a space type, and choose Deal Room.
 
-![Deal Room Model](./WWSSpaceTypeView.png)
+![Deal Room Model](../images/WWSSpaceTypeView.png)
 
 When a user decides to create a new space of type Deal Room they will;
 
