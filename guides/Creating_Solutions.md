@@ -441,27 +441,3 @@ When a user decides to create a new space of type Deal Room they will;
 Once the space is created, the Salesforce App is automatically added to this space. Also the time line is shown in the user experience so all the space members can see and update the timeline in the deal room.
 
 That's the story for creating solutions with Watson Work Services.
-
-
-----
-
-## Notes from conversation with Joe Russo
-
-yesterday on approach and material gen to introduce template/solutions concept to engage developers/partners/customers:
-1.  Start by identifying business processes that are obvious candidates.  Provide a sample list and expand on one: Sales Process (draw on prior experiences Joe had with SalesConnect/ClientConnect)
-2.  Describe flow:
-  1. Create template and associated apps (props, states, apps)
-  2. Test by creating own spaces, invite others to space....
-  3. Share template+app with others so they can create their own spaces
-  4. Optional: Have team admin make template+app available to others for discovery
-  5. Optional: Have IBM make template available to any licensed users of offering
-3. Socialize componetry of a "solution":
-  1. template
-  2. Apps (listening, writing to conversation, AF, processing)
-  3. Apps UI if available separate from WW
-  4. Integration with other services (ie. SalesForce, etc)
-D. Documentation and example implementations (github.com)
-
-Other:
-- Difference between building "solution" to accomplish a specific workflow at the start vs starting organically with a conversation and adding more function to it over time. (See next point)
-- Adding template/app functionality to existing spaces vs creating new space based on it and decomissioning existing space
