@@ -22,7 +22,10 @@ Here are some of the common Annotation fields.
 | updated       | Date    | Date the Annotation was updated |
 | updatedBy     | Person | Person who last updated the Annotation  |
 
-Note: The ID scalar type represents a unique identifier. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable.
+<div class="tip">
+  <img src="../images/note_pencil.png" />
+  <p><strong>Note:</strong> The ID scalar type represents a unique identifier. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable.</p>
+</div>
 
 ## Annotation Types
 
