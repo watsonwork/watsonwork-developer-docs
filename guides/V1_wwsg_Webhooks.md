@@ -57,4 +57,7 @@ _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found
 
 Details about event notification requests are described in the [Webhooks API Reference](../references/V1_OutboundCallback.yml).
 
-Note: It's important that your App carries out the proper handshake sequence.  To learn more, read [Preparing your App to run](../guides/V1_PreparingYourApp.md).
+<div class="tip">
+  <img src="../images/note_pencil.png" />
+  <p><strong>Note:</strong> It's important that your App carries out the proper handshake sequence. To learn more, read <a href="https://developer.watsonwork.ibm.com/docs/apps/prepare-your-app-to-run">Preparing your App to run</a>.</p>
+</div>

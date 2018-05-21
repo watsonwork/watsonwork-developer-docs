@@ -121,4 +121,7 @@ A **MomentMessageReference** represents a reference in the moment annotation to 
 | messageId     | ID            | The ID of the message being referenced |
 | published     | Date          | The date of publication for the referenced message |
 
-Note: The ID scalar type represents a unique identifier. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable
+<div class="tip">
+  <img src="../images/note_pencil.png" />
+  <p><strong>Note:</strong> The ID scalar type represents a unique identifier. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable.</p>
+</div>
