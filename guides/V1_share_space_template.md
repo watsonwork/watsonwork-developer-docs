@@ -1,0 +1,59 @@
+---
+copyright: 'Copyright IBM Corp. 2018'
+link: 'share-space-template'
+is: 'experimental'
+---
+
+# Share a Space Template
+
+A user can share one of their custom space templates with the _shareSpaceTemplate_ mutation.
+
+## Schema
+
+### Create Space Template Mutation
+At a high-level the mutation looks like this:
+
+```graphql
+MutationRoot {
+  shareSpaceTemplate(input: ShareSpaceTemplateInput!): ShareSpaceTemplateMutation!
+}
+
+type ShareSpaceTemplateInput {
+  id: ID!
+  audience: ShareAudience!
+}
+
+enum ShareAudience {
+  PUBLIC
+}
+```
+
+The input has two required arguments, id and audience. The id is the id of the template to be shared. The only audience currently available is PUBLIC, which means the template, once shared, is available to anyone that has permission to access publically shared templates. Once shared a template cannot be unshared.
+
+In order to share a template you should be the owner of the template and all required apps in the template should already be shared
+(see [Share an app](guides/V1_ShareAnApp.md) for additional information.
+
+
+```graphql
+type ShareSpaceTemplateMutation {
+  successful: Boolean!
+}
+```
+
+The mutation returns successful if the share operation succeeds.
+
+## Example request
+
+Below is an example request to share a space template.
+
+~~~~
+Method: POST
+URL: https://api.watsonwork.ibm.com/graphql
+Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIMENTAL'
+Body:
+mutation {
+  shareSpaceTemplate(input: {id: "34c74efa-62eb-4475-afd0-e36b6bf0f515", audience: PUBLIC}) {
+    successful
+  }
+}
+~~~~
