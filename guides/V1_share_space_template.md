@@ -10,7 +10,7 @@ A user can share one of their custom space templates with the _shareSpaceTemplat
 
 ## Schema
 
-### Create Space Template Mutation
+### Share Space Template Mutation
 At a high-level the mutation looks like this:
 
 ```graphql
