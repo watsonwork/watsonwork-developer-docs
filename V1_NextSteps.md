@@ -12,7 +12,7 @@ Next thing you'll want to do is check out these helpful topics and features.
 
 - Start with the [Developer's Guide to GraphQL](guides/V1_wwsg_GraphQLAPIIntro.md).
 - Play with [sample apps](https://github.com/watsonwork) other developers have already built.
-- [Make your app cognitive](guides/V1_cognitive_app.md) to associate an instance of Watson Conversation.
+- [Make your app cognitive](guides/V1_cognitive_app.md) to associate an instance of Watson Assistant.
 - [Make your app configurable](guides/V1_MakeAppsConfigurable.md) to allow users to customize or configure preferences for your app.
 - [Listen to events](guides/V1_wwsg_Webhooks.md) in a space by adding a Webhook to your app.
 - [Share your app](guides/V1_ShareAnApp.md) with friends and colleagues.
