@@ -6,8 +6,13 @@ is: 'published'
 
 ## Pagination: Iterate over messages in a conversation one page at a time
 
-The **pageInfo** element is available for any of the collections (people, spaces, members, messages, etc.)
-It contains the place where the results start and end, relative to the results and identified by strings in startCursor and endCursor.  Do not assume these strings to be numbers.  Utilize the **hasNextPage** and **hasPreviousPage** boolean values to determine if there is more data.
+The **pageInfo** element is available for any of the collections (people, spaces, members, messages, etc.). It contains 4 elements to help you determine if there is more data and how to specify the start or end boundaries in the next request for more info from that collection.
+
+Utilize the **startCursor** and **endCursor** string values to determine the offset for the next request in the start and end arguments to the collection query.
+
+Utilize the **hasNextPage** and **hasPreviousPage** boolean values to determine if there is more data.
+
+
 ```
 {
   conversation (id: "conversation-id") {
