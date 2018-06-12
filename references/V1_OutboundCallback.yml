@@ -5,7 +5,9 @@ info:
   description: |
     This API has to be implemented by the callbacks implementing outbound webhooks.
 
-      Changes in version 1.5.0:
+    - Changes in version 1.6.0:
+      - New event type and notification format for `space-updated` and `space-deleted`.
+    - Changes in version 1.5.0:
       - New event type and notification format for `reaction-added` and `reaction-removed`.
     - Changes in version 1.4.0:
       - New event type and notification format for `message-deleted`.
@@ -32,6 +34,8 @@ definitions:
       - $ref: '#/definitions/MessageDeletedBody'
       - $ref: '#/definitions/SpaceMembersAddedBody'
       - $ref: '#/definitions/SpaceMembersRemovedBody'
+      - $ref: '#/definitions/SpaceUpdatedBody'
+      - $ref: '#/definitions/SpaceDeletedBody'
       - $ref: '#/definitions/MessageAnnotationAddedBody'
       - $ref: '#/definitions/MessageAnnotationEditedBody'
       - $ref: '#/definitions/MessageAnnotationRemovedBody'
@@ -171,6 +175,45 @@ definitions:
       - spaceName
       - memberIds
       - time
+  MessageEditedBody:
+    type: object
+    description: |
+      Notifies the subscribed app that a message has been edited.
+
+      This event is only sent to webhooks that
+      - have been added for the message-edited event
+      - and belong to an app that is a member of the space.
+    properties:
+      type:
+        description: The event type is `message-edited`.
+        type: string
+      userId:
+        description: Id of the user who edited the message.
+        type: string
+      spaceId:
+        description: Id of the space in which the message was edited.
+        type: string
+      messageId:
+        description: Unique id of the message.
+        type: string
+      content:
+        description: NEW Message content.
+        type: string
+      contentType:
+        description: Mime type of the message content.
+        type: string
+      time:
+        description: "Time and date of message update, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+    required:
+      - type
+      - userId
+      - spaceId
+      - messageId
+      - content
+      - contentType
+      - time
   SpaceMembersRemovedBody:
     type: object
     description: |
@@ -204,6 +247,85 @@ definitions:
       - spaceId
       - spaceName
       - memberIds
+      - time
+  SpaceUpdatedBody:
+    type: object
+    description: |
+      Notifies that a space has been updated.
+
+      This event is sent only to webhooks that
+      - have been added for the space-updated event
+      - and belong to an app that is a member of the space.
+    properties:
+      spaceId:
+        description: Id of the space which was updated.
+        type: string
+      userId:
+        description: Id of the user who updated the space.
+        type: string
+      type:
+        description: The event type is `space-updated`.
+        type: string
+      time:
+        description: "Time and date of the space being updated, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+      title:
+        description: The new title of the space.
+        type: string
+      description:
+        description: The new description of the space.
+        type: string
+      visibility:
+        description: The new visibility of the space.
+        type: string
+      allowGuests:
+        description: The new allow guests setting of the space.
+        type: string
+      statusValue:
+        description: The new status value of the space.
+        type: string
+      spaceProperties:
+        description: The new space property values of the space
+        type: Map<String, Object>
+    required:
+      - spaceId
+      - userId
+      - type
+      - time
+    optional:
+      - title
+      - description
+      - visibility
+      - allowGuests
+      - statusValue
+      - spaceProperties
+  SpaceDeletedBody:
+    type: object
+    description: |
+      Notifies that a space has been deleted.
+
+      This event is sent only to webhooks that
+      - have been added for the space-deleted event
+      - and belong to an app that was a member of the space at the time of deletion.
+    properties:
+      spaceId:
+        description: Id of the space which was deleted.
+        type: string
+      userId:
+        description: Id of the user that deleted the space.
+        type: string
+      type:
+        description: The event type is `space-deleted`.
+        type: string
+      time:
+        description: "Time and date of the space deletion, in milliseconds since January 1st, 00:00, 1970 UTC"
+        type: integer
+        format: int64
+    required:
+      - spaceId
+      - userId
+      - type
       - time
   MessageAnnotationAddedBody:
     type: object
@@ -341,7 +463,7 @@ definitions:
   AddReactionBody:
     type: object
     description: |
-      Notifies the addition of a reaction to a message.  Note that this event is currently classified as an EXPERIMENTAL API.
+      Notifies the addition of a reaction to a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
       This event is only sent to webhooks that
       - have been added for the reaction-added event
@@ -380,7 +502,7 @@ definitions:
   RemoveReactionBody:
     type: object
     description: |
-      Notifies the removal of a reaction from a message.  Note that this event is currently classified as an EXPERIMENTAL API.
+      Notifies the removal of a reaction from a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
       This event is only sent to webhooks that
       - have been added for the reaction-removed event

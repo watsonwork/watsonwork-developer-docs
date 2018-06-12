@@ -18,7 +18,6 @@ In Watson Workspace, these commands will surface as _slash commands_. Anytime a 
 
 #### Register your command
 To register a command for your app, navigate to your app's dashboard under https://developer.watsonwork.ibm.com.
-  * **Note:** While we are in _BETA_ for this feature, you will need to add the URL parameter `?actionTriggers=true`.
 
 From the app's dashboard, select the **Add an Action** menu option on the left menu. This section lets you define actions that your app has, and associate these actions with a command.
 

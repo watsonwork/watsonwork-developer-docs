@@ -77,7 +77,7 @@ See also [Annotation](../guides/V1_annotations.md) for information on common ann
 | ------------- |:------------- |:------------ |
 | type          | String        | For a focus annotation, the type will be _message-focus_. |
 | lens          | String        | One of _ActionRequest_, _Question_, and _Commitment_. Watson Work may add lenses at any time, and clients should not depend upon only receiving this set of lenses. |
-| category      | String        | Only ActionRequest currently uses _categories_. These categories are _Add_, _Create_, _Delete_, _Modify_, _Schedule_, _Share_, and _View_. Watson Work Services may add categories at any time, and clients should not depend upon only receiving this set of categories.
+| category      | String        | Only ActionRequest currently uses _categories_. These categories are _Schedule_ and _Share_. Watson Work Services may add categories at any time, and clients should not depend upon only receiving this set of categories.
 | focusVersion  | String        | The schema version for this focus |
 | start         | Number        | An inclusive index for the focus's start location in the message's original content (including markdown). In some cases, start and end may be omitted, in which case clients should consider the entire message as the focus. |
 | end           | Number        | An exclusive index for the focus's end location in the message's original content (including markdown). In some cases, start and end may be omitted, in which case clients should consider the entire message as the focus. |

@@ -19,7 +19,10 @@ mutation createSpace {
 }
 ```
 
-**Note:** Only users can create spaces. Need your App to create a space? No problem! Checkout out [Prepare your app to run](../guides/V1_PreparingYourApp.md) to learn how to authorize your App to act on behalf of a user.
+<div class="tip">
+  <img src="../images/note_pencil.png" />
+  <p><strong>Note:</strong> Only users can create spaces. Need your App to create a space? No problem! Checkout out <a href="https://developer.watsonwork.ibm.com/docs/apps/prepare-your-app-to-run">Prepare your app to run</a> to learn how to authorize your App to act on behalf of a user.</p>
+</div>
 
 See it in action with our GraphQL tool and create a space. <a href="https://developer.watsonwork.ibm.com/tools/graphql?query=mutation%20createSpace%20%7B%0A%20%20createSpace(input%3A%20%7Btitle%3A%20%22Space%20title%22%2C%20members%3A%20%5B%22user1-id%22%2C%20%22user2-id%22%5D%7D)%20%7B%0A%20%20%20%20space%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A" target="_blank">Try it now</a>
 

@@ -16,13 +16,8 @@ When Watson Work Services identifies a `focus`, an annotation is added to the me
 The `ActionRequest` lens is used when there is an explicit or implied request to do something.
 
 The following _categories_ are available
-* `Add`: Add or invite a person to a planned meeting or call, add a person to a group e.g. by giving access to protected data etc, or add to an agenda.
-* `Create`: Create something new, like a new document, issue, project plan, design, etc.
-* `Delete`: Remove or delete something.
-* `Modify`: Make changes to or update work, documents, plans, an agenda, etc.
 * `Schedule` : Schedule an event or create an invite.
 * `Share` : Share or send content such as documents or links. Send a message or email (or otherwise contact or reach out to) another person.
-* `View`: Request someone look at or consider a document, link, etc
 
 ###### Question
 The `Question` lens is used to identify text where a user is asking a question and where they expect an answer.

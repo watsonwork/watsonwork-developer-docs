@@ -105,7 +105,7 @@ request(authenticationOptions, function(err, response, body){
 
 ```
 
-4. Open a command line and change to the directory where you saved your file. Set two environment variables to the App ID and App Secret. Enter `export APP_ID=<yourAppId>` on a Mac or `set APP_ID=<yourAppId` on a PC.  Do the same for `APP_SECRET`
+4. Open a command line and change to the directory where you saved your file. Set two environment variables to the App ID and App Secret. Enter `export APP_ID=<yourAppId>` on a Mac or `set APP_ID=<yourAppId>` on a PC.  Do the same for `APP_SECRET`
 5. Install the Node `request` library. Enter `npm install request`.
 6. Using the name of the file that you saved the above code enter: `node <your file name>.js` to execute the code.
 

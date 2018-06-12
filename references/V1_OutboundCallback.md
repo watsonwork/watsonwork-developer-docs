@@ -5,6 +5,8 @@
 ## Overview
 This API has to be implemented by the callbacks implementing outbound webhooks.
 
+- Changes in version 1.6.0:
+  - New event type and notification format for `space-updated` and `space-deleted`.
 - Changes in version 1.5.0:
   - New event type and notification format for `reaction-added` and `reaction-removed`.
 - Changes in version 1.4.0:
@@ -208,6 +210,25 @@ This event is only sent to webhooks that
 |**type**  <br>*required*|The event type is `message-deleted`.|string|
 
 
+<a name="messageeditedbody"></a>
+### MessageEditedBody
+Notifies the subscribed app that a message has been edited.
+
+This event is only sent to webhooks that
+- have been added for the message-edited event
+- and belong to an app that is a member of the space.
+
+
+|Name|Description|Schema|
+|---|---|---|
+|**content**  <br>*required*|NEW Message content.|string|
+|**contentType**  <br>*required*|Mime type of the message content.|string|
+|**messageId**  <br>*required*|Unique id of the message.|string|
+|**spaceId**  <br>*required*|Id of the space in which the message was edited.|string|
+|**time**  <br>*required*|Time and date of message edit, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
+|**type**  <br>*required*|The event type is `message-edited`.|string|
+|**userId**  <br>*required*|Id of the user who edited the message.|string|
+
 <a name="spacemembersaddedbody"></a>
 ### SpaceMembersAddedBody
 Notifies that one or more members (users or apps) have been added to a space.
@@ -243,6 +264,43 @@ This event is sent only to webhooks that
 |**time**  <br>*required*|Time and date of member removal, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
 |**type**  <br>*required*|The event type is `space-members-removed`.|string|
 
+<a name="spaceupdatedbody"></a>
+### SpaceUpdatedBody
+Notifies that a space has been updated.
+
+This event is sent only to webhooks that
+- have been added for the space-updated event
+- and belong to an app that is a member of the space.
+
+
+|Name|Description|Schema|
+|---|---|---|
+|**spaceId**  <br>*required*|Id of the space which was updated|string|
+|**userId**  <br>*required*|Id of the user who updated the space.|string|
+|**type**  <br>*required*|The event type is `space-updated`.|string|
+|**time**  <br>*required*|Time and date of the space being updated, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
+|**title**  <br>*optional*|The new title of the space.|string|
+|**description**  <br>*optional*|The new description of the space.|string|
+|**visibility**  <br>*optional*|The new visibility of the space.|string|
+|**allowGuests**  <br>*optional*|The new allow guests setting of the space.|string|
+|**statusValue**  <br>*optional*|The new status value of the space.|string|
+|**spaceProperties**  <br>*optional*|The new space property values of the space.|Map<String, Object>|
+
+<a name="spacedeletedbody"></a>
+### SpaceDeletedBody
+Notifies that a space has been deleted.
+
+This event is sent only to webhooks that
+- have been added for the space-deleted event
+- and belong to an app that was a member of the space at the time of deletion.
+
+
+|Name|Description|Schema|
+|---|---|---|
+|**spaceId**  <br>*required*|Id of the space which was deleted.|string|
+|**userId**  <br>*required*|Id of the user that deleted the space.|string|
+|**type**  <br>*required*|The event type is `space-deleted`.|string|
+|**time**  <br>*required*|Time and date of the space deletion, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
 
 <a name="verificationinputbody"></a>
 ### VerificationInputBody
@@ -269,7 +327,7 @@ Send back the verification challenge to show that the webhook supports this call
 
 <a name="addreactionbody"></a>
 ### AddReactionBody
-Notifies the addition of an emoji reaction to a message.
+Notifies the addition of a reaction to a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
 - have been added for the reaction-added event
@@ -278,7 +336,7 @@ This event is only sent to webhooks that
 
 <a name="removereactionbody"></a>
 ### RemoveReactionBody
-Notifies the removal of an emoji reaction from a message.
+Notifies the removal of a reaction from a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
 - have been added for the reaction-removed event

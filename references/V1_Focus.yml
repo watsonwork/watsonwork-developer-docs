@@ -52,13 +52,8 @@ definitions:
         description: "The particular type of focus that was identified by the lens.  This field may not exist for some lens types."
         type: string
         enum:
-          - Add
-          - Create
-          - Delete
-          - Modify
           - Schedule
           - Share
-          - View
       start:
         description: "In the provided text, the index of the starting character of this phrase."
         type: integer

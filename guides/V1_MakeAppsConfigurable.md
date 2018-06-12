@@ -19,7 +19,10 @@ If your App registers a configuration, then users adding it to a space will see 
 
 ![AppConfig Usage Screenshot](../images/ConfigUsage.jpg)
 
-NOTE: All members of a space have access to configure an app in the space regardless of who added the app to the space.
+<div class="tip">
+  <img src="../images/note_pencil.png" />
+  <p><strong>Note:</strong> All members of a space have access to configure an app in the space regardless of who added the app to the space.</p>
+</div>
 
 ## Implementing the configuration page
 
@@ -64,7 +67,10 @@ Authorize your app [as an App](../references/V1_oauth_token_client_credentials.y
 If the access to the configuration data is successful, then you can be sure that the call has been triggered by Watson Workspace.
 You will also get the configuration data, which includes `spaceId` and `userId`.  `spaceId` is the unique ID of the space for which the configuration of your app has been triggered.  `userId` is the unique ID of the user who triggers the configuration of your app.
 
-- Note: If the implementation of the your configuration page still base on version prior to 1.1.0 of the [Configuration Callback API](../guides/V1_App_Configuration_Callback.md), then you have to do the oauth flow to verify the caller as a user of Watson Work Services, to obtain the user id and name, and to establish a link between the user's ID and the user's name.
+<div class="tip">
+  <img src="../images/note_pencil.png" />
+  <p><strong>Note:</strong> If the implementation of the your configuration page still base on version prior to 1.1.0 of the <a href="https://developer.watsonwork.ibm.com/docs/apps/app-configuration-callback">Configuration Callback API</a>, then you have to do the oauth flow to verify the caller as a user of Watson Work Services, to obtain the user id and name, and to establish a link between the user's ID and the user's name.</p>
+</div>
 
 
 ### Protect the user's sensitive data
@@ -97,7 +103,7 @@ If your app is going to make requests to Watson Work Services on behalf of a use
 
 If your app is configurable per space, then it is good practice to ensure that the user is aware of which space the app is being configured for.  To get the space name, request the [Space Details](https://developer.watsonwork.ibm.com/docs/space/get-space-details) in Watson Work Services.  The resulting object contains the space name in its `title` field.
 
-NOTE: You can only get information for spaces that you are authorized for. In particular, this means:
+<strong>Note</strong>: You can only get information for spaces that you are authorized for. In particular, this means:
 - The authorization [as an App](../references/V1_oauth_token_client_credentials.yml) can access information for spaces that the app was added to.
 - The authorization [on behalf of a User](https://developer.watsonwork.ibm.com/docs/api-reference/authorize-on-behalf-of-a-user) can access details of spaces that the user is a member of.
 
