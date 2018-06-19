@@ -18,7 +18,7 @@ Each moment includes a summary of a group of messages. The summary includes summ
 
 Observers can catch up and understand the significance of activity that has transpired since their last visit, or use moments to get a glimpse into an ongoing discussion without reading all the messages.
 
-Moments are automatically created as the chat in each space progresses.
+Moments are automatically created as a conversation progresses.
 
 The [Conversation](./guides/V1_conversation_main.md) object also references the collection of moments for that conversation, so in addition to dedicated queries for moments by their ID or by a space ID, you can query for moments in many places where you query for messages in conversations.
 
@@ -60,6 +60,9 @@ The keyword interface is used to distinguish a keyword summary phrase, but curre
 | viaAppUsers | AppUser | The extra user info from App participant, should be null for normal user |
 
 ### AppUser
+
+If present, the AppUser represents information sent to Watson Work through the [actor fields when the message was created](./guides/V1_wwsg_Spaces.md).
+
 | property      | type          | description  |
 | ------------- |:------------- |:-----|
 | displayName | String | The display name of this 3rd party App user |
