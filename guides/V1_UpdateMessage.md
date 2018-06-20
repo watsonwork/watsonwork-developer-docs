@@ -9,6 +9,7 @@ is: 'experimental'
 ## Concepts
 
 The _updateMessage_ mutation allows the API caller to change the contents of a message.  The mutation accepts a message id (id) and the new content (content) as arguments, and makes the request on behalf of the caller, adding the specified new content to the message replacing the previous message content.
+Note: Only the author of a message can update its content.  Updating the content of messages not created by the calling user will receive a 403 Forbidden response.
 
 ## Schema
 
