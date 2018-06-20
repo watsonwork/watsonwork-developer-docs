@@ -20,15 +20,15 @@ MutationRoot {
 
 type ShareSpaceTemplateInput {
   id: ID!
-  audience: ShareAudience!
+  target: ShareTarget!
 }
 
-enum ShareAudience {
-  PUBLIC
+enum ShareTarget {
+  OPEN
 }
 ```
 
-The input has two required arguments, id and audience. The id is the id of the template to be shared. The only audience currently available is PUBLIC, which means the template, once shared, is available to anyone that has permission to access publicly shared templates. Once shared a template cannot be unshared.
+The input has two required arguments, id and target. The id is the id of the template to be shared. The only target currently available is OPEN, which means the template, once shared, is available to anyone that has permission to access openly shared templates. Once shared a template cannot be unshared.
 
 In order to share a template you should be the creator of the template and all required apps in the template should already be shared
 (see [Share an app](guides/V1_ShareAnApp.md) for additional information).
@@ -52,7 +52,7 @@ URL: https://api.watsonwork.ibm.com/graphql
 Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIMENTAL'
 Body:
 mutation {
-  shareSpaceTemplate(input: {id: "34c74efa-62eb-4475-afd0-e36b6bf0f515", audience: PUBLIC}) {
+  shareSpaceTemplate(input: {id: "34c74efa-62eb-4475-afd0-e36b6bf0f515", target: OPEN}) {
     successful
   }
 }
