@@ -9,6 +9,9 @@ Watson Work Services provides an **updateMessage** API for callers to change the
 
 Note: Only the author of a message can update its content.  Updating the content of messages not created by the calling user will receive a 403 Forbidden response.
 
+![Image](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/images/editMessage.png)
+
+
 ### External API
 
  * GraphQL mutation for editing a message
