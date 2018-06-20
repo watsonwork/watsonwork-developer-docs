@@ -28,7 +28,7 @@ type UpdateMessageInput {
 }
 ```
 
-## Example Requests
+## Example Request
 
 ~~~~
 Method: POST
@@ -36,17 +36,6 @@ URL: https://api.watsonwork.ibm.com/graphql
 Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIMENTAL'
 Body:
 {
-  mutation{
-    updateMessage(input: {
-     id: "message_id",
-     content: "message_content"
-   }){
-      id
-      content
-      contentUpdated
-    }
-  }
-
   mutation {
     updateMessage(input: {
       id: "message_id",
