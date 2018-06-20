@@ -8,7 +8,6 @@
   * [What's New](./Whats_New.md)
   * [Coming Next](./Coming_Next.md)
 
-
 * ## [Developer's Guide](./guides/V1_wwsg_DevelopersGuide.md)
   * [GraphQL API](./guides/V1_wwsg_GraphQLAPIIntro.md)
 
@@ -33,6 +32,8 @@
   * [Get my user information](./guides/V1_get_me.md)
   * [Update space membership](./guides/V1_update_space.md)
 
+* ## [Moment](./guides/V1_moment_main.md)
+  * [Get a list of moments in a space](./guides/V1_get_moments_in_conversation.md)
 
 * ## [Annotations](./guides/V1_annotations.md)
   * [Moments](./guides/V1_wwsg_MomentIdentification.md)
