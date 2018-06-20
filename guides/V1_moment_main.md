@@ -61,10 +61,8 @@ The keyword interface is used to distinguish a keyword summary phrase, but curre
 
 ### AppUser
 
-If present, the AppUser represents information sent to Watson Work through the [actor fields when the message was created](./guides/V1_wwsg_Spaces.md).
+If present, the AppUser represents information sent to Watson Work through the [actor field when the message was created](./guides/V1_wwsg_Spaces.md).
 
 | property      | type          | description  |
 | ------------- |:------------- |:-----|
 | displayName | String | The display name of this 3rd party App user |
-| photoUrl | String | The photo url of this App user |
-| url | String | The url of this App user |
