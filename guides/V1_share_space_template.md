@@ -28,7 +28,7 @@ enum ShareTarget {
 }
 ```
 
-The input has two required arguments, id and target. The id is the id of the template to be shared. The only target currently available is OPEN, which means the template, once shared, is available to anyone that has permission to access openly shared templates. Once shared a template cannot be unshared.
+The input has two required arguments, id and target. The id is the id of the template to be shared. The target denotes who the template is to be shared with. The only target currently available is OPEN, which means the template, once shared, is available to anyone who knows the template id and has permission to access openly shared templates. Once shared a template cannot be unshared.
 
 In order to share a template you should be the creator of the template and all required apps in the template should already be shared
 (see [Share an app](guides/V1_ShareAnApp.md) for additional information).
