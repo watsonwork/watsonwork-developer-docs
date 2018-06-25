@@ -14,7 +14,7 @@ Notes:
 
  - Only the author of a message can update its content.  Updating the content of messages not created by the calling user will receive a **403 Forbidden** response.
 
- - Existing annotations will be stripped from an updated message.  Apps are expected to regenerate any annotation using the new content.  Mention annotations are automatically regenerated based on the new content.  These annotations will be sent as message-annotation-added events.
+ - Existing annotations will be stripped from an updated message.  Apps are expected to regenerate any annotation using the new content.  Mention annotations are automatically regenerated based on the new content.  These annotations will be sent as `message-annotation-added` events.
 
  - Apps calling the updateMessage mutation using the app's identity will be rejected with a **400 Bad Request** response, but using a user's identity, an app will be allowed to update the user's messages as that user.
 
