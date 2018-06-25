@@ -9,10 +9,18 @@ Watson Work Services provides an **updateMessage** API for callers to change the
 
 ![Image](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/images/editMessage.png)
 
-Note: Only the author of a message can update its content.  Updating the content of messages not created by the calling user will receive a 403 Forbidden response.
-
+Notes:
+<br>
+ - Only the author of a message can update its content.  Updating the content of messages not created by the calling user will receive a **403 Forbidden** response.
+<br>
+ - Existing annotations will be stripped from an updated message.  Apps are expected to regenerate any annotation using the new content.  Mention annotations are automatically regenerated based on the new content.
+<br>
+ - Apps calling the updateMessage mutation using the app's identity will rejected with a **400 Bad Request** response, but using a user's identity, an app will be allowed to update the user's messages as that user.
+<br>
+ - An app can not update a message created via generic annotation or by using generic annotations.
+<br><br>
 ### External API
-
+<br><br>
  * GraphQL mutation for editing a message
     * **updateMessage** [Change the content of a message](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_UpdateMessage.md)
     <br>
