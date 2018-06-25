@@ -11,15 +11,16 @@ is: 'experimental'
 The _updateMessage_ mutation allows the API caller to change the contents of a message.  The mutation accepts a message id (id) and the new content (content) as arguments, and makes the request on behalf of the caller, adding the specified new content to the message replacing the previous message content.
 
 Notes:
-<br>
+
+
  - Only the author of a message can update its content.  Updating the content of messages not created by the calling user will receive a **403 Forbidden** response.
-<br>
- - Existing annotations will be stripped from an updated message.  Apps are expected to regenerate any annotation using the new content.  Mention annotations are automatically regenerated based on the new content.
-<br>
- - Apps calling the updateMessage mutation using the app's identity will rejected with a **400 Bad Request** response, but using the user's identity, an app will be allowed to update the user's messages as that user.
-<br>
+
+ - Existing annotations will be stripped from an updated message.  Apps are expected to regenerate any annotation using the new content.  Mention annotations are automatically regenerated based on the new content.  These annotations will be sent as message-annotation-added events.
+
+ - Apps calling the updateMessage mutation using the app's identity will be rejected with a **400 Bad Request** response, but using the user's identity, an app will be allowed to update the user's messages as that user.
+
  - An app can not update a message created via generic annotation or by using generic annotations.
-<br><br>
+
 
 ## Schema
 
