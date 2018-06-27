@@ -66,7 +66,7 @@ To view a shared template go to:
 ```
 https://workspace.ibm.com/space/template/<templateId>
 ```
-To create a space directly from the shared template, go to:
+To create a space directly from the shared template go to:
 ```
 https://workspace.ibm.com/space/create?template=<templateId>
 ```
