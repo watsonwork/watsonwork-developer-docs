@@ -16,7 +16,7 @@ Notes:
 
  - Existing annotations will be stripped from an updated message.  Apps are expected to regenerate any annotation using the new content.  Mention annotations are automatically regenerated based on the new content.  These annotations will be sent as `message-annotation-added` events.
 
- - Apps calling the updateMessage mutation using the app's identity will be rejected with a **400 Bad Request** response, but when the app is running on behalf of a user, it will be allowed to update the user's messages as that user.
+ - Apps calling the updateMessage mutation using the app's identity will be rejected with a **403 Forbidden** response, but when the app is running on behalf of a user, it will be allowed to update the user's messages as that user.
 
  - An app can not update a message created via generic annotation or by using generic annotations.
 
