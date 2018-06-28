@@ -57,3 +57,16 @@ mutation {
   }
 }
 ~~~~
+
+## Watson Workspace Share URL
+
+Once shared, templates can be accessed in Watson Workspace via a share URL.
+
+To view a shared template go to:
+```
+https://workspace.ibm.com/space/template/<templateId>
+```
+To create a space directly from the shared template go to:
+```
+https://workspace.ibm.com/space/create?template=<templateId>
+```
