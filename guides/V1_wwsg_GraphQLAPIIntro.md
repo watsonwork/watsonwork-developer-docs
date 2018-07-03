@@ -129,7 +129,9 @@ And here's what is returned. Exactly what we asked for!
   <p><strong>Tip:</strong> Throughout the doc you'll see these buttons to "Try it now".  That means you can try the example code using our <a href="https://developer.watsonwork.ibm.com/tools/graphql">GraphQL Explorer</a>.  You can also browse the Watson Work Services data model and make your own GraphQL requests dynamically. Go ahead, run this mutation to create a space.</p>
 </div>
 
-<a href="https://developer.watsonwork.ibm.com/tools/graphql?query=mutation%20createSpace%20%7B%0A%20%20createSpace(input%3A%20%7Btitle%3A%20%22Space%20title%20demo%22%2C%20members%3A%20%5B%22%22%5D%7D)%20%7B%0A%20%20%20%20space%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20title%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A" target="_blank"> Try it now</a>
+<div class="try-it-now">
+  <a href="https://developer.watsonwork.ibm.com/tools/graphql?query=mutation%20createSpace%20%7B%0A%20%20createSpace(input%3A%20%7Btitle%3A%20%22Space%20title%20demo%22%2C%20members%3A%20%5B%22%22%5D%7D)%20%7B%0A%20%20%20%20space%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20title%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A" target="_blank"> Try it now</a>
+</div>
 
 You can use the GraphQL endpoint with two different content types:
  - `Content-type: application/graphql`, documented [here:](../references/V1_graphql_raw.yml)

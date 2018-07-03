@@ -53,6 +53,8 @@ Available events are:
 
 **reaction_removed**: each time a reaction is removed from a message (API is EXPERIMENTAL)
 
+**message_edited**: each time a message is updated (EVENT is EXPERIMENTAL)
+
 _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 Details about event notification requests are described in the [Webhooks API Reference](../references/V1_OutboundCallback.yml).
