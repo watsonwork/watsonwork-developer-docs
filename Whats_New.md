@@ -9,6 +9,7 @@ Keep up to date on what's new in IBM Watson Work Services. We'll list the latest
 
 | Date          | What's new       |
 | ------------- |:-------------|
+| 03.Jul.2018   | Added section with GraphQL [pagination](./guides/V1_pagination.md) example. |
 | 19.Jun.2018   | Added documentation section on [Moments GraphQL](./guides/V1_moment_main.md). |
 | 27.Mar.2018   | Added `space-updated` and `space-deleted` webhook events. |
 | 26.Mar.2018   | Updated [Focus](./guides/V1_wwsg_ActionIdentification.md), [Focus Annotation](guides/V2_Annotation_Message_Action_Identification.md), and [Focus API](./references/V1_Focus.yml) to reflect the classes produced by the latest implementation of Focus identification. After examining the usefulness of various categories for collaboration scenarios, a smaller set of categories with better precision is now used. See also [How AI can help enterprise workers automatically triage conversations](https://www.ibm.com/blogs/research/2018/01/ai-enterprise-workers-triage-convos/) for more information on the latest approach used for Focus identification. |
