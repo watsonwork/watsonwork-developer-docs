@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'reacting-users'
-is: 'experimental'
+is: 'published'
 ---
 
 # Query for Users Reacting to a Message

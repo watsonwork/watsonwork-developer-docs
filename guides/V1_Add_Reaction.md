@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'add-a-reaction'
-is: 'experimental'
+is: 'published'
 ---
 
 # Add a Reaction
