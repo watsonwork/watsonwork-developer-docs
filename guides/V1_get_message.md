@@ -14,7 +14,7 @@ query getMessage {
     content
     contentType
     annotations
-    softDelted
+    softDeleted
     reactions
   }
 }

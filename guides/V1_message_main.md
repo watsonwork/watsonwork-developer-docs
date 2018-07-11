@@ -1,5 +1,5 @@
 ---
-copyright: 'Copyright IBM Corp. 2017'
+copyright: 'Copyright IBM Corp. 2017,2018'
 link: 'message'
 is: 'published'
 ---
@@ -23,4 +23,4 @@ Watson Work Services represents a Message with this object.
 | contentType | String | Mime type of the message content  |
 | contentUpdated | Date | Date this message content was edited or null. Available when you add `EXPERIMENTAL` to the `x-graphql-view` header |
 | annotations | [String] | A set of optional objects/attachments that are added to a message, called annotations. Each annotation represents meta data that are related to the message. An annotation is represented by a structured format, which can be viewed as a template. There are different annotation types, some are used to store results of cognitive analysis to a message for example. An annotation can be added at message create time or later, as an update.  Apps are currently limited to create only one type of annotation called `generic` |
-| reactions | [Reaction] | A set of optional objects that are added to a message, called reactions. Each reaction represents how users reacted to the message. A Reaction is represented by the reaction (String, usually an emoji but not required), the count (Int, number of users that reacted with the same reaction), and viewerHasReacted (Boolean, true, the calling user reacted with given reaction, or false, the calling user did not).  Complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_. |
+| reactions | [Reaction] | A set of optional objects that are added to a message, called reactions. Each reaction represents how users reacted to the message. A Reaction is represented by the reaction (String, usually an emoji but not required), the count (Int, number of users that reacted with the same reaction), and viewerHasReacted (Boolean, true, the calling user reacted with given reaction, or false, the calling user did not). |

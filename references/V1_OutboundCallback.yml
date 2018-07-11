@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  x-copyright: 'Copyright IBM Corp. 2017'
+  x-copyright: 'Copyright IBM Corp. 2017,2018'
   title: Webhooks
   description: |
     This API has to be implemented by the callbacks implementing outbound webhooks.
