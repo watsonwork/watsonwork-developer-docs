@@ -12,7 +12,7 @@ Action fulfillment enables developers to create apps that can define actions on 
 
 Apps can achieve this functionality by implementing these tasks:
 
-1. Specifying possible actions on some aspect of the conversation, for instance, a part of a message. This is done by integrating your app with an instance of Watson Assitant which has defined actions, or by directly calling the Watson Work Service APIs to declare an action has been identified.
+1. Specifying possible actions on some aspect of the conversation, for instance, a part of a message. This is done by integrating your app with an instance of Watson Assistant which has defined actions, or by directly calling the Watson Work Service APIs to declare an action has been identified.
 2. Presenting the user with steps to fulfill the action, represented as messages from your app sent to the user. This is done through the Watson Work Services APIs for creating messages.
 3. Receiving a user's responses to the steps. This is done by receiving calls from Watson Work Services, via Webhooks.
 
