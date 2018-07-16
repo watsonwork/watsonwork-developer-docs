@@ -11,7 +11,6 @@ Keep up to date on what's new in IBM Watson Work Services. We'll list the latest
 | ------------- |:-------------|
 | 11.Jul.2018   | Published [message reactions](./guides/V1_wwsg_Reactions.md). |
 | 11.Jul.2018   | Published [message deletion](./guides/V1_delete_message.md). |
-| 06.Jul.2018   | Added sections for [message editing](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_wwsg_EditingMessages.md) as `EXPERIMENTAL`. |
 | 03.Jul.2018   | Added section with GraphQL [pagination](./guides/V1_pagination.md) example. |
 | 19.Jun.2018   | Added documentation section on [Moments GraphQL](./guides/V1_moment_main.md). |
 | 27.Mar.2018   | Added `space-updated` and `space-deleted` webhook events. |
