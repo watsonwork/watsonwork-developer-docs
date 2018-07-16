@@ -32,14 +32,6 @@
   * [Optional inclusion of soft deleted flag with message retrieval](./guides/V1_message_main.md)
   
 
-* ## [Reactions](./guides/V1_wwsg_Reactions.md)
-  * [Add a reaction to a message](./guides/V1_Add_Reaction.md)
-  * [Remove a reaction from a message](./guides/V1_Remove_Reaction.md)
-  * [Get users reacting to a message](./guides/V1_Reacting_Users.md)
-  * [Events for reactions (reaction-added, reaction-removed)](./guides/V1_wwsg_Webhooks.md)
-  * [Optional inclusion of reactions with message retrieval](./guides/V1_message_main.md)
-  
-
 * ## [People](./guides/V1_people_main.md)
   * [Get user information](./guides/V1_get_user.md)
   * [Get a list of users](./guides/V1_get_users.md)
