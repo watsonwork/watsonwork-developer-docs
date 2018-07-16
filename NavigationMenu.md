@@ -28,8 +28,8 @@
   * [Send a message into a conversation](./guides/V1_wwsg_Spaces.md)
   * [View a message from a conversation](./guides/V1_get_message.md)
   * [Delete a message](./guides/V1_delete_message.md)
-  * [Events for message deletion (message-deleted)](./guides/V1_wwsg_Webhooks.md)
-  * [Optional inclusion of soft deleted flag with message retrieval](./guides/V1_message_main.md)
+  * [Event for message deletion](./guides/V1_wwsg_Webhooks.md)
+  * [Retrieving soft-deleted with message](./guides/V1_message_main.md)
   
 
 * ## [People](./guides/V1_people_main.md)
