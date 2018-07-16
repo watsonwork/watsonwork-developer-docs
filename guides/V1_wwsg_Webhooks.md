@@ -1,5 +1,5 @@
 ---
-copyright: 'Copyright IBM Corp. 2017, 2018'
+copyright: 'Copyright IBM Corp. 2017'
 link: 'listen-to-events-in-a-space'
 is: 'published'
 ---

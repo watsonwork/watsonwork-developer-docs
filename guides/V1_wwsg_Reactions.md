@@ -24,7 +24,7 @@ Reactions are a quick way to respond to someone's message.  The caller can selec
  * GraphQL query for users reacting with a reaction
     * **reactingUsers** [Get users who reacted to a message](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_Reacting_Users.md)
     <br>
- * Outbound webhooks [Events for reactions](./V1_wwsg_Webhooks.md)
+ * Outbound webhooks [Events for reactions](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_wwsg_Webhooks.md)
     * **reaction-added**
     * **reaction-removed**
     <br>
