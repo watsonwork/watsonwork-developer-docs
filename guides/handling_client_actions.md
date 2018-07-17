@@ -26,6 +26,8 @@ Steps to add an action handler:
 4. Type the action handler URL.
 5. Select the team-app-config-requested checkbox if you want to enable the team configuration. Select space-app-config-requested checkbox if you want to enable the space configuration. 
 
+![Action Handler Screenshot](../images/action_handler_dialog.jpg)
+
 ### Space Configuration 
 
 Invididual users including team members, space owners, and sapce users can configure the Apps based on their preferences. For example, a scheduling app might need calendar access. Having the user's authorization or credentials is essential for coordinating with third-party services.  
@@ -39,14 +41,9 @@ If your App enables space configuration, users in a space will see a Configure b
 ### Team Configuration 
 The team administrators manage the app configuration for the entire team and the configuration can improve the enablment of your App. For example, for a file managment App, the team administraotr can configure the source url of the file service and the the authentication method required.
 
-If your App enables team configuration, team administrators will see a Configure button in App details page from the administration portal.  
+If your App enables team configuration, team administrators will see a Configure button in App details page from the administration portal. Only the team administrators have access to configure an App for the entire team.  
 
 ![AppConfig Usage Screenshot](../images/ConfigUsage_admin.jpg)
-
-NOTE: 
-1. All members of a space have access to configure an App in the space regardless of who added the app to the space.
-2. Only the team administrators have access to configure an App for the entire team. 
-3. If the team administrators configure an App in the space setting, then what they configure in the space will not impact the team configuration. 
 
 
 
