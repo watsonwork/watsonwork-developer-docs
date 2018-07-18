@@ -1,6 +1,10 @@
 ## Handling Client Actions
 
-Watson Work Services allows your App to provide for actions issued from a Watson Work Services client (for example, Watson Workspace). Here your App will be invoked directly from the client app and can provide a user experience to guide a user through the fulfillment of that action. This is accomplished by using Client Action Handlers.
+Watson Work Services allows your App to provide for actions issued from a Watson Work Services client (for example, Watson Workspace). Here your App will be invoked directly from the client app and can provide a user experience to guide a user through the fulfillment of that action. This is accomplished in one of two ways, using Commands or Client Action Handlers.
+
+### Commands
+
+Refer to [Commands](../guides/slash_commands.md) for details.
 
 ### Client Action Handlers
 
@@ -24,7 +28,10 @@ Steps to add an action handler:
 2. Click Add an Action. 
 3. Click Add an action handler.
 4. Type the action handler URL.
-5. Select the team-app-config-requested checkbox if you want to enable the team configuration. Select space-app-config-requested checkbox if you want to enable the space configuration. 
+5. Select the action type that you want. 
+Current available action types are:
+*team-app-config-requested: Select this type if you want to enable the team configuration. 
+*space-app-config-requested: Select this type if you want to enable thea space configuration. 
 
 ![Action Handler Screenshot](../images/action_handler_dialog.jpg)
 
