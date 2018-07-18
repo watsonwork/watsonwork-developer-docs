@@ -1,5 +1,5 @@
 ---
-copyright: 'Copyright IBM Corp. 2017'
+copyright: 'Copyright IBM Corp. 2018'
 link: 'get-public-meeting'
 is: 'experimental'
 ---

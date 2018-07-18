@@ -53,3 +53,5 @@ Body:
   }
 }
 ~~~~
+
+Try it out with our GraphQL tool - <a href="https://developer.watsonwork.ibm.com/tools/graphql?apiType=experimental&query=mutation%20startMeeting%20{%20%20startMeeting(input: {spaceId:%20%22space-id%22})%20{%20%20%20%20accepted%20%20}}" target="_blank">Start a meeting</a>
