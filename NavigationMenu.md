@@ -47,7 +47,6 @@
   * [Information extraction annotations](./guides/V1_Annotation_Message_Information_Extraction.md)
 
 * ## [Actions and Events](./guides/actions_and_events_overview.md)
-  * [Listen to events in a space](./guides/V1_wwsg_Webhooks.md)
   * [Handling Client Actions](./guides/handling_client_actions.md)
    * [App actions callback](./guides/App_action_Callback.md)
    * [Get action context information](./guides/get_action_context.md)
