@@ -57,17 +57,15 @@ If your App enables team configuration, team administrators will see a Configure
 
 ![AppConfig Usage Screenshot](../images/ConfigUsage_admin.jpg)
 
-### App Configuration Callback
+### App Action Callback
 
-The callback must be implemented to provide the user-specific configuration service of an app. The request is triggered when a user clicks on the Configure button of an app. For existing Apps with old configuration URL, refer to [App Configuration Callback](../guides/V1_App_Configuration_Callback.md).
+The callback must be implemented to provide the user-specific configuration service of an app. The request is triggered when a user clicks on the Configure button of an app. Refer to [App Action Callback](../guides/App_action_Callback.md) for details. For existing Apps with old configuration URL, refer to [App Configuration Callback](../guides/V1_App_Configuration_Callback.md) for details.
 
-For new Apps, refer to [App Configuration Callback](../guides/App_action_Callback.md).
-
-### Access Configuration Data or Action Context Information
+### Access Action Context Information
 
 The configuration data is generated via Watson Work Services by Watson Workspace clients when a user triggers the configuration of your app. It contains the needed data for the configuration of the app. 
 
-When a user clicks the Configure button, if it returns `GET <configurationURL>?configurationToken=<configurationToken>`, refer to [Access configuration data](../guides/V1_Access_Configuration_Data.md) for details.  If it returns `actionURL?actionHandlerContextToken=<token>token`, refer to [Get action context information](../guides/get_action_context.md) for details.
+When a user clicks the Configure button,  if it returns `actionURL?actionHandlerContextToken=<token>token`, refer to [Get action context information](../guides/get_action_context.md) for details. If it returns `GET <configurationURL>?configurationToken=<configurationToken>`, refer to [Access configuration data](../guides/V1_Access_Configuration_Data.md) for details. 
 
 
 
