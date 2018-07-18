@@ -57,15 +57,17 @@ If your App enables team configuration, team administrators will see a Configure
 
 ![AppConfig Usage Screenshot](../images/ConfigUsage_admin.jpg)
 
-### App Action Callback
+### App Action Handler Callback
 
-The callback must be implemented to provide the user-specific configuration service of an app. The request is triggered when a user clicks on the Configure button of an app. Refer to [App Action Callback](../guides/App_action_Callback.md) for details. For existing Apps with old configuration URL, refer to [App Configuration Callback](../guides/V1_App_Configuration_Callback.md) for details.
+The callback must be implemented to provide the user-specific action of an app. Refer to [App Action Callback](../guides/App_action_Callback.md) for details. 
+
+If a user clicks the Configure button of the App which has previous configuration URL, refer to [App Configuration Callback](../guides/V1_App_Configuration_Callback.md) for details.
 
 ### Access Action Context Information
 
-The configuration data is generated via Watson Work Services by Watson Workspace clients when a user triggers the configuration of your app. It contains the needed data for the configuration of the app. 
+When your App is notified by some actions via `actionURL?actionHandlerContextToken=<token>token`, you need to get the action context information by [Get action context information](../guides/get_action_context.md). 
 
-When a user clicks the Configure button,  if it returns `actionURL?actionHandlerContextToken=<token>token`, refer to [Get action context information](../guides/get_action_context.md) for details. If it returns `GET <configurationURL>?configurationToken=<configurationToken>`, refer to [Access configuration data](../guides/V1_Access_Configuration_Data.md) for details. 
+If your App is notified by `GET <configurationURL>?configurationToken=<configurationToken>`, refer to [Access configuration data](../guides/V1_Access_Configuration_Data.md) for details. 
 
 
 
