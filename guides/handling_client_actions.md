@@ -29,6 +29,7 @@ Steps to add an action handler:
 3. Click Add an action handler.
 4. Type the action handler URL.
 5. Select the action type that you want. 
+
 Current available action types are:
 *team-app-config-requested: Select this type if you want to enable the team configuration. 
 *space-app-config-requested: Select this type if you want to enable thea space configuration. 
