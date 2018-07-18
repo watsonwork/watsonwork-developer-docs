@@ -12,7 +12,7 @@ Action fulfillment enables developers to create apps that can define actions on 
 
 Apps can achieve this functionality by implementing these tasks:
 
-1. Specifying possible actions on some aspect of the conversation, for instance, a part of a message. This is done by integrating your app with an instance of Watson Conversation which has defined actions, or by directly calling the Watson Work Service APIs to declare an action has been identified.
+1. Specifying possible actions on some aspect of the conversation, for instance, a part of a message. This is done by integrating your app with an instance of Watson Assistant which has defined actions, or by directly calling the Watson Work Service APIs to declare an action has been identified.
 2. Presenting the user with steps to fulfill the action, represented as messages from your app sent to the user. This is done through the Watson Work Services APIs for creating messages.
 3. Receiving a user's responses to the steps. This is done by receiving calls from Watson Work Services, via Webhooks.
 
@@ -24,27 +24,27 @@ Interacting with the user takes place in isolation of the other participants in 
 
 * Follow the instructions for creating your app with the [Prepare your App to Run](https://developer.watsonwork.ibm.com/docs/apps/prepare-your-app-to-run) instructions.
 * When configuring the webhook select to receive `message-annotation-added` events.
-* Configure a Watson Conversation through Bluemix following the steps below.
+* Configure a Watson Assistant through Bluemix following the steps below.
 
-### Configuring a Watson Conversation Instance
+### Configuring a Watson Assistant Instance
 
-Your Watson Conversation instance can be setup to utilize Dialog, a Conversation feature, which allows you to model conversations using nodes, or potential states. The conversation node must be configured with a name, a trigger and a response. This describes which messages should surface to the user as a triggerable action.
+Your Watson Assistant instance can be setup to utilize Dialog, a Conversation feature, which allows you to model conversations using nodes, or potential states. The conversation node must be configured with a name, a trigger and a response. This describes which messages should surface to the user as a triggerable action.
 
-**Adding a Watson Conversation Node**
+**Adding a Watson Assistant Node**
 
-Go to Bluemix and go to your Watson Conversation Service. Launch the tool and select the
+Go to Bluemix and go to your Watson Assistant Service. Launch the tool and select the
 Workspace your app is connected to.
 
 <img src="../images/WatsonConversationService.png" style="height:200px;text-align:center;" />
 
-In your Watson Conversation instance, navigate to the Dialog tab
+In your Watson Assistant instance, navigate to the Dialog tab
 
 <img src="../images/WatsonConversationDialogTab.png" style="height:150px;text-align:center;" />
 
 Where it says `Conversation starts`, you want to add a new conversation node. A form
 will appear and this dictates how your application uses your intents.
 
-**Configuring a Watson Conversation node, triggers and responses**
+**Configuring a Watson Assistant node, triggers and responses**
 
 _Node Name_
 
@@ -52,7 +52,7 @@ Name of the node.
 
 _Triggers_
 
-The `TRIGGERS` tell Watson Conversation which intents, entities, and/or context variables this conversation node should act upon. A good idea is to fill it
+The `TRIGGERS` tell Watson Assistant which intents, entities, and/or context variables this conversation node should act upon. A good idea is to fill it
 with any of the intents that you want your application to recognize. In the IF statement's `Enter a condition`, enter in any intents like this: `#INTENT_NAME` These should match data in your `Intents` tab. You can also have chain multiple
 intents to the same trigger.
 
@@ -76,7 +76,7 @@ to have an actions array with the name of an action that you can choose.
 This will allow users of IBM Watson Workspace to click on messages that your app recognizes.
 
 **Make it Cognitive**
-In the 'Make it Cognitive' section of your app you can provide the identifier for your Watson Conversation Workspace that is configured in a Watson Conversation Instance. You will also need the Watson Conversation Username/Password from Bluemix.
+In the 'Make it Cognitive' section of your app you can provide the identifier for your Watson Assistant Workspace that is configured in a Watson Assistant Instance. You will also need the Watson Assistant Username/Password from Bluemix.
 
 ## APIs to support Action Fulfillment
 
@@ -218,12 +218,12 @@ Here's an example with attachments:
 
 **Interacting with users through action fulfillment**
 
-If your Watson Conversation instance recognizes one of your intents that has been configured with an action, a `message-focus` annotation will be added to the message. This annotation will contain information about the actions that have been configured, enabling the Workspace clients to indicate to the end user that an action can be taken. If the end user selects the action, an event will be sent to your Webhook in the form of a `message-annotation-added` event.
+If your Watson Assistant instance recognizes one of your intents that has been configured with an action, a `message-focus` annotation will be added to the message. This annotation will contain information about the actions that have been configured, enabling the Workspace clients to indicate to the end user that an action can be taken. If the end user selects the action, an event will be sent to your Webhook in the form of a `message-annotation-added` event.
 
 To interact with the end user who has selected the action:
 
 1. In the request body check that the type is `message-annotation-added` and that the annotationType is `actionSelected`.
-2. The `actionId` from the annotationPayload is the name of the action from Watson Conversation defined earlier in the  _Response_ section.
+2. The `actionId` from the annotationPayload is the name of the action from Watson Assistant defined earlier in the  _Response_ section.
 3. Create a `targeted message` containing the `Generic Annotation` directed towards the user
 
   * `conversationId` can be found from the original request body

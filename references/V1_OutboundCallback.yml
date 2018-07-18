@@ -5,6 +5,8 @@ info:
   description: |
     This API has to be implemented by the callbacks implementing outbound webhooks.
 
+-     Changes in version 1.7.0:
+      - New event type and notification format for `message-edited`.
     - Changes in version 1.6.0:
       - New event type and notification format for `space-updated` and `space-deleted`.
     - Changes in version 1.5.0:

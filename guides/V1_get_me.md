@@ -17,4 +17,6 @@ query getMyself {
 }
 ```
 
-<a href="https://developer.watsonwork.ibm.com/tools/graphql?query=query%20getMyself%20%7B%0A%20%20me%20%7B%0A%20%20%20%20id%0A%20%20%20%20displayName%0A%20%20%20%20email%0A%20%20%7D%0A%7D%0A" target="_blank"> Try it now</a>
+<div class="try-it-now">
+  <a href="https://developer.watsonwork.ibm.com/tools/graphql?query=query%20getMyself%20%7B%0A%20%20me%20%7B%0A%20%20%20%20id%0A%20%20%20%20displayName%0A%20%20%20%20email%0A%20%20%7D%0A%7D%0A" target="_blank"> Try it now</a>
+</div>

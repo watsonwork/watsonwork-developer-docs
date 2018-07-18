@@ -32,4 +32,8 @@ query getSpaces {
   }
 }
 ```
-See it in action with our GraphQL tool and get a list of spaces. <a href="https://developer.watsonwork.ibm.com/tools/graphql?query=query%20getSpaces%20%7B%0A%20%20spaces(first%3A%2050)%20%7B%0A%20%20%20%20items%20%7B%0A%20%20%20%20%20%20title%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20description%0A%20%20%20%20%20%20membersUpdated%0A%20%20%20%20%20%20members%20%7B%0A%20%20%20%20%20%20%20%20items%20%7B%0A%20%20%20%20%20%20%20%20%20%20email%0A%20%20%20%20%20%20%20%20%20%20displayName%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20conversation%20%7B%0A%20%20%20%20%20%20%20%20messages%20%7B%0A%20%20%20%20%20%20%20%20%20%20items%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20content%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A" target="_blank">Try it now</a>
+See it in action with our GraphQL tool and get a list of spaces.
+
+<div class="try-it-now">
+  <a href="https://developer.watsonwork.ibm.com/tools/graphql?query=query%20getSpaces%20%7B%0A%20%20spaces(first%3A%2050)%20%7B%0A%20%20%20%20items%20%7B%0A%20%20%20%20%20%20title%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20description%0A%20%20%20%20%20%20membersUpdated%0A%20%20%20%20%20%20members%20%7B%0A%20%20%20%20%20%20%20%20items%20%7B%0A%20%20%20%20%20%20%20%20%20%20email%0A%20%20%20%20%20%20%20%20%20%20displayName%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20conversation%20%7B%0A%20%20%20%20%20%20%20%20messages%20%7B%0A%20%20%20%20%20%20%20%20%20%20items%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20content%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A" target="_blank">Try it now</a>
+</div>

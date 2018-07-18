@@ -5,6 +5,8 @@
 ## Overview
 This API has to be implemented by the callbacks implementing outbound webhooks.
 
+- Changes in version 1.7.0:
+  - New event type and notification format for `message-edited`.
 - Changes in version 1.6.0:
   - New event type and notification format for `space-updated` and `space-deleted`.
 - Changes in version 1.5.0:
@@ -212,7 +214,7 @@ This event is only sent to webhooks that
 
 <a name="messageeditedbody"></a>
 ### MessageEditedBody
-Notifies the subscribed app that a message has been edited.
+Notifies the subscribed app that a message has been edited.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
 - have been added for the message-edited event
