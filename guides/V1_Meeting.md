@@ -52,7 +52,7 @@ Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIME
 Body:
 {
   query {
-    meeting(spaceId: "5a9ee86ee4b0cb1ca3dfef33") {
+    meeting(spaceId: "space-id") {
       active
     	password
     	joinInfo {
@@ -77,3 +77,5 @@ Body:
     }
 }
 ~~~~
+
+Try it out with our GraphQL tool - <a href="https://developer.watsonwork.ibm.com/tools/graphql?apiType=experimental&query=query%20getMeetingBySpaceId%20{%20%20meeting(spaceId:%20%22space-id%22)%20{%20%20%20%20startTime%20%20%20%20active%20%20%20%20allowPublic%20%20%20%20meetingNumber%20%20}}" target="_blank">Get a meeting by space-id</a>

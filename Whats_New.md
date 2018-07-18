@@ -9,6 +9,7 @@ Keep up to date on what's new in IBM Watson Work Services. We'll list the latest
 
 | Date          | What's new       |
 | ------------- |:-------------|
+| 18.Jul.2018   | Added [meeting API](./guides/V1_wwsg_Meetings.md). |
 | 03.Jul.2018   | Added section with GraphQL [pagination](./guides/V1_pagination.md) example. |
 | 19.Jun.2018   | Added documentation section on [Moments GraphQL](./guides/V1_moment_main.md). |
 | 27.Mar.2018   | Added `space-updated` and `space-deleted` webhook events. |
