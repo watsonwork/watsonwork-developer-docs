@@ -31,8 +31,9 @@ Steps to add an action handler:
 5. Select the action type that you want. 
 
 Current available action types are:
-*team-app-config-requested: Select this type if you want to enable the team configuration. 
-*space-app-config-requested: Select this type if you want to enable thea space configuration. 
+
+- team-app-config-requested: Select this type if you want to enable the team configuration. 
+- space-app-config-requested: Select this type if you want to enable thea space configuration. 
 
 ![Action Handler Screenshot](../images/action_handler_dialog.jpg)
 
@@ -60,7 +61,7 @@ If your App enables team configuration, team administrators will see a Configure
 
 The callback must be implemented to provide the user-specific configuration service of an app. The request is triggered when a user clicks on the Configure button of an app. For existing Apps with old configuration URL, refer to [App Configuration Callback](../guides/V1_App_Configuration_Callback.md).
 
-For new Apps, refer to [App Configuration Callback](../guides/App_action_Callback.md)
+For new Apps, refer to [App Configuration Callback](../guides/App_action_Callback.md).
 
 ### Access Configuration Data or Action Context Information
 
