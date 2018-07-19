@@ -1,5 +1,5 @@
 ---
-copyright: 'Copyright IBM Corp. 2017, 2018'
+copyright: 'Copyright IBM Corp. 2017'
 link: 'listen-to-events-in-a-space'
 is: 'published'
 ---
@@ -49,9 +49,9 @@ Available events are:
 
 **message-annotation-removed**: each time an annotation is removed from a message
 
-**reaction_added**: each time a reaction is added to a message
+**reaction_added**: each time a reaction is added to a message (API is EXPERIMENTAL)
 
-**reaction_removed**: each time a reaction is removed from a message
+**reaction_removed**: each time a reaction is removed from a message (API is EXPERIMENTAL)
 
 **message_edited**: each time a message is updated (EVENT is EXPERIMENTAL)
 
