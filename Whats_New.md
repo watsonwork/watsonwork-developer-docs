@@ -9,7 +9,6 @@ Keep up to date on what's new in IBM Watson Work Services. We'll list the latest
 
 | Date          | What's new       |
 | ------------- |:-------------|
-| 11.Jul.2018   | Published [message reactions](./guides/V1_wwsg_Reactions.md). |
 | 11.Jul.2018   | Published [message deletion](./guides/V1_delete_message.md). |
 | 03.Jul.2018   | Added section with GraphQL [pagination](./guides/V1_pagination.md) example. |
 | 19.Jun.2018   | Added documentation section on [Moments GraphQL](./guides/V1_moment_main.md). |

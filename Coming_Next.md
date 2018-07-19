@@ -1,5 +1,5 @@
 ---
-copyright: 'Copyright IBM Corp. 2017, 2018'
+copyright: 'Copyright IBM Corp. 2017'
 is: 'published'
 link: 'coming-next'
 ---

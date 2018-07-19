@@ -6,7 +6,7 @@ info:
 
       *  POST endpoint to upload a custom image to Watson Work Services.
 
-      *  To retrieve a URL for a user's photo please see details for getting their Person object and its PhotoURL at [IBM Watson Work Services People Service Documentation](../guides/V1_people_main)."
+      *  To retrieve a URL for a user's photo please see details for getting their Person object and its PhotoURL at [IBM Watson Work Services People Service Documentation](../people)."
   version: 1.0.0
 host: api.watsonwork.ibm.com
 schemes:
