@@ -31,7 +31,7 @@ Available events are:
 
 **message-created**: each time a new message is created in the space
 
-**message-deleted**: each time a message is deleted from the space. Please note that the **message-deleted** event API is currently `experimental` and subject to change. It is being included here to engage developers early with this API.
+**message-deleted**: each time a message is deleted from the space. 
 
 **message-edited**: each time message content is edited in the space. Please note that the triggering of **message-edited** events takes place due to a change in the data model via Administrator action, End User action or through an API call. Currently only Administrator actions are implemented
 

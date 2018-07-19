@@ -1,7 +1,7 @@
 ---
-copyright: 'Copyright IBM Corp. 2017'
+copyright: 'Copyright IBM Corp. 2017, 2018'
 link: 'delete-a-message'
-is: 'future'
+is: 'published'
 ---
 
 # Delete a message

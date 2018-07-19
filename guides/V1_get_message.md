@@ -1,5 +1,5 @@
 ---
-copyright: 'Copyright IBM Corp. 2017'
+copyright: 'Copyright IBM Corp. 2017, 2018'
 link: 'view-a-message-from-a-conversation'
 is: 'published'
 ---
@@ -14,6 +14,7 @@ query getMessage {
     content
     contentType
     annotations
+    softDeleted
   }
 }
 ```

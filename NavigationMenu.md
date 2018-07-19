@@ -27,6 +27,10 @@
 * ## [Message](./guides/V1_message_main.md)
   * [Send a message into a conversation](./guides/V1_wwsg_Spaces.md)
   * [View a message from a conversation](./guides/V1_get_message.md)
+  * [Delete a message](./guides/V1_delete_message.md)
+  * [Event for message deletion](./guides/V1_wwsg_Webhooks.md)
+  * [Retrieving soft-deleted with message](./guides/V1_message_main.md)
+  
 
 * ## [People](./guides/V1_people_main.md)
   * [Get user information](./guides/V1_get_user.md)

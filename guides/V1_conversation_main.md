@@ -1,5 +1,5 @@
 ---
-copyright: 'Copyright IBM Corp. 2017'
+copyright: 'Copyright IBM Corp. 2017, 2018'
 link: 'conversation'
 is: 'published'
 ---
@@ -17,4 +17,4 @@ Watson Work Services represents a Conversation with this object.
 | createdBy   | Person    | The person who created the space for this conversation |
 | updated     | Date    | The date that the space for this conversation  was updated at|
 | updatedBy   | Person | The person who updated the space for this conversation  |
-| messages(oldestTimestamp: Long, mostRecentTimestamp: Long, annotationType: String, before: String, after: String, first: Int, last: Int, includeSoftDeleted: Boolean) | MessageCollection | The messages of this conversation provided as a MessageCollection. The `includeSoftDeleted` parameter requires the `EXPERIMENTAL` value in `x-graphql-view header`. |
+| messages(oldestTimestamp: Long, mostRecentTimestamp: Long, annotationType: String, before: String, after: String, first: Int, last: Int, includeSoftDeleted: Boolean) | MessageCollection | The messages of this conversation provided as a MessageCollection. |
