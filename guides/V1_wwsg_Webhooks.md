@@ -33,8 +33,8 @@ Available events are:
 
 **message-deleted**: each time a message is deleted from the space. 
 
-**message_edited**: each time a message is updated (EVENT is EXPERIMENTAL)
-
+**message_edited**: each time a message is edited (EVENT is EXPERIMENTAL)
+Please note that the triggering of **message-edited** events takes place due to a change in the data model via Administrator action, End User action or through an API call.
 _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 **space-members-added**: each time a member is added to the space
