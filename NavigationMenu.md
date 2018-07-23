@@ -46,7 +46,7 @@
   * [Information extraction](./guides/V1_wwsg_InformationExtraction.md)
   * [Information extraction annotations](./guides/V1_Annotation_Message_Information_Extraction.md)
 
-* ## [Actions and Events](./guides/actions_and_events_overview.md)
+* ## [Actions and Events](./guides/V1_ActionsEvents.md)
    * [Client action handler callback API](./guides/App_action_Callback.md)
    * [Get action context information](./guides/get_action_context.md)
   
