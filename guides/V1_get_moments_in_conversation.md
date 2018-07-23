@@ -32,4 +32,8 @@ query getMomentsInConversation {
 }
 ```
 
-Try it out with our GraphQL tool - <a href="https://developer.watsonwork.ibm.com/tools/graphql?apiType=beta&query=query%20getMomentsInConversation%20%7B%0Aconversation(id%3A%20%22conversation-id%22)%20%7B%0Amoments%20%7B%0Aitems%20%7B%0Aid%0Alive%0AstartTime%0AendTime%0AsummaryPhrases(first%3A%203)%20%7B%0Alabel%0A%7D%0A%7D%0A%7D%0A%7D%0A%7D" target="_blank">Get a list of moments in conversation</a>
+Get a list of moments in conversation, see it in action with our GraphQL tool.
+
+<div class="try-it-now">
+      <a href="https://developer.watsonwork.ibm.com/tools/graphql?apiType=beta&query=query%20getMomentsInConversation%20%7B%0Aconversation(id%3A%20%22conversation-id%22)%20%7B%0Amoments%20%7B%0Aitems%20%7B%0Aid%0Alive%0AstartTime%0AendTime%0AsummaryPhrases(first%3A%203)%20%7B%0Alabel%0A%7D%0A%7D%0A%7D%0A%7D%0A%7D" target="_blank">Try it now</a>
+</div>
