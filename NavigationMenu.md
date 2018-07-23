@@ -47,8 +47,7 @@
   * [Information extraction annotations](./guides/V1_Annotation_Message_Information_Extraction.md)
 
 * ## [Actions and Events](./guides/actions_and_events_overview.md)
-  * [Handling Client Actions](./guides/handling_client_actions.md)
-   * [App actions callback](./guides/App_action_Callback.md)
+   * [Client action handler callback API](./guides/App_action_Callback.md)
    * [Get action context information](./guides/get_action_context.md)
   
 * ## [Apps](./guides/V1_Apps.md)
