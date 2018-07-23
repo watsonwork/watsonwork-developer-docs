@@ -52,6 +52,7 @@
   
 * ## [Apps](./guides/V1_Apps.md)
   * [Prepare your App to run](./guides/V1_PreparingYourApp.md)
+  * [Make your App configurable(Deprecated)](./guides/V1_MakeAppsConfigurable.md)
   * [App configuration callback](./guides/V1_App_Configuration_Callback.md)
   * [Access configuration data](./guides/V1_Access_Configuration_Data.md)
   * [Authorize an App](./guides/V1_wwsg_AuthorizeApp.md)
