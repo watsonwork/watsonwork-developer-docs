@@ -1,6 +1,6 @@
 # Get action context information 
 
-The App needs access to the ActionContext via ActionToken to provide corresponding configuration page with the specific action context.
+If you have registered a Client action handler callback for your App, then when your App is called through this callback, it will receive an action handler context token. Your App needs to use this token with this API to extract the proper action context.
 
 ### Path
 ```
