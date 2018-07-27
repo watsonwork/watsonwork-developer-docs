@@ -7,7 +7,7 @@ is: 'future'
 # Get Team Space Templates
 
 Some space templates are associated with particular teams. 
-Using the teamSpaceTemplates query, a user with the appropriate permission (determined by the offering to which they are subscribed) can fetch a collection of the templates associated with a team to which they belong.
+Using the teamSpaceTemplates query, a user with the appropriate permission (determined by the offering to which they are subscribed) can fetch a collection of the templates curated by their team admin.
 
 ## Schema
 
