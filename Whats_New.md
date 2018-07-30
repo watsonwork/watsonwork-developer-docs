@@ -9,7 +9,7 @@ Keep up to date on what's new in IBM Watson Work Services. We'll list the latest
 
 | Date          | What's new       |
 | ------------- |:-------------|
-| 30.Jul.2018   | Adding new guide for [Actions and Events](./guides/V1_ActionsEvents.md), with new API for dealing with configuration of Apps for teams. We've reorganzied [Your Apps](https://developer.watsonwork.ibm.com/apps) you can read more about that change in [Actions and Events](./guides/V1_ActionsEvents.md) and [Make your app configurable](./guides/V1_MakeAppsConfigurable.md). |
+| 30.Jul.2018   | Adding new guide for [Actions and Events](./guides/V1_ActionsEvents.md), with new API for dealing with configuration of Apps for teams. We've reorganzied [Your Apps](https://developer.watsonwork.ibm.com/apps) and you can read more about that change in [Actions and Events](./guides/V1_ActionsEvents.md) and [Make your app configurable](./guides/V1_MakeAppsConfigurable.md). |
 | 11.Jul.2018   | Published [message reactions](./guides/V1_wwsg_Reactions.md). |
 | 11.Jul.2018   | Published [message deletion](./guides/V1_delete_message.md). |
 | 06.Jul.2018   | Added sections for [message editing](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_wwsg_EditingMessages.md) as `EXPERIMENTAL`. |
