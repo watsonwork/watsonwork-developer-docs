@@ -42,19 +42,26 @@ The table below list the fields that actionContext contains for app configuratio
 |**userId**  <br>*required*|Id of the user by which the configuration data has been generated.|string|
 |**actioncontext**  <br>*required*|The action context structure according to the action type.|actioncontext|
 
-#### Actioncontext for space configuration
+#### SpaceConfigTypeActionContext
 The action context information for space configuration. 
 
-|Name|Description|Schema|
-|---|---|---|
-|**type** <br>*required*|The action type is space-app-config-requested|actionContext format { spaceId:xx, teamId: xx}|
-
-#### Actioncontext for team configuration
-The action context information for team configuration. 
+type: space-app-config-requested 
+actionContext format { spaceId:xx, teamId: xx}
 
 |Name|Description|Schema|
 |---|---|---|
-|**type** <br>*required*|The action type is team-app-config-requested|actionContext format { teamId:xx}|
+|**spaceId** <br>*required*|Id of the space for which users invoke space configuration action|string|
+|**teamId** <br>*required*|Id of team where the space belongs|string|
+
+#### TeamConfigTypeActionContext
+The action context information for team configuration.
+
+type: team-app-config-requested 
+actionContext format { teamId: xx}
+
+|Name|Description|Schema|
+|---|---|---|
+|**teamId** <br>*required*|Id of the team for which team administrators invoke tam configuratoin action|string|
 
 
 
