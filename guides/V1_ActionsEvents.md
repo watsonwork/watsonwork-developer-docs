@@ -103,7 +103,7 @@ If your App registers a Client Action Handler URL for configuring a space, then 
 ## Implementing the space configuration page
 
 First, you need to implement your space configuration page for your App. Read the 
-[Client Action Handler Callback API](https://#) for more information. Then follow the instructions above
+[Client Action Handler Callback API](./V1_AppActionCallback.md) for more information. Then follow the instructions above
 to add your Client Action Handler URL. 
 
 ### Configuring your app for a team
@@ -122,7 +122,7 @@ If your App registers a Client Action Handler URL for team configuration then a 
 ## Implementing the team configuration page
 
 First, you need to implement your team configuration page for your App. Read the 
-[Client Action Handler Callback API](https://#) for more information. Then follow the instructions above
+[Client Action Handler Callback API](./V1_AppActionCallback.md) for more information. Then follow the instructions above
 to add your Client Action Handler URL. 
 
 ## Steps to configure your app
