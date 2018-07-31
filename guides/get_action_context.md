@@ -20,7 +20,7 @@ actionHandlerContextToken has only 5 minutes liftime. It will be deleted once it
 
 |HTTP Code|Description|Schema|
 |---|---|---|
-|**200**|The configuration data is returned and deleted successfully.|ActionOutputEntity(see below)|
+|**200**|The configuration data is returned and deleted successfully.|< [ActionOutputEntity](#ActionOutputEntity) >|
 |**401**|Unauthorized.||
 |**403**|Forbidden.||
 |**404**|Not Found. The app with the given `appId` or the configuration data for the given `configurationToken` could not be found.||
@@ -29,6 +29,8 @@ actionHandlerContextToken has only 5 minutes liftime. It will be deleted once it
 #### Produces
 
 * `application/json`
+
+<a name="ActionOutputEntity"></a>
 
 #### ActionOutputEntity
 
