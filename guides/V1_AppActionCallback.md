@@ -1,3 +1,9 @@
+---
+copyright: 'Copyright IBM Corp. 2017'
+link: 'client-action-handler-callback'
+is: 'experimental'
+---
+
 # Client Action Handler Callback API
 Client action handlers allow your App to deliver a user experience to a Watson Work Services client. You will need to 
 register a call back URL that the client can invoke for specified actions so that the client can recognize and enable 
