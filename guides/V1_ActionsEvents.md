@@ -93,7 +93,7 @@ A user configuration can take place at two times:
 
 If your App registers a Client Action Handler URL for configuring a space, then users adding it to a space will see a Configure button if they have the `space.app.configure` permission.
 
-![AppConfig Usage Screenshot](https://github.com/watsonwork/watsonwork-developer-docs/images/ConfigUsage.jpg)
+![AppConfig Usage Screenshot](../images/ConfigUsage.jpg)
 
 <div class="tip">
   <img src="https://github.com/watsonwork/watsonwork-developer-docs/images/note_pencil.png" />
@@ -112,7 +112,7 @@ You can use Team Configuration to provide an administrator of a team with settin
 
 If your App registers a Client Action Handler URL for team configuration then a team administrator will see a Configure button when they enable your App for their team. 
 
-_screens_
+![AppConfig Usage Screenshot for team](../images/ConfigUsage_admin.jpg)
 
 <div class="tip">
   <img src="https://github.com/watsonwork/watsonwork-developer-docs/images/note_pencil.png" />
