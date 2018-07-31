@@ -40,21 +40,46 @@ could not be found.||
 
 * `application/json`
 
-#### ActionContext
+#### Action Output Entity
 
-App configuration specific case is triggered via open URL (configure URL provided by app).
-The table below list the fields that actionContext contains for app configuration.
+The result from this call provides the following payload.
 
 |Name|Description|Schema|
 |---|---|---|
-|**type**  <br>*required*|The action type for users to be aware of the configuration context. It should be either 
-`space-app-config-requested` or `team-app-config-requested`.|string|
+|**type**  <br>*required*|The action type for users to be aware of the configuration context. It should be either space-app-config-requested or team-app-config-requested.|string|
 |**appId**  <br>*optional*|Id of the app for which the configuration data has been generated.|string|
 |**userId**  <br>*required*|Id of the user by which the configuration data has been generated.|string|
-|**actioncontext**  <br>*required*|The action context structure according to the action type.|JSONObject|
+|**actioncontext**  <br>*required*|The action context structure according to the action type.|[ActionContext](#actioncontext)|
 
-- type: space-app-config-requested
-actionContext format { spaceId:xx, spaceName:xxx, teamId: xx}
 
-- type: team-app-config-requested
-actionContext format { teamId: xx, teamName: xxx}
+<a name="actioncontext"></a>
+
+#### Action Context
+
+Here are the set of currently supported actions. There will be more supported action types in future.
+
+#### Space Configuration Action Context
+
+The `space-app-config-requested` action type occurs when users invoke the action to configure an app for a space. 
+
+The **actionContext** format for `space-app-config-requested` action type
+
+|Name|Description|Schema|
+|---|---|---|
+|**spaceId** <br>*required*|Id of the space where the user invoked the app configuration |string|
+|**teamId** <br>*required*|Id of team where the space belongs|string|
+
+#### Team Configuration Action Context
+
+
+The `team-app-config-requested` action type occurs when users invoke the action to configure an app for a team. 
+
+The **actionContext** format for `team-app-config-requested` action type
+
+|Name|Description|Schema|
+|---|---|---|
+|**teamId** <br>*required*|Id of the team where the user invoked the app configuratoin |string|
+
+
+
+
