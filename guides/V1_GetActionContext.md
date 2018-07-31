@@ -1,3 +1,10 @@
+---
+copyright: 'Copyright IBM Corp. 2017'
+link: 'get-action-context'
+is: 'experimental'
+---
+
+
 # Get action context information 
 
 If you have registered a Client action handler callback for your App, then when your App is called through this callback, 
