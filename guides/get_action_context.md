@@ -45,6 +45,7 @@ The table below list the fields that actionContext contains for app configuratio
 |**actioncontext**  <br>*required*|The action context structure according to the action type.|actioncontext|
 
 #### SpaceConfigTypeActionContext
+
 The action context information for space configuration. 
 
 type: space-app-config-requested 
@@ -56,6 +57,7 @@ actionContext format { spaceId:xx, teamId: xx}
 |**teamId** <br>*required*|Id of team where the space belongs|string|
 
 #### TeamConfigTypeActionContext
+
 The action context information for team configuration.
 
 type: team-app-config-requested 
