@@ -26,7 +26,7 @@ fulfillment of that action. This is accomplished in one of two ways, using Comma
 
 _docs for commands here with diagram_
 
-![Command Flow](./CommandFlow.png)
+![Command Flow](./images/CommandFlow.png)
 
 ### Client Action Handlers
 
@@ -36,7 +36,7 @@ users. Once a user invokes your action through the client, your App can access c
 
 Here’s the flow for client action handlers
 
-![Client Action Handler Flow](./ClientActionHandlerFlow.png)
+![Client Action Handler Flow](./images/ClientActionHandlerFlow.png)
 
 ## Client Action Handler available actions
 
@@ -54,27 +54,27 @@ To add a Client Action Handler for your App, you need to;
 
 1. Go to Your Apps and choose the App.
 
-![AppConfig Usage Screenshot](./AddAction1.png)
+![AppConfig Usage Screenshot](./images/AddAction1.png)
 
 2. Click Add an Action.
 
-![AppConfig Usage Screenshot](./AddAction2.png)
+![AppConfig Usage Screenshot](./images/AddAction2.png)
 
 3. Then click Add Client Handler Action URL.
 
-![AppConfig Usage Screenshot](./AddAction3.png)
+![AppConfig Usage Screenshot](./images/AddAction3.png)
 
 4. Add your URL and select at least one of *Space configuration* or *Team configuration*.
 
-![AppConfig Usage Screenshot](./AddAction4.png)
+![AppConfig Usage Screenshot](./images/AddAction4.png)
 
 5. Click to add it and you will see a confirmation of the addition.
 
-![AppConfig Usage Screenshot](./AddAction5.png)
+![AppConfig Usage Screenshot](./images/AddAction5.png)
 
 6. Click close and you will see your Client Action Handler, which you can Edit or Delete in the future.
 
-![AppConfig Usage Screenshot](./AddAction6.png)
+![AppConfig Usage Screenshot](./images/AddAction6.png)
 
 
 ### Configuring an app for a space
