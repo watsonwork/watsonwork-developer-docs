@@ -20,7 +20,7 @@ actionHandlerContextToken has only 5 minutes liftime. It will be deleted once it
 
 |HTTP Code|Description|Schema|
 |---|---|---|
-|**200**|The configuration data is returned and deleted successfully.|ConfigurationData(see below)|
+|**200**|The configuration data is returned and deleted successfully.|ActionOutputEntity(see below)|
 |**401**|Unauthorized.||
 |**403**|Forbidden.||
 |**404**|Not Found. The app with the given `appId` or the configuration data for the given `configurationToken` could not be found.||
@@ -30,7 +30,7 @@ actionHandlerContextToken has only 5 minutes liftime. It will be deleted once it
 
 * `application/json`
 
-#### ActionContext
+#### ActionOutputEntity
 
 App configuration specific case is triggered via open URL (configure URL provided by app).
 The table below list the fields that actionContext contains for app configuration.
@@ -40,11 +40,22 @@ The table below list the fields that actionContext contains for app configuratio
 |**type**  <br>*required*|The action type for users to be aware of the configuration context. It should be either space-app-config-requested or team-app-config-requested.|string|
 |**appId**  <br>*optional*|Id of the app for which the configuration data has been generated.|string|
 |**userId**  <br>*required*|Id of the user by which the configuration data has been generated.|string|
-|**actioncontext**  <br>*required*|The action context structure according to the action type.|JSONObject|
+|**actioncontext**  <br>*required*|The action context structure according to the action type.|actioncontext|
 
-- type: space-app-config-requested
-actionContext format { spaceId:xx, spaceName:xxx, teamId: xx}
+#### Actioncontext for space configuration
+The action context information for space configuration. 
 
-- type: team-app-config-requested
-actionContext format { teamId: xx, teamName: xxx}
+|Name|Description|Schema|
+|---|---|---|
+|**type** <br>*required*|The action type is space-app-config-requested|actionContext format { spaceId:xx, teamId: xx}|
+
+#### Actioncontext for team configuration
+The action context information for team configuration. 
+
+|Name|Description|Schema|
+|---|---|---|
+|**type** <br>*required*|The action type is team-app-config-requested|actionContext format { teamId:xx}|
+
+
+
 
