@@ -55,7 +55,7 @@ List all the action context formats for each action type. There will be more sup
 
 The action context information for space app configuration. Users can configure the app of the space. 
 
-The actionContext format for `space-app-config-requested` action type.
+The actionContext format for `space-app-config-requested` action type
 
 |Name|Description|Schema|
 |---|---|---|
