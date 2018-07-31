@@ -53,7 +53,7 @@ List all the action context formats for each action type. There will be more sup
 
 #### SpaceConfigTypeActionContext
 
-The action context information for space app configuration. Users can configure the app of the space. 
+Specify the ActionContext format for space-app-config-requested action type when users invoke the space app configuration action. 
 
 The actionContext format for `space-app-config-requested` action type
 
@@ -64,7 +64,7 @@ The actionContext format for `space-app-config-requested` action type
 
 #### TeamConfigTypeActionContext
 
-The action context information for team app configuration. Users can configure the app of the team.
+Specify the ActionContext format for team-app-config-requested action type when users invoke the team app configuration action.
 
 The actionContext format for `team-app-config-requested` action type
 
