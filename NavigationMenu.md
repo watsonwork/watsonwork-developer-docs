@@ -58,9 +58,13 @@
   * [Information extraction](./guides/V1_wwsg_InformationExtraction.md)
   * [Information extraction annotations](./guides/V1_Annotation_Message_Information_Extraction.md)
 
+* ## [Actions and Events](./guides/V1_ActionsEvents.md)
+   * [Client action handler callback API](./guides/App_action_Callback.md)
+   * [Get action context information](./guides/get_action_context.md)
+  
 * ## [Apps](./guides/V1_Apps.md)
   * [Prepare your App to run](./guides/V1_PreparingYourApp.md)
-  * [Make your App configurable](./guides/V1_MakeAppsConfigurable.md)
+  * [Make your App configurable(Deprecated)](./guides/V1_MakeAppsConfigurable.md)
   * [App configuration callback](./guides/V1_App_Configuration_Callback.md)
   * [Access configuration data](./guides/V1_Access_Configuration_Data.md)
   * [Authorize an App](./guides/V1_wwsg_AuthorizeApp.md)
