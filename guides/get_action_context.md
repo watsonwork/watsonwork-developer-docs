@@ -6,7 +6,7 @@ If you have registered a Client action handler callback for your App, then when 
 ```
 GET /v1/apps/{appId}/getActionContext/{actionHandlerContextToken}
 ```
-actionHandlerContextToken has only 5 minutes liftime, and can only be used once. It will be deleted once it is used. 
+actionHandlerContextToken has only 5 minutes liftime. It will be deleted once it is used. 
 
 #### Parameters
 
