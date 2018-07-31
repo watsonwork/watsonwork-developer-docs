@@ -65,7 +65,8 @@ The actionContext format for `space-app-config-requested` action type.
 #### TeamConfigTypeActionContext
 
 The action context information for team app configuration. Users can configure the app of the team.
-The actionContext format for `team-app-config-requested` action type.
+
+The actionContext format for `team-app-config-requested` action type
 
 |Name|Description|Schema|
 |---|---|---|
