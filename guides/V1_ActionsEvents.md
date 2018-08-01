@@ -5,8 +5,9 @@ is: 'experimental'
 ---
 ## Actions and Events
 
-Watson Work Services gives your App two patterns for dealing with events in the system and allowing for actions from a 
-client. Your App can Listen to Events, through secure web hooks. Also, your App can handle actions that may be invoked 
+Watson Work Services gives your App two patterns for dealing with events, which take place either due to changes in the data model and/or due to actions humans take using a participating client in Watson Work Services such as the Workspace clients. 
+
+Your App can Listen to Events, through secure web hooks. Also, your App can handle actions that may be invoked 
 from a Watson Work Services client so that you can provide an experience to users for taking that action, in two ways, 
 using Client Action Handlers or user entered Commands. 
 
