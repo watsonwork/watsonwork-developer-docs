@@ -39,6 +39,8 @@ GET /v1/apps/{appId}/getActionContext/{actionHandlerContextToken}
 
 * `application/json`
 
+<a name="action-output-entity"></a>
+
 #### Action Output Entity
 
 The result from this call provides the following payload.
