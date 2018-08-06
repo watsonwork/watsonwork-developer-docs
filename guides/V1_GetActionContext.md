@@ -49,7 +49,7 @@ The result from this call provides the following payload.
 |---|---|---|
 |**type**  <br>*required*|The action type for the provided context.|string|
 |**appId**  <br>*optional*|Id of the app for this **actionContext**.|string|
-|**userId**  <br>*required*|Id of the user for this **actionContext**.|string|
+|**userId**  <br>*required*|Id of the user who triggered this action.|string|
 |**actioncontext**  <br>*required*|The action context structure according to the action type.|[ActionContext](#actioncontext)|
 
 
