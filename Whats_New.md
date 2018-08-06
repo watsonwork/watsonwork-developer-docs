@@ -9,7 +9,6 @@ Keep up to date on what's new in IBM Watson Work Services. We'll list the latest
 
 | Date          | What's new       |
 | ------------- |:-------------|
-| 31.Jul.2018   | Adding guide for [Actions and Events](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_ActionsEvents.md) as `EXPERIMENTAL`. This includes two `EXPERIMENTAL` APIs, one a callback, [Client Action Handler Callback API](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_AppActionCallback.md) and [Get Action Context API](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_GetActionContext.md). |
 | 11.Jul.2018   | Published [message reactions](./guides/V1_wwsg_Reactions.md). |
 | 11.Jul.2018   | Published [message deletion](./guides/V1_delete_message.md). |
 | 06.Jul.2018   | Added sections for [message editing](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_wwsg_EditingMessages.md) as `EXPERIMENTAL`. |
