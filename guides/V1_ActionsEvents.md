@@ -9,11 +9,17 @@ Your App can Listen to Events, through secure web hooks. Also, your App can hand
 from a Watson Work Services client so that you can provide an experience to users for taking that action, in two ways, 
 using Client Action Handlers or user entered Commands. 
 
-Note: This will introduce a change to how to make your app configurable. Currently, in the [Your Apps section](https://developer.watsonwork.ibm.com/apps) there is a section called **Additional Information** where you enter a configuration URL (for configuring your app in a space) and Terms of Services for your app. This change we will move Terms of Service to it's own section, and remove the **Additional Information** section. The rest of this guide explains what you will do to set up configuration. If you had already establised an app with configuration, you will not need to do anything to continue working as is, and can update your app as needed. 
+We are standardizing patterns in our programming model and thus the existing App Configuration flow, though is being kept for backwards compatibility, is being incorporated into this new ClientActionHandler flow. It will introduce a change to how to make your app configurable. Currently, in the [Your Apps section](https://developer.watsonwork.ibm.com/apps) there is a section called **Additional Information** where you enter a configuration URL (for configuring your app in a space) and Terms of Services for your app. With this change we will move Terms of Service to it's own section, and remove the **Additional Information** section. The rest of this guide explains what you will do to set up your app to handle user actions regarding App configuration. If you had already establised an app with configuration, you will not need to do anything to continue working as is, and can update your app as needed. 
 
 ## Listen to Events
 
-Please read [Listen to Events](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_wwsg_Webhooks.md) here.
+In our programming model we refer to Events in general, as those triggered based on changes to the data model regardless of the source of that change (ie. a human using a client, an app on a schedule, etc...). One exception is the actionSelected event which makes no changes to the data model and is referred to later in this guide.
+
+The common theme is that typically, an app that handles these events need not present a user experience to a user and can operate in a "headless" or "no-UI needed" fashion.
+
+Handling these events was also known as apps "listening to a conversation", but as has been established there are many other types of events.
+
+Please read [Listen to Events](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_wwsg_Webhooks.md) here for information on handling these types of events.
 
 ## Handling Client Actions
 
@@ -21,9 +27,12 @@ Watson Work Services allows your App to provide for actions issued from a Watson
 Here your App will be invoked directly from the client app and can provide a user experience to guide a user through the 
 fulfillment of that action. This is accomplished in one of two ways, using Commands or Client Action Handlers. 
 
-### Commands
+Watson Work Services allows your App to provide handlers for user actions issued from a Watson Work Services client (like Watson Workspace). User actions can be classified as:
 
-_docs for commands here with diagram_
+1. User actions which can be handled by an app with an indirect user experience where the app developer declares simpler UI constructs for the Watson Work services client to then generate UI and present to the user. Example: /commands
+2. User actions which can be handled by an app providing a direct user experience where the app developer codes client specific UI. Here your App will be invoked directly from the Watson Work Services client (such as Workspace) and it can provide a user experience to guide a user through the fulfillment of that action. Example: App Configuration
+
+### Commands
 
 ![Command Flow](../images/CommandFlow.png)
 
