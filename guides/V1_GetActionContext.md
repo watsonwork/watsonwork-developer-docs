@@ -47,9 +47,9 @@ The result from this call provides the following payload.
 
 |Name|Description|Schema|
 |---|---|---|
-|**type**  <br>*required*|The action type for users to be aware of the configuration context. It should be either space-app-config-requested or team-app-config-requested.|string|
-|**appId**  <br>*optional*|Id of the app for which the configuration data has been generated.|string|
-|**userId**  <br>*required*|Id of the user by which the configuration data has been generated.|string|
+|**type**  <br>*required*|The action type for the provided context.|string|
+|**appId**  <br>*optional*|Id of the app for this **actionContext**.|string|
+|**userId**  <br>*required*|Id of the user for this **actionContext**.|string|
 |**actioncontext**  <br>*required*|The action context structure according to the action type.|[ActionContext](#actioncontext)|
 
 
