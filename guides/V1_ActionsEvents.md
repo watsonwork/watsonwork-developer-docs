@@ -5,7 +5,7 @@ is: 'experimental'
 ---
 ## Actions and Events
 
-Watson Work Services gives your App two patterns for dealing with events, which take place either due to changes in the data model and/or due to actions humans take using a participating client in Watson Work Services such as the Workspace clients.
+Watson Work Services gives your App two patterns for dealing with events, which take place either due to changes in the data model and/or due to actions humans take using a participating client in Watson Work Services such as the Workspace clients. One of these is called **Implicit Action Handler**, the other is called **Explicit Action Handler**.
 
 We are standardizing patterns in our programming model and thus the existing App Configuration flow, though is being kept for backwards compatibility, is being incorporated into this new ClientActionHandler flow. It will introduce a change to how to make your app configurable. Currently, in the [Your Apps section](https://developer.watsonwork.ibm.com/apps) there is a section called **Additional Information** where you enter a configuration URL (for configuring your app in a space) and Terms of Services for your app. With this change we will move Terms of Service to it's own section, and remove the **Additional Information** section. The rest of this guide explains what you will do to set up your app to handle user actions regarding App configuration. If you had already establised an app with configuration, you will not need to do anything to continue working as is, and can update your app as needed. 
 
@@ -34,9 +34,9 @@ Watson Work Services allows your App to provide handlers for user actions issued
 
 These type of user actions are expected to be handled without the need for apps to provide UI code. The app is notified via a webhook and typically provides a declaration of a user experience for the Work Services client to interpret and present to the user. Examples are:
 
-    1. /commands
-    2. actions identified for cognitively detected intents from users utterances in a conversation
-    3. Clicking on buttons associated with actions presented via declarative UI
+1. /commands
+2. actions identified for cognitively detected intents from users utterances in a conversation
+3. clicking on buttons associated with actions presented via declarative UIe UI
 
 ![Command Flow](../images/CommandFlow.png)
 
