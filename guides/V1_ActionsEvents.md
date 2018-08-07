@@ -40,7 +40,7 @@ These type of user actions are expected to be handled without the need for apps 
 
 ![Command Flow](../images/CommandFlow.png)
 
-TBD - Flow for actionSelected 
+![Action Selected Flow](../images/actionSelectedFlow.png) 
 
 ### Explicit Action Handler
 
