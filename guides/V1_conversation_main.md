@@ -18,3 +18,4 @@ Watson Work Services represents a Conversation with this object.
 | updated     | Date    | The date that the space for this conversation  was updated at|
 | updatedBy   | Person | The person who updated the space for this conversation  |
 | messages(oldestTimestamp: Long, mostRecentTimestamp: Long, annotationType: String, before: String, after: String, first: Int, last: Int, includeSoftDeleted: Boolean) | MessageCollection | The messages of this conversation provided as a MessageCollection. |
+| space   | Space | The space that this conversation is part of. |
