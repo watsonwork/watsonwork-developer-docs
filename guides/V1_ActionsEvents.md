@@ -30,11 +30,19 @@ Watson Work Services allows your App to provide handlers for user actions issued
 1. User actions which can be handled by an app with an indirect user experience where the app developer declares simpler UI constructs for the Watson Work services client to then generate UI and present to the user. Example: /commands
 2. User actions which can be handled by an app providing a direct user experience where the app developer codes client specific UI. Here your App will be invoked directly from the Watson Work Services client (such as Workspace) and it can provide a user experience to guide a user through the fulfillment of that action. Example: App Configuration
 
-### Commands
+### Implicit Action Handler
+
+These type of user actions are expected to be handled without the need for apps to provide UI code. The app is notified via a webhook and typically provides a declaration of a user experience for the Work Services client to interpret and present to the user. Examples are:
+
+    1. /commands
+    2. actions identified for cognitively detected intents from users utterances in a conversation
+    3. Clicking on buttons associated with actions presented via declarative UI
 
 ![Command Flow](../images/CommandFlow.png)
 
-### Client Action Handlers
+TBD - Flow for actionSelected 
+
+### Explciit Action Handlers
 
 Directly handling a user action allows your App to deliver a user experience via a Watson Work Services client. You will need to register a call back URL that the Work Services client will present typically in a browser/webview context such as a window, iframe, etc. The Work Services client implementation chooses what user gestures and where in the user experience these user actions take place by adhering to a known list of supported user actions by Watson Work Services. The app's handler will get a token code which it will use to obtain context corresponding to the type of action the user took.
 
@@ -42,7 +50,7 @@ Here’s the flow for client action handlers
 
 ![Client Action Handler Flow](../images/ClientActionHandlerFlow.png)
 
-## Client Action Handler available actions
+## Explicit Action Handler available actions
 
 There are currently two actions available, `space-app-config-requested` and `team-app-config-requested`. Other user actions will soon become available such as clicking on buttons to share resources, etc...
 
