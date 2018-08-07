@@ -42,7 +42,7 @@ These type of user actions are expected to be handled without the need for apps 
 
 TBD - Flow for actionSelected 
 
-### Explciit Action Handlers
+### Explicit Action Handler
 
 Directly handling a user action allows your App to deliver a user experience via a Watson Work Services client. You will need to register a call back URL that the Work Services client will present typically in a browser/webview context such as a window, iframe, etc. The Work Services client implementation chooses what user gestures and where in the user experience these user actions take place by adhering to a known list of supported user actions by Watson Work Services. The app's handler will get a token code which it will use to obtain context corresponding to the type of action the user took.
 
