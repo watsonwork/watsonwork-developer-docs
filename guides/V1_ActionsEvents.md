@@ -38,7 +38,11 @@ These type of user actions are expected to be handled without the need for apps 
 2. actions identified for cognitively detected intents from users utterances in a conversation
 3. clicking on buttons associated with actions presented via declarative UIe UI
 
+**/Command flow**
+
 ![Command Flow](../images/CommandFlow.png)
+
+**Action Selected flow**
 
 ![Action Selected Flow](../images/actionSelectedFlow.png) 
 
