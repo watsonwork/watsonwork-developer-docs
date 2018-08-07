@@ -38,9 +38,7 @@ Watson Work Services allows your App to provide handlers for user actions issued
 
 ### Client Action Handlers
 
-Client Action Handlers allow your App to deliver a user experience to a Watson Work Services client. You will need to register 
-a call back URL that the client can invoke for specified actions so that the client can recognize and enable your action for 
-users. Once a user invokes your action through the client, your App can access context. 
+Directly handling a user action allows your App to deliver a user experience via a Watson Work Services client. You will need to register a call back URL that the Work Services client will present typically in a browser/webview context such as a window, iframe, etc. The Work Services client implementation chooses what user gestures and where in the user experience these user actions take place by adhering to a known list of supported user actions by Watson Work Services. The app's handler will get a token code which it will use to obtain context corresponding to the type of action the user took.
 
 Here’s the flow for client action handlers
 
@@ -48,7 +46,9 @@ Here’s the flow for client action handlers
 
 ## Client Action Handler available actions
 
-There are currently two actions available, `space-app-config-requested` and `team-app-config-requested`.
+There are currently two actions available, `space-app-config-requested` and `team-app-config-requested`. Other user actions will soon become available such as clicking on buttons to share resources, etc...
+
+In Summary: this pattern is utilized by Watson Work Services to allow clients adhering to its programming model to be extensible in their user experience by third party applications.
 
 | Action                        | Description       |
 | ----------------------------- |:------------------|
