@@ -5,9 +5,7 @@ is: 'experimental'
 ---
 ## Actions and Events
 
-Your App can Listen to Events, through secure web hooks. Also, your App can handle actions that may be invoked 
-from a Watson Work Services client so that you can provide an experience to users for taking that action, in two ways, 
-using Client Action Handlers or user entered Commands. 
+Watson Work Services gives your App two patterns for dealing with events, which take place either due to changes in the data model and/or due to actions humans take using a participating client in Watson Work Services such as the Workspace clients.
 
 We are standardizing patterns in our programming model and thus the existing App Configuration flow, though is being kept for backwards compatibility, is being incorporated into this new ClientActionHandler flow. It will introduce a change to how to make your app configurable. Currently, in the [Your Apps section](https://developer.watsonwork.ibm.com/apps) there is a section called **Additional Information** where you enter a configuration URL (for configuring your app in a space) and Terms of Services for your app. With this change we will move Terms of Service to it's own section, and remove the **Additional Information** section. The rest of this guide explains what you will do to set up your app to handle user actions regarding App configuration. If you had already establised an app with configuration, you will not need to do anything to continue working as is, and can update your app as needed. 
 
