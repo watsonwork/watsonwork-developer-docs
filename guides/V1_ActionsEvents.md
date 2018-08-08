@@ -76,25 +76,33 @@ To add a Client Action Handler for your App, you need to;
 
 1. Go to Your Apps and choose the App.
 
-![AppConfig Usage Screenshot](../images/AddAction1.png)
+![Your Apps](../images/YourApps1.png)
 
 2. Click Add an Action.
 
-![AppConfig Usage Screenshot](../images/AddAction2.png)
+![My App View](../images/YourApps2.png)
 
-3. Then click Add Client Handler Action URL.
+3. Then click Add a configuration handler.
 
-![AppConfig Usage Screenshot](../images/AddAction3.png)
+![AppConfig Usage Screenshot](../images/AddAction1.png)
 
 4. Add your URL and select at least one of *Space configuration* or *Team configuration*.
 
+![AppConfig Usage Screenshot](../images/AddAction2.png)
+
+5. click Add configuration handler.
+
+![AppConfig Usage Screenshot](../images/AddAction3.png)
+
+6. See a confirmation of the addition.
+
 ![AppConfig Usage Screenshot](../images/AddAction4.png)
 
-5. Click to add it and you will see a confirmation of the addition.
+7. You will see your Client Action Handler...
 
 ![AppConfig Usage Screenshot](../images/AddAction5.png)
 
-6. Click close and you will see your Client Action Handler, which you can Edit or Delete in the future.
+8. ...which you can Edit or Delete in the future.
 
 ![AppConfig Usage Screenshot](../images/AddAction6.png)
 
