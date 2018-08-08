@@ -62,12 +62,12 @@ Here’s the flow for client action handlers
 
 There are currently two actions available, `space-app-config-requested` and `team-app-config-requested`. Other user actions will soon become available such as clicking on buttons to share resources, etc...
 
-In Summary: this pattern is utilized by Watson Work Services to allow clients adhering to its programming model to be extensible in their user experience by third party applications.
-
 | Action                        | Description       |
 | ----------------------------- |:------------------|
 | `space-app-config-requested`  | This registers an action handler to allow your app to be configured for a user in a space. Note that this was previously called the Configuration URL |
 | `team-app-config-requested`   | This registers an action handler to allow your app to be configured for a team, so that a team administrator can set the appropriate configuration for your app for their entire team|
+
+In Summary: this pattern is utilized by Watson Work Services to allow clients adhering to its programming model to be extensible in their user experience by third party applications.
 
 
 ## Adding a client action handler callback
