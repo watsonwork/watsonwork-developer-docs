@@ -32,7 +32,7 @@ Watson Work Services allows your App to provide handlers for user actions issued
 
 ### Implicit Action Handler
 
-These type of user actions are expected to be handled without the need for apps to provide UI code. The app is notified via a webhook and typically provides a declaration of a user experience for the Work Services client to interpret and present to the user. Examples are:
+These type of user actions are expected to be handled without the need for apps to provide UI code. The app is notified via the actionSelected webhook event (currently part of the annotation-added event, but soon to be promoted into its own top level event) and typically provides a declaration of a user experience for the Work Services client to interpret and present to the user (via the createTargetedMessage mutation). Examples are:
 
 1. /commands
 2. actions identified for cognitively detected intents from users utterances in a conversation
