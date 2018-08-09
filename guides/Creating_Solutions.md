@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'creating-solutions'
-is: 'experimental'
+is: 'beta'
 ---
 
 ## Templates - Creating solutions
