@@ -107,7 +107,7 @@ To add a Client Action Handler for your App, you need to;
 ![AppConfig Usage Screenshot](../images/AddAction6.png)
 
 
-### Configuring an app for a space
+## Configuring an app for a space
 
 Having a space configuration can benefit your App in many ways. For example, a scheduling app might need calendar access. 
 Having the user's authorization or credentials is essential for coordinating with third-party services.  
@@ -130,13 +130,13 @@ If your App registers a Client Action Handler URL for configuring a space, then 
   <p><strong>Note:</strong> All members of a space that have `space.app.configure` permission have access to configure an app in the space regardless of who added the app to the space.</p>
 </div>
 
-## Implementing the space configuration page
+### Implementing the space configuration page
 
 First, you need to implement your space configuration page for your App. Read the 
 [Client Action Handler Callback API](./V1_AppActionCallback.md) for more information. Then follow the instructions above
 to add your Client Action Handler URL. Also, you will need to use the [Get Action Context API](./V1_GetActionContext.md) to determine the context information that was passed via the [Client Action Handler Callback API](./V1_AppActionCallback.md) call.
 
-### Configuring your app for a team
+## Configuring your app for a team
 
 You can use Team Configuration to provide an administrator of a team with settings to customize your App for their team. For example, you can use this to allow an administrator to set a particular enterprise library for file sharing, that is unique to their team. This allows you to create a single App that can be built for a variety of teams, instead of having to make one-offs for each team you work with, giving you less work and giving your App broader appeal. 
 
@@ -149,7 +149,7 @@ If your App registers a Client Action Handler URL for team configuration then a 
   <p><strong>Note:</strong> Only people who have have `team.app.configure` permission have access to configure an app for an entire team.</p>
 </div>
 
-## Implementing the team configuration page
+### Implementing the team configuration page
 
 First, you need to implement your team configuration page for your App. Read the 
 [Client Action Handler Callback API](./V1_AppActionCallback.md) for more information. Then follow the instructions above
