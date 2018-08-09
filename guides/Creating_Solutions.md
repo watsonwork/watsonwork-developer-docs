@@ -4,7 +4,7 @@ link: 'creating-solutions'
 is: 'experimental'
 ---
 
-## Creating solutions - Concepts
+## Templates - Creating solutions
 
 Watson Work Services introduce several ingredients that can be combined with other ones to create a particular "solution" to challenges faced by users when executing business processes.
 
@@ -441,3 +441,18 @@ When a user decides to create a new space of type Deal Room they will;
 Once the space is created, the Salesforce App is automatically added to this space. Also the time line is shown in the user experience so all the space members can see and update the timeline in the deal room.
 
 That's the story for creating solutions with Watson Work Services.
+
+Dive into the details here:
+
+- [Create a space template](./V1_create_space_template.md)
+- [Space template](./V1_space_template_main.md)
+- [Space template info](./V1_space_template_info.md)
+- [Get my space templates](./V1_get_my_space_templates.md)
+- [Get offering space templates](./V1_get_offering_space_templates.md)
+- [Get space template](./V1_get_space_template.md)
+- [Creat a space from a template](./V1_create_space_from_template.md)
+- [Delete space template](./V1_delete_space_template.md)
+- [Share space template](./V1_share_space_template.md) `EXPERIMENTAL`
+
+
+
