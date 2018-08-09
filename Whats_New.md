@@ -9,6 +9,7 @@ Keep up to date on what's new in IBM Watson Work Services. We'll list the latest
 
 | Date          | What's new       |
 | ------------- |:-------------|
+| 09.Aug.2018   | Graduated [message reactions](./guides/V1_wwsg_Reactions.md). from `EXPERIMENTAL` to `PUBLISHED` |
 | 11.Jul.2018   | Published [message reactions](./guides/V1_wwsg_Reactions.md). |
 | 11.Jul.2018   | Published [message deletion](./guides/V1_delete_message.md). |
 | 06.Jul.2018   | Added sections for [message editing](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_wwsg_EditingMessages.md) as `EXPERIMENTAL`. |
