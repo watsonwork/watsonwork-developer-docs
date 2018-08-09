@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'reactions-overview'
-is: 'experimental'
+is: 'published'
 ---
 ## Reactions Overview
 
