@@ -67,6 +67,8 @@ There are currently two actions available, `space-app-config-requested` and `tea
 | `space-app-config-requested`  | This registers an action handler to allow your app to be configured for a user in a space. Note that this was previously called the Configuration URL |
 | `team-app-config-requested`   | This registers an action handler to allow your app to be configured for a team, so that a team administrator can set the appropriate configuration for your app for their entire team|
 
+For specific details on these action handlers, read [Configuring an App](./V1_ConfigurationAction.md)
+
 In Summary: this pattern is utilized by Watson Work Services to allow clients adhering to its programming model to be extensible in their user experience by third party applications.
 
 
@@ -178,54 +180,4 @@ If your explicit action takes into account something to do with the space, then 
 ### Continue to the space
 
 When the user is finished with the explicit action for a space, it's a good idea to include an easy way to quickly return to that space. For example, if your App has been made to work with <a href="https://workspace.ibm.com/" target="_blank">Watson Workspace</a> you can do this by providing a link or button back to the space, using the URL pattern `https://workspace.ibm.com/<spaceId>/`.
-
-
-
-## Configuring an app for a space
-
-Having a space configuration can benefit your App in many ways. For example, a scheduling app might need calendar access. 
-Having the user's authorization or credentials is essential for coordinating with third-party services.  
-
-Recognizing user-specific preferences can also enhance your App.  For example, the scheduling app can propose better meeting 
-times when user has already entered their preferred times.
-
-You can even consider customizing your app differently for each space it's been added to.   
-
-A user configuration can take place at two times:
- - when your App is added to a space
- - when a member of a space configures your App in that space
-
-If your App registers a Client Action Handler URL for configuring a space, then users adding it to a space will see a Configure button if they have the `space.app.configure` permission.
-
-![AppConfig Usage Screenshot](../images/ConfigUsage.jpg)
-
-<div class="tip">
-  <img src="https://github.com/watsonwork/watsonwork-developer-docs/images/note_pencil.png" />
-  <p><strong>Note:</strong> All members of a space that have `space.app.configure` permission have access to configure an app in the space regardless of who added the app to the space.</p>
-</div>
-
-### Implementing the space configuration page
-
-First, you need to implement your space configuration page for your App. Read the 
-[Client Action Handler Callback API](./V1_AppActionCallback.md) for more information. Then follow the instructions above
-to add your Client Action Handler URL. Also, you will need to use the [Get Action Context API](./V1_GetActionContext.md) to determine the context information that was passed via the [Client Action Handler Callback API](./V1_AppActionCallback.md) call.
-
-## Configuring your app for a team
-
-You can use Team Configuration to provide an administrator of a team with settings to customize your App for their team. For example, you can use this to allow an administrator to set a particular enterprise library for file sharing, that is unique to their team. This allows you to create a single App that can be built for a variety of teams, instead of having to make one-offs for each team you work with, giving you less work and giving your App broader appeal. 
-
-If your App registers a Client Action Handler URL for team configuration then a team administrator will see a Configure button when they enable your App for their team. 
-
-![AppConfig Usage Screenshot for team](../images/ConfigUsage_admin.jpg)
-
-<div class="tip">
-  <img src="https://github.com/watsonwork/watsonwork-developer-docs/images/note_pencil.png" />
-  <p><strong>Note:</strong> Only people who have have `team.app.configure` permission have access to configure an app for an entire team.</p>
-</div>
-
-### Implementing the team configuration page
-
-First, you need to implement your team configuration page for your App. Read the 
-[Client Action Handler Callback API](./V1_AppActionCallback.md) for more information. Then follow the instructions above
-to add your Client Action Handler URL. Also, you will need to use the [Get Action Context API](./V1_GetActionContext.md) to determine the context information that was passed via the [Client Action Handler Callback API](./V1_AppActionCallback.md) call.
 
