@@ -1,12 +1,12 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'create-space-from-template'
-is: 'experimental'
+is: 'beta'
 ---
 
 # Create a Space from a Template
 
-When you add `EXPERIMENTAL` to the `x-graphql-view` header, a number of additional properties are exposed in the _CreateSpaceInput_ object.
+When you add `BETA` to the `x-graphql-view` header, a number of additional properties are exposed in the _CreateSpaceInput_ object.
 
 ```graphql
 input CreateSpaceInput {
