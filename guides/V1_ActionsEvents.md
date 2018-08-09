@@ -67,7 +67,7 @@ There are currently two actions available, `space-app-config-requested` and `tea
 | `space-app-config-requested`  | This registers an action handler to allow your app to be configured for a user in a space. Note that this was previously called the Configuration URL |
 | `team-app-config-requested`   | This registers an action handler to allow your app to be configured for a team, so that a team administrator can set the appropriate configuration for your app for their entire team|
 
-For specific details on these action handlers, read [Configuring an App](./V1_ConfigurationAction.md)
+For specific details on these action handlers, read [Configuring an App](./V1_ConfigurationAction.md).
 
 In Summary: this pattern is utilized by Watson Work Services to allow clients adhering to its programming model to be extensible in their user experience by third party applications.
 
