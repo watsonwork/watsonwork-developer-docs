@@ -92,4 +92,4 @@ type SpaceListPropertyAcceptableValue {
 }
 ```
 
-Try adding these fields to a _space_ query in <a href="https://developer.watsonwork.ibm.com/tools/graphql?apiType=experimental" target="_blank">our GraphQL Explorer</a>.
+Try adding these fields to a _space_ query in <a href="https://developer.watsonwork.ibm.com/tools/graphql?apiType=beta" target="_blank">our GraphQL Explorer</a>.
