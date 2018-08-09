@@ -44,4 +44,4 @@ input SpaceStatusValueInput {
 
 The _statusValueId_ should be the id of one of the acceptable status values defined in the template.
 
-Try creating and updating a space from a template in <a href="https://developer.watsonwork.ibm.com/tools/graphql?apiType=experimental" target="_blank">our GraphQL Explorer</a>.
+Try creating and updating a space from a template in <a href="https://developer.watsonwork.ibm.com/tools/graphql?apiType=beta" target="_blank">our GraphQL Explorer</a>.
