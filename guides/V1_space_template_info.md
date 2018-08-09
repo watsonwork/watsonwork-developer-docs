@@ -1,12 +1,12 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'space-template-info'
-is: 'experimental'
+is: 'beta'
 ---
 
 # Space Template Info
 
-A number of additional properties of a _Space_ object are exposed when you add `EXPERIMENTAL` to the `x-graphql-view` header.
+A number of additional properties of a _Space_ object are exposed when you add `BETA` to the `x-graphql-view` header.
 
 ```graphql
 type Space {
