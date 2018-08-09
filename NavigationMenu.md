@@ -21,7 +21,8 @@
   * [Delete a space](./guides/V1_delete_space.md)
   * [Listen to events in a space](./guides/V1_wwsg_Webhooks.md)
   
-* ## [Create a space template](./guides/V1_create_space_template.md)
+* ## [ Templates - Creating Solutions](./guides/Creating_Solutions.md) 
+  * [Create a space template](./guides/V1_create_space_template.md)
   * [Space template](./guides/V1_space_template_main.md)
   * [Space template info](./guides/V1_space_template_info.md)
   * [Get my space templates](./guides/V1_get_my_space_templates.md)
