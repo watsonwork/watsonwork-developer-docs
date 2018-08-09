@@ -46,7 +46,24 @@ You can use Team Configuration to provide an administrator of a team with settin
 
 If your App registers a Client Action Handler URL for team configuration then a team administrator will see a Configure button when they enable your App for their team. 
 
-![AppConfig Usage Screenshot for team](../images/ConfigUsage_admin.jpg)
+They will follow this flow...
+
+1. Open up the settings panel in Workspace and select **Admin Portal**.
+
+![Workspace Settings Panel](../images/WorkspacePanel.png)
+
+2. In the Admin Portal, select Manage Apps
+
+![Admin Portal](../images/TeamAdmin1.png)
+
+3. Now seeing the list, Admin can select an app and...
+
+![Admin Portal](../images/AdminListX.png)
+
+4. ...and go through the team configuration experience
+
+![Admin Portal](../images/AdminListX2.png)
+
 
 <div class="tip">
   <img src="https://github.com/watsonwork/watsonwork-developer-docs/images/note_pencil.png" />
