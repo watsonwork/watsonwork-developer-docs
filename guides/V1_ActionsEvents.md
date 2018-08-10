@@ -35,9 +35,8 @@ Watson Work Services allows your App to provide handlers for user actions issued
 These type of user actions are expected to be handled without the need for apps to provide UI code. The app is notified via the actionSelected webhook event (currently part of the annotation-added event, but soon to be promoted into its own top level event) and typically provides a declaration of a user experience for the Work Services client to interpret and present to the user (via the createTargetedMessage mutation). Examples are:
 
 1. /commands
-2. actions identified for cognitively detected intents from users utterances in a conversation
-3. clicking on buttons associated with actions presented via declarative UI
-
+2. actions corresponding to cognitively detected intents from users' statements in a conversation
+3. actions corresponding to Action Fulfillment UI elements
 
 **/Command flow**
 
@@ -58,6 +57,8 @@ Here’s the flow for client action handlers
 
 ![Client Action Handler Flow](../images/ClientActionHandlerFlow.png)
 
+In Summary: this pattern is utilized by Watson Work Services to allow clients adhering to its programming model to be extensible in their user experience by third party applications.
+
 ## Explicit Action Handler available actions
 
 There are currently two actions available, `space-app-config-requested` and `team-app-config-requested`. Other user actions will soon become available such as clicking on buttons to share resources, etc...
@@ -69,7 +70,6 @@ There are currently two actions available, `space-app-config-requested` and `tea
 
 For specific details on these action handlers, read [Configuring an App](./V1_ConfigurationAction.md).
 
-In Summary: this pattern is utilized by Watson Work Services to allow clients adhering to its programming model to be extensible in their user experience by third party applications.
 
 
 ## Adding a client action handler callback
@@ -134,11 +134,10 @@ Making an endpoint publicly available has security risks; for example, your endp
 Use the url parameter `actionToken` and utilize Watson Work Services to verify the call.
 Authorize your app [as an App](../references/V1_oauth_token_client_credentials.yml) and access the action data with the `actionToken` - see [Get Action Context](./V1_GetActionContext.md).
 If the access to the action data is successful, then you can be sure that the call has been triggered by Watson Workspace.
-You will also get the action context data, which may include things like `spaceId` and `userId`.  `spaceId` is the unique ID of the space for which the action has been triggered.  While `userId` is the unique ID of the user who triggers the action.
 
 <div class="tip">
   <img src="https://github.com/watsonwork/watsonwork-developer-docs/images/note_pencil.png" />
-  <p><strong>Note:</strong> If the implementation of the your explicit action handler page is still based on a version prior to 1.1.0 of the <a href="https://developer.watsonwork.ibm.com/docs/apps/get-action-context>Get Actiopn Context API</a>, then you have to do the oauth flow to verify the caller as a user of Watson Work Services, to obtain the user id and name, and to establish a link between the user's ID and the user's name.</p>
+  <p><strong>Note:</strong> If the implementation of the your explicit action handler page is still based on a version prior to 1.1.0 of the <a href="https://developer.watsonwork.ibm.com/docs/apps/get-action-context>Get Action Context API</a>, then you have to do the oauth flow to verify the caller as a user of Watson Work Services, to obtain the user id and name, and to establish a link between the user's ID and the user's name.</p>
 </div>
 
 
