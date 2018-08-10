@@ -29,10 +29,10 @@ GET /v1/apps/{appId}/getActionContext/{actionHandlerContextToken}
 
 |HTTP Code|Description|Schema|
 |---|---|---|
-|**200**|The configuration data is returned and deleted successfully.|[ConfigurationData](#action-output-entity)|
+|**200**|The action context data is returned and deleted successfully.|[Action Output Entity](#action-output-entity)|
 |**401**|Unauthorized.||
 |**403**|Forbidden.||
-|**404**|Not Found. The app with the given `appId` or the configuration data for the given `configurationToken` could not be found.||
+|**404**|Not Found. The app with the given `appId` or the action context data for the given `actionToken` could not be found.||
 |**500**|Internal server error.||
 
 #### Produces
