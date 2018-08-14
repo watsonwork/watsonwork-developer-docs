@@ -79,7 +79,7 @@ The **actionContext** format for `team-app-config-requested` action type
 
 |Name|Description|Schema|
 |---|---|---|
-|**teamId** <br>*required*|Id of the team where the user invoked the app configuratoin |string|
+|**teamId** <br>*required*|Id of the team where the user invoked the app configuration |string|
 
 
 
