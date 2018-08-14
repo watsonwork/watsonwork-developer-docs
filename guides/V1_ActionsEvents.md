@@ -60,7 +60,7 @@ Watson Work Services allows your App to provide handlers for user actions issued
 
 These type of user actions are expected to be handled without the need for apps to provide UI code. The app is notified via the actionSelected webhook event (currently part of the annotation-added event, but soon to be promoted into its own top level event) and typically provides a declaration of a user experience for the Work Services client to interpret and present to the user (via the createTargetedMessage mutation). Examples are:
 
-1. /commands (you can see details on this here [Slash Commands](./guides/slash_commands.md)
+1. /commands (you can see details on this here [Slash Commands](./slash_commands.md)
 2. actions corresponding to cognitively detected intents from users' statements in a conversation
 3. actions corresponding to Action Fulfillment UI elements
 
