@@ -25,8 +25,6 @@ A user configuration can take place at two times:
  - when your App is added to a space
  - when a member of a space configures your App in that space
 
-If your App registers a Client Action Handler URL for configuring a space, then users adding it to a space will see a Configure button if they have the `space.app.configure` permission.
-
 ![AppConfig Usage Screenshot](../images/ConfigUsage.jpg)
 
 <div class="tip">
