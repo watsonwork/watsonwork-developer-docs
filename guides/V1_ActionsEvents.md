@@ -9,6 +9,32 @@ Watson Work Services gives your App two patterns for dealing with events, which 
 
 We are standardizing patterns in our programming model and thus the existing App Configuration flow, though is being kept for backwards compatibility, is being incorporated into this new ClientActionHandler flow. It will introduce a change to how to make your app configurable. Currently, in the [Your Apps section](https://developer.watsonwork.ibm.com/apps) there is a section called **Additional Information** where you enter a configuration URL (for configuring your app in a space) and Terms of Services for your app. With this change we will move Terms of Service to it's own section, and remove the **Additional Information** section. The rest of this guide explains what you will do to set up your app to handle user actions regarding App configuration. If you had already establised an app with configuration, you will not need to do anything to continue working as is, and can update your app as needed. 
 
+There are three main concepts to Actions
+
+| Concept                       | Description       |
+| ----------------------------- |:------------------|
+| **Declare**                   | The developer will declare their app will handle an action, either **/Commands** or **Actions from detected intents** or **Action Fulfillment UI**. |
+| **Action Handling**           | This is the act of handling actions fired based on what the developer has declared above. |
+| **Action User Experience**    | Here we have two ways that actions can be exposed in the User Experience. <br><br>**Implicit** where a Watson Work Services client will handle the actual User Experience rendering and interaction. <br>**Explicit** where your app will be invoked from a Watson Work Services client to inject a User Experience via URL. |
+
+
+Here you can see how these three concepts come into play
+
+**/Command flow**
+
+
+![Command Flow](../images/CommandFlow.png)
+
+**Action selected flow**
+
+![Action Selected Flow](../images/actionSelectedFlow.png) 
+
+**Client action handlers**
+
+![Client Action Handler Flow](../images/ClientActionHandlerFlow.png)
+
+
+
 ## Listen to Events
 
 In our programming model we refer to Events in general, as those triggered based on changes to the data model regardless of the source of that change (ie. a human using a client, an app on a schedule, etc...). One exception is the actionSelected event which makes no changes to the data model and is referred to later in this guide.
@@ -34,28 +60,16 @@ Watson Work Services allows your App to provide handlers for user actions issued
 
 These type of user actions are expected to be handled without the need for apps to provide UI code. The app is notified via the actionSelected webhook event (currently part of the annotation-added event, but soon to be promoted into its own top level event) and typically provides a declaration of a user experience for the Work Services client to interpret and present to the user (via the createTargetedMessage mutation). Examples are:
 
-1. /commands
+1. /commands (you can see details on this here [Slash Commands](./guides/slash_commands.md)
 2. actions corresponding to cognitively detected intents from users' statements in a conversation
 3. actions corresponding to Action Fulfillment UI elements
 
-**/Command flow**
 
 
-![Command Flow](../images/CommandFlow.png)
-
-
-**Action Selected flow**
-
-
-![Action Selected Flow](../images/actionSelectedFlow.png) 
 
 ### Explicit Action Handler
 
 Directly handling a user action allows your App to deliver a user experience via a Watson Work Services client. You will need to register a call back URL that the Work Services client will present typically in a browser/webview context such as a window, iframe, etc. The Work Services client implementation chooses what user gestures and where in the user experience these user actions take place by adhering to a known list of supported user actions by Watson Work Services. The app's handler will get a token code which it will use to obtain context corresponding to the type of action the user took.
-
-Here’s the flow for client action handlers
-
-![Client Action Handler Flow](../images/ClientActionHandlerFlow.png)
 
 In Summary: this pattern is utilized by Watson Work Services to allow clients adhering to its programming model to be extensible in their user experience by third party applications.
 
