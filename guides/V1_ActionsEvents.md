@@ -13,19 +13,19 @@ There are three main concepts to Actions
 
 | Concept                       | Description       |
 | ----------------------------- |:------------------|
-| **Declare**                   | The developer will declare their app will handle an action, either **/Commands** or **Actions from detected intents** or **Action Fulfillment UI**. |
+| **Declare**                   | The developer will declare their app will handle an action via various constructs provided in the developer user experience such as:<br>/Commands that trigger an Action Fulfillment experience <br>Cognitively detected actions from Watson Assistant training<br>Action Fulfillment UI elements such as buttons, etc<br>Client provided actions such as App Configuration and Sharing Resources |
 | **Action Handling**           | This is the act of handling actions fired based on what the developer has declared above. |
-| **Action User Experience**    | Here we have two ways that actions can be exposed in the User Experience. <br><br>**Implicit** where a Watson Work Services client will handle the actual User Experience rendering and interaction. <br>**Explicit** where your app will be invoked from a Watson Work Services client to inject a User Experience via URL. |
+| **Action User Experience**    | There are two approaches to handle and present a user experience to satisfy an action. <br><br>**Implicit** where a Watson Work Services client will handle the actual User Experience rendering and interaction. <br>**Explicit** where your app will be invoked from a Watson Work Services client to inject a User Experience via URL. |
 
 
-Here you can see how these three concepts come into play
+Here you can see how these three concepts come into play via these examples:
 
 **/Command flow**
 
 
 ![Command Flow](../images/CommandFlow.png)
 
-**Action selected flow**
+**Cognitively detected actions flow**
 
 ![Action Selected Flow](../images/actionSelectedFlow.png) 
 
