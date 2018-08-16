@@ -88,7 +88,9 @@ For specific details on these action handlers, read [Configuring an App](./V1_Co
 
 ## Adding a client action handler callback
 
-To add a Client Action Handler for your App, you need to;
+The current design of the developer experience is simplified and presents the capability to declare handlers for client provided actions as one focused on app configuration as these are currently the only types of actions supported. This experience will evolve as more capabilities such as sharing resources are added. 
+
+To add a Client Action Handler for Configuring your App, you need to:
 
 1. Go to Your Apps and choose the App.
 
