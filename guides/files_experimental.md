@@ -7,7 +7,7 @@ is: 'experimental'
 
 # Files in IBM Watson Work Services
 
-**Note: This documentation and underlying APIs and structures ARE subject to change**
+**Note: OBSOLETE. Need to update to GraphQL variant.  This documentation and underlying APIs and structures ARE subject to change**
 
 ## Concepts
 
