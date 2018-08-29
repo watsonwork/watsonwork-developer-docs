@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2017'
 link: 'get-a-list-of-moments'
-is: 'beta'
+is: 'published'
 ---
 ## Get a list of moments
 
@@ -66,4 +66,8 @@ query getMoments($spaceId: String!) {
 
 ```
 
-Try it out with our GraphQL tool - <a href="https://developer.watsonwork.ibm.com/tools/graphql?query=query%20getMoments(%24spaceId%3A%20String!)%20%7B%0A%20%20moments(spaceId%3A%20%24spaceId)%20%7B%0A%20%20%20%20items%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20live%0A%20%20%20%20%20%20startTime%0A%20%20%20%20%20%20endTime%0A%20%20%20%20%20%20keyMessage%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20content%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20summaryPhrases(first%3A%203)%20%7B%0A%20%20%20%20%20%20%20%20label%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20participants(first%3A%2010)%20%7B%0A%20%20%20%20%20%20%20%20user%20%7B%0A%20%20%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20%20%20displayName%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20messageCount%0A%20%20%20%20%20%20%20%20viaAppUsers%20%7B%0A%20%20%20%20%20%20%20%20%20%20displayName%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20priority%20%7B%0A%20%20%20%20%20%20%20%20predicted%0A%20%20%20%20%20%20%20%20support%20%7B%0A%20%20%20%20%20%20%20%20%20%20category%0A%20%20%20%20%20%20%20%20%20%20...%20on%20SupportingParticipant%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20person%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20displayName%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20...%20on%20SupportingPhrase%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20label%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=getMoments" target="_blank">Get a list of moments</a>
+Get a list of moments in a space, see it in action with our GraphQL tool.
+
+<div class="try-it-now">
+      <a href="https://developer.watsonwork.ibm.com/tools/graphql?query=query%20getMoments(%24spaceId%3A%20String!)%20%7B%0Amoments(spaceId%3A%20%24spaceId)%20%7B%0Aitems%20%7B%0Aid%0Alive%0AstartTime%0AendTime%0AkeyMessage%20%7B%0Aid%0Acontent%0A%7D%0AsummaryPhrases(first%3A%203)%20%7B%0Alabel%0A%7D%0Aparticipants(first%3A%2010)%20%7B%0Auser%20%7B%0Aid%0AdisplayName%0A%7D%0AmessageCount%0AviaAppUsers%20%7B%0AdisplayName%0A%7D%0A%7D%0Apriority%20%7B%0Apredicted%0Asupport%20%7B%0Acategory%0A...%20on%20SupportingParticipant%20%7B%0Aperson%20%7B%0AdisplayName%0A%7D%0A%7D%0A...%20on%20SupportingPhrase%20%7B%0Alabel%0A%7D%0A%7D%0A%7D%0A%7D%0A%7D%0A%7D" target="_blank">Try it now</a>
+</div>

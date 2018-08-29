@@ -1,16 +1,9 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'moment'
-is: 'beta'
+is: 'published'
 ---
 # Moment
-
-**NOTE**: This graphql object is currently in `BETA` release and is only available with the following http request header:
-
-      x-graphql-view: BETA
-
-or with <a href="https://developer.watsonwork.ibm.com/tools/graphql?apiType=beta" target="_blank" >apiType=beta on the graphical GraphQL tool URL</a>.
-
 
 Watson Work Services analyzes messages in each space to identify **moments**.
 
@@ -25,7 +18,7 @@ The [Conversation](./guides/V1_conversation_main.md) object also references the 
 | property      | type          | description  |
 | ------------- |:------------- |:-----|
 | id | ID | The unique ID for this moment. The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. |
-| live | Boolean | The status whether this moment is still under updating |
+| live | Boolean | True indicates this moment is ongoing and may receive updates |
 | startTime | Date | Date and time this moment started |
 | endTime | Date | Date and time this moment ended |
 | keyMessage | Message | A messages which is most representative of the discussion in the moment |
@@ -42,6 +35,8 @@ The [Conversation](./guides/V1_conversation_main.md) object also references the 
 | label | String | The display string of this phrase |
 | score | Float | The confidence of this phrase, if applicable |
 
+An line fragment can be used to see more details for each type of SummaryPhrase. See also https://graphql.org/learn/queries/#inline-fragments.
+
 ### Keyword (implements SummaryPhrase)
 
 The keyword interface is used to distinguish a keyword summary phrase, but currently adds no unique properties of its own.
@@ -50,7 +45,6 @@ The keyword interface is used to distinguish a keyword summary phrase, but curre
 | property      | type          | description  |
 | ------------- |:------------- |:-----|
 | count | Int | The count of this entity phrase in the moment |
-
 
 ## Participant
 | property      | type          | description  |
