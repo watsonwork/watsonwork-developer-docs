@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'team-space-templates'
-is: 'future'
+is: 'experimental'
 ---
 
 # Get Team Space Templates
@@ -25,7 +25,7 @@ type QueryRoot {
 ~~~~
 Method: POST
 URL: https://api.watsonwork.ibm.com/graphql
-Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, FUTURE'
+Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIMENTAL'
 Body:
 {
   teamSpaceTemplates(teamId: "myTeamId") {
