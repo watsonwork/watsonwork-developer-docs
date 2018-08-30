@@ -28,7 +28,7 @@
   * [Get my space templates](./guides/V1_get_my_space_templates.md)
   * [Get offering space templates](./guides/V1_get_offering_space_templates.md)
   * [Get space template](./guides/V1_get_space_template.md)
-  * [Creat a space from a template](./guides/V1_create_space_from_template.md)
+  * [Create a space from a template](./guides/V1_create_space_from_template.md)
   * [Delete space template](./guides/V1_delete_space_template.md)
 
 * ## [Conversation](./guides/V1_conversation_main.md)
