@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'remove-a-reaction'
-is: 'experimental'
+is: 'published'
 ---
 
 # Remove a Reaction
@@ -43,7 +43,7 @@ type RemoveReactionInput {
 ~~~~
 Method: POST
 URL: https://api.watsonwork.ibm.com/graphql
-Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIMENTAL'
+Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC'
 Body:
 {
   mutation {

@@ -31,9 +31,11 @@ Available events are:
 
 **message-created**: each time a new message is created in the space
 
-**message-deleted**: each time a message is deleted from the space. Please note that the **message-deleted** event API is currently `experimental` and subject to change. It is being included here to engage developers early with this API.
+**message-deleted**: each time a message is deleted from the space. 
 
-**message-edited**: each time message content is edited in the space. Please note that the triggering of **message-edited** events takes place due to a change in the data model via Administrator action, End User action or through an API call. Currently only Administrator actions are implemented
+**message_edited**: each time a message is edited (EVENT is EXPERIMENTAL)
+Please note that the triggering of **message-edited** events takes place due to a change in the data model via Administrator action, End User action or through an API call.
+_Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 **space-members-added**: each time a member is added to the space
 
@@ -49,13 +51,10 @@ Available events are:
 
 **message-annotation-removed**: each time an annotation is removed from a message
 
-**reaction_added**: each time a reaction is added to a message (API is EXPERIMENTAL)
+**reaction_added**: each time a reaction is added to a message
 
-**reaction_removed**: each time a reaction is removed from a message (API is EXPERIMENTAL)
+**reaction_removed**: each time a reaction is removed from a message
 
-**message_edited**: each time a message is updated (EVENT is EXPERIMENTAL)
-
-_Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 Details about event notification requests are described in the [Webhooks API Reference](../references/V1_OutboundCallback.yml).
 

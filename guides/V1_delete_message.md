@@ -1,7 +1,7 @@
 ---
-copyright: 'Copyright IBM Corp. 2017'
+copyright: 'Copyright IBM Corp. 2017, 2018'
 link: 'delete-a-message'
-is: 'future'
+is: 'published'
 ---
 
 # Delete a message
@@ -36,7 +36,7 @@ type DeleteMessageInput {
 ~~~~
 Method: POST
 URL: https://api.watsonwork.ibm.com/graphql
-Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIMENTAL'
+Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC'
 Body:
 {
   mutation {

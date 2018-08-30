@@ -27,6 +27,18 @@
 * ## [Message](./guides/V1_message_main.md)
   * [Send a message into a conversation](./guides/V1_wwsg_Spaces.md)
   * [View a message from a conversation](./guides/V1_get_message.md)
+  * [Delete a message](./guides/V1_delete_message.md)
+  * [Event for message deletion](./guides/V1_wwsg_Webhooks.md)
+  * [Retrieving soft-deleted with message](./guides/V1_message_main.md)
+  
+
+* ## [Reactions](./guides/V1_wwsg_Reactions.md)
+  * [Add a reaction to a message](./guides/V1_Add_Reaction.md)
+  * [Remove a reaction from a message](./guides/V1_Remove_Reaction.md)
+  * [Get users reacting to a message](./guides/V1_Reacting_Users.md)
+  * [Events for reactions](./guides/V1_wwsg_Webhooks.md)
+  * [Retrieving reactions with a message](./guides/V1_message_main.md)
+  
 
 * ## [People](./guides/V1_people_main.md)
   * [Get user information](./guides/V1_get_user.md)
