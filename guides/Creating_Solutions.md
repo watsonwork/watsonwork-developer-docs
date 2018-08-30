@@ -449,6 +449,7 @@ Dive into the details here:
 - [Space template info](./V1_space_template_info.md)
 - [Get my space templates](./V1_get_my_space_templates.md)
 - [Get offering space templates](./V1_get_offering_space_templates.md)
+- [Get team templates](./V1_get_team_space_templates.md) `EXPERIMENTAL`
 - [Get space template](./V1_get_space_template.md)
 - [Creat a space from a template](./V1_create_space_from_template.md)
 - [Delete space template](./V1_delete_space_template.md)
