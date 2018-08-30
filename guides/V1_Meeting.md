@@ -43,6 +43,32 @@ type DialInNumber {
 
 ```
 
+## Field definitions
+
+# Meeting
+|Name|Description|Schema|
+|---|---|---|---|
+|**active**|Whether the meeting is currently active|**Boolean** <br>_required_|
+|**meetingNumber**|If a meeting is active, the a string of digits representing the Zoom meeting|**String**|
+|**password** |If a meeting is active, the password required to join the Zoom meeting|**String**|
+|**allowPublic** |Whether the meeting can be joined by non-members of the space|**Boolean** <br>_required_|
+|**startTime** |The start date/time of the meeting |**Date**|
+|**joinInfo** |Join details about the active meeting |**JoinInfo**|
+
+# JoinInfo
+|Name|Description|Schema|
+|---|---|---|---|
+|**meetingProviderJoinUrl**|A URL which can be used to directly joint he meeting in a browser|**String**|
+|**pstnPasscode**|If required, the DTMF digits necessary to join a meeting via a phone dial in|**String**|
+|**dialInNumbers**|An array of DialInNumber objects|** DialInNumber** array|
+
+# DialInNumber
+|Name|Description|Schema|
+|---|---|---|---|
+|**countryCode**|Two character country code where the number resides|**String** <br>_required_|
+|**number**|E.164 phone number which can be used to dial into the meeting|**String** <br>_required_|
+
+
 ## Example Request
 
 ~~~~

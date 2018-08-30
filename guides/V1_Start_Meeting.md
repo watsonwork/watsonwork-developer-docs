@@ -22,10 +22,26 @@ type MutationRoot {
   startMeeting(input: StartMeetingInput!): MeetingMutationOutput
 }
 
+type StartMeetingInput {
+  spaceId: ID!
+}
+
 type MeetingMutationOutput {
   accepted: Boolean!
 }
 ```
+
+## Field definitions
+
+# StartMeetingInput
+|Name|Description|Schema|
+|---|---|---|---|
+|**spaceId**|Space ID of the space in which to start a meeting|**String** <br>_required_|
+
+# MeetingMutationOutput
+|Name|Description|Schema|
+|---|---|---|---|
+|**accepted**|Whether the request to start a meeting was accepted for processing|**Boolean** <br>_required_|
 
 ## Example Request
 
