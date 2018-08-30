@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'reacting-users'
-is: 'experimental'
+is: 'published'
 ---
 
 # Query for Users Reacting to a Message
@@ -40,7 +40,7 @@ type ReactingUserCollection {
 ~~~~
 Method: POST
 URL: https://api.watsonwork.ibm.com/graphql
-Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIMENTAL'
+Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC'
 Body:
 {
   query {
