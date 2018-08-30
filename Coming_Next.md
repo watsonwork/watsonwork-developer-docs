@@ -9,7 +9,6 @@ Here’s the stuff we’re working on next for you and IBM Watson Work Services.
 
 | Coming Next   |
 | :-------------|
-| **Creating Solutions.** We're adding a guide that helps you to develop solutions, based on the work we're doing on **Templates**. For now, it's `EXPERIMENTAL` and you can find it here, [Creating Solutions](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/Creating_Solutions.md).  |
 | **Editing a Message.** It's `EXPERIMENTAL` but you can check it out here, [Editing Messages](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_wwsg_EditingMessages.md). We have [Update Message](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_UpdateMessage.md) and changes to [Messages](./guides/V1_message_main.md) adding **contentUpdated** field and [Listening for Events](./guides/V1_wwsg_Webhooks.md) adding **message-edited**.              |
 
 
