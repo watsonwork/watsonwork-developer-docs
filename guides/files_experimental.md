@@ -12,7 +12,7 @@ is: 'experimental'
 ## Concepts
 
 - Files can exist in a number of external repositories with various degrees of integration capabilities
-- IBM Watson Work Services _provides_ a default Files repository which we will which we will refer to as **Files** in this document
+- IBM Watson Work Services _provides_ a default Files repository which we will refer to as **Files** in this document
 - Files are related to the rest of the object model in Watson Work Services by virtue of two connecting points:
   - a reference to them as part of markdown in a conversation message
   - an annotation of type `File` to a conversation message
