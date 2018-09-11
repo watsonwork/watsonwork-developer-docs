@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'offering-space-templates'
-is: 'experimental'
+is: 'beta'
 ---
 
 # Get Offering Space Templates
@@ -26,7 +26,7 @@ type QueryRoot {
 ~~~~
 Method: POST
 URL: https://api.watsonwork.ibm.com/graphql
-Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIMENTAL'
+Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, BETA'
 Body:
 {
   offeringSpaceTemplates {

@@ -20,6 +20,16 @@
   * [Get a list of spaces](./guides/V1_get_spaces.md)
   * [Delete a space](./guides/V1_delete_space.md)
   * [Listen to events in a space](./guides/V1_wwsg_Webhooks.md)
+  
+* ## [ Templates - Creating Solutions](./guides/Creating_Solutions.md) 
+  * [Create a space template](./guides/V1_create_space_template.md)
+  * [Space template](./guides/V1_space_template_main.md)
+  * [Space template info](./guides/V1_space_template_info.md)
+  * [Get my space templates](./guides/V1_get_my_space_templates.md)
+  * [Get offering space templates](./guides/V1_get_offering_space_templates.md)
+  * [Get space template](./guides/V1_get_space_template.md)
+  * [Create a space from a template](./guides/V1_create_space_from_template.md)
+  * [Delete space template](./guides/V1_delete_space_template.md)
 
 * ## [Conversation](./guides/V1_conversation_main.md)
   * [View the conversation in a space](./guides/V1_get_conversation.md)

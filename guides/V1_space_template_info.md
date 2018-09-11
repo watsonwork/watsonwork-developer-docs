@@ -1,12 +1,12 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'space-template-info'
-is: 'experimental'
+is: 'beta'
 ---
 
 # Space Template Info
 
-A number of additional properties of a _Space_ object are exposed when you add `EXPERIMENTAL` to the `x-graphql-view` header.
+A number of additional properties of a _Space_ object are exposed when you add `BETA` to the `x-graphql-view` header.
 
 ```graphql
 type Space {
@@ -92,4 +92,9 @@ type SpaceListPropertyAcceptableValue {
 }
 ```
 
-Try adding these fields to a _space_ query in <a href="https://developer.watsonwork.ibm.com/tools/graphql?apiType=experimental" target="_blank">our GraphQL Explorer</a>.
+Try adding these fields to a _space_ query in our GraphQL Explorer - copy above and click below to construct one.
+   
+<div class="try-it-now">
+  <a href="https://developer.watsonwork.ibm.com/tools/graphql?apiType=beta" target="_blank">Try it now</a>
+</div>
+  

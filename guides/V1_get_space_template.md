@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'get-space-template'
-is: 'experimental'
+is: 'beta'
 ---
 
 # Get Space Template
@@ -25,7 +25,7 @@ type QueryRoot {
 ~~~~
 Method: POST
 URL: https://api.watsonwork.ibm.com/graphql
-Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIMENTAL'
+Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, BETA'
 Body:
 {
   spaceTemplate(id: "template-id") {
