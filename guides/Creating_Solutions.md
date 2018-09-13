@@ -444,14 +444,14 @@ That's the story for creating solutions with Watson Work Services.
 
 Dive into the details here:
 
-- [Create a space template](./V1_create_space_template.md)
-- [Space template](./V1_space_template_main.md)
-- [Space template info](./V1_space_template_info.md)
-- [Get my space templates](./V1_get_my_space_templates.md)
-- [Get offering space templates](./V1_get_offering_space_templates.md)
+- [Create a space template](../guides/V1_create_space_template.md)
+- [Space template](../guides/V1_space_template_main.md)
+- [Space template info](../guides/V1_space_template_info.md)
+- [Get my space templates](../guides/V1_get_my_space_templates.md)
+- [Get offering space templates](../guides/V1_get_offering_space_templates.md)
 - [Get team templates](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_get_team_space_templates.md) `EXPERIMENTAL`
-- [Get space template](./V1_get_space_template.md)
-- [Create a space from a template](./V1_create_space_from_template.md)
-- [Delete space template](./V1_delete_space_template.md)
+- [Get space template](../guides/V1_get_space_template.md)
+- [Create a space from a template](../guides/V1_create_space_from_template.md)
+- [Delete space template](../guides/V1_delete_space_template.md)
 - [Share space template](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_share_space_template.md) `EXPERIMENTAL`
 
