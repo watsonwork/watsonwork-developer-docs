@@ -76,11 +76,11 @@ Right now you can use our API and GraphQL tool to design and create your Templat
 mutation {
   createSpaceTemplate(input:
     {
-      	name: "Deal Room",
-      	description: "A space for deals.",
-      	spaceStatus:
-      	{
-          	acceptableValues: [
+        name: "Deal Room",
+        description: "A space for deals.",
+        spaceStatus:
+        {
+            acceptableValues: [
               {displayName: "Prospecting"},
               {displayName: "Qualifying"},
               {displayName: "Needs Analysis"},
@@ -89,28 +89,28 @@ mutation {
               {displayName: "Won/Closed"}
             ]
         },
-				properties:
-      	{
-          	properties: [
+        properties:
+        {
+            properties: [
               {textProperty: {displayName: "Opportunity ID", defaultValue: "none"}},
               {textProperty: {displayName: "Contact count", defaultValue: "none"}},
- 							{listProperty:
+              {listProperty:
                 {
                 displayName: "Deal temperature"
-          			acceptableValues:[
-            			{displayName:"OK"},
-            			{displayName:"Great"},
+                acceptableValues:[
+                  {displayName:"OK"},
+                  {displayName:"Great"},
                   {displayName:"At risk"}
-          			]
-                }}  
+                ]
+                }}
             ]
         }
       requiredApps:
       {
-        	apps:
-            	{id: "36a3ca38-fa32-43df-b28e-2fef7141c56f"}
+          apps:
+              {id: "36a3ca38-fa32-43df-b28e-2fef7141c56f"}
       }})
-  	{
+    {
     spaceTemplate {
       id
       name
@@ -260,16 +260,16 @@ Once you’ve created your template - you have a the means to create spaces of t
 ``` GraphQL
 mutation createSpace {
   createSpace(input: {
-    title: "Acme Super Deal",  
+    title: "Acme Super Deal",
     members: [""],
-  	templateId : "43101971-4d6e-11e8-9612-17ab710fbd53",
+    templateId : "43101971-4d6e-11e8-9612-17ab710fbd53",
     visibility : PRIVATE,
-		propertyValues: [
+    propertyValues: [
       {
         propertyId: "a3f5ad57-5c7a-4404-a308-9d8ad8571eb2",
         propertyValueId: "0000001"
       },
-    	{
+      {
         propertyId: "45dd2253-1963-463d-af1d-c978162ed48a",
         propertyValueId: "0"
       },
@@ -444,16 +444,14 @@ That's the story for creating solutions with Watson Work Services.
 
 Dive into the details here:
 
-- [Create a space template](./V1_create_space_template.md)
-- [Space template](./V1_space_template_main.md)
-- [Space template info](./V1_space_template_info.md)
-- [Get my space templates](./V1_get_my_space_templates.md)
-- [Get offering space templates](./V1_get_offering_space_templates.md)
-- [Get team templates](./V1_get_team_space_templates.md) `EXPERIMENTAL`
-- [Get space template](./V1_get_space_template.md)
-- [Create a space from a template](./V1_create_space_from_template.md)
-- [Delete space template](./V1_delete_space_template.md)
-- [Share space template](./V1_share_space_template.md) `EXPERIMENTAL`
-
-
+- [Create a space template](../guides/V1_create_space_template.md)
+- [Space template](../guides/V1_space_template_main.md)
+- [Space template info](../guides/V1_space_template_info.md)
+- [Get my space templates](../guides/V1_get_my_space_templates.md)
+- [Get offering space templates](../guides/V1_get_offering_space_templates.md)
+- [Get team templates](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_get_team_space_templates.md) `EXPERIMENTAL`
+- [Get space template](../guides/V1_get_space_template.md)
+- [Create a space from a template](../guides/V1_create_space_from_template.md)
+- [Delete space template](../guides/V1_delete_space_template.md)
+- [Share space template](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/guides/V1_share_space_template.md) `EXPERIMENTAL`
 
