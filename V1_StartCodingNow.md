@@ -109,4 +109,4 @@ request(authenticationOptions, function(err, response, body){
 5. Install the Node `request` library. Enter `npm install request`.
 6. Using the name of the file that you saved the above code enter: `node <your file name>.js` to execute the code.
 
-The app returns an access token based on the provided App ID and App Secret and additional data on the token including its lifetime in seconds (how long it will be valid.) You'll use this token to access the Watson Work Services APIs. Now you're ready to start building!
+The app returns an access token based on the provided App ID and App Secret and additional data on the token including its lifetime in seconds (how long it will be valid). You’ll use this token to access the Watson Work Services APIs. Now you’re ready to start building!

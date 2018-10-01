@@ -11,7 +11,7 @@ Refresh access token using refresh token
 
 
 ### URI scheme
-*Host* : api.watsonwork.ibm.com  
+*Host* : api.watsonwork.ibm.com
 *Schemes* : HTTPS
 
 
@@ -28,7 +28,7 @@ POST /oauth/token
 
 
 #### Description
-Standard OAuth2 endpoint for authenticating users via OAuth2 refresh token. 
+Standard OAuth2 endpoint for authenticating users via OAuth2 refresh token.
 
 More Information in [Section 6 of RFC 6749](https://tools.ietf.org/html/rfc6749#section-6)
 
@@ -105,7 +105,7 @@ Client credentials authentication object
 |**expires_in**  <br>*optional*|Time, in seconds, before the access token expires.|integer|
 |**id**  <br>*optional*|UUID for the app or user whose access token is returned.|string|
 |**jti**  <br>*optional*|UUID for the JWT token itself.|string|
-|**permissions**  <br>*optional*|The user's permssion associated with the JWTToken|string|
+|**permissions**  <br>*optional*|The user’s permssion associated with the JWTToken|string|
 |**providerId**  <br>*optional*|ID provider of the JWT token|string|
 |**refresh_token**  <br>*optional*|Refresh token for application, in the form of a JWT token.|string|
 |**scope**  <br>*optional*|Access scopes granted to the returned access token.|string|

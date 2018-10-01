@@ -8,13 +8,13 @@ is: 'beta'
 
 ## Concepts
 
-Action fulfillment enables developers to create apps that can define actions on a particular phrase, and privately interact with the end users once they've selected the action.
+Action fulfillment enables developers to create apps that can define actions on a particular phrase, and privately interact with the end users once they’ve selected the action.
 
 Apps can achieve this functionality by implementing these tasks:
 
 1. Specifying possible actions on some aspect of the conversation, for instance, a part of a message. This is done by integrating your app with an instance of Watson Assistant which has defined actions, or by directly calling the Watson Work Service APIs to declare an action has been identified.
 2. Presenting the user with steps to fulfill the action, represented as messages from your app sent to the user. This is done through the Watson Work Services APIs for creating messages.
-3. Receiving a user's responses to the steps. This is done by receiving calls from Watson Work Services, via Webhooks.
+3. Receiving a user’s responses to the steps. This is done by receiving calls from Watson Work Services, via Webhooks.
 
 Interacting with the user takes place in isolation of the other participants in the conversation. This prevents disturbing the flow of the conversation. Apps can send messages to private dialogs with the user and listen to actions taken by the user through Webhooks. Watson Work Services routes the messages to the appropriate device where the user is performing the action.
 
@@ -53,7 +53,7 @@ Name of the node.
 _Triggers_
 
 The `TRIGGERS` tell Watson Assistant which intents, entities, and/or context variables this conversation node should act upon. A good idea is to fill it
-with any of the intents that you want your application to recognize. In the IF statement's `Enter a condition`, enter in any intents like this: `#INTENT_NAME` These should match data in your `Intents` tab. You can also have chain multiple
+with any of the intents that you want your application to recognize. In the IF statement’s `Enter a condition`, enter in any intents like this: `#INTENT_NAME` These should match data in your `Intents` tab. You can also have chain multiple
 intents to the same trigger.
 
 _Responses_
@@ -148,7 +148,7 @@ The `targetDialogId` and the `targetUserId` are obtained from the actionSelected
 
 The generic annotation can be added through GraphQL for these targeted messages. In addition to the title and text field, generic annotations within a targeted message can contain buttons with a title, id and style. The title is the text that is displayed to the user. The button identifier (id) is used as the actionId of a Webhook event that is sent back to your app. The current styles are _PRIMARY_ (purple button) AND _SECONDARY_ (gray button).
 
-Here's an example with a generic annotation:
+Here’s an example with a generic annotation:
 
 ```
   mutation {
@@ -181,7 +181,7 @@ Here's an example with a generic annotation:
 
 Attachments can be added through GraphQL for targeted messages as well. If your app sends both attachments and annotations, only attachments will be rendered in the User Experience. Cards are a type of an Attachment. Information card is a type of Card Attachment. Information card has title, subtitle, text, date, and can also contain buttons. The title is the primary text that is displayed in card. The subtitle is secondary text in the card. The date is a unix-timestamp displayed as human readable date in the card. Buttons have text, payload, and style. The button payload is used as the actionId of a Webhook event that is sent back to your app. The current styles are _PRIMARY_ (purple button) AND _SECONDARY_ (gray button).
 
-Here's an example with attachments:
+Here’s an example with attachments:
 
 ```
   mutation {

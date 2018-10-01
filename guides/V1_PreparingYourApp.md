@@ -6,7 +6,7 @@ is: 'published'
 ## Prepare your App to run
 
 This guide will help you to prepare your code to work, once you have registered with Watson Work Services.
-If you haven't registered yet, you can do so here, [Create your App](https://developer.watsonwork.ibm.com/apps).
+If you haven’t registered yet, you can do so here, [Create your App](https://developer.watsonwork.ibm.com/apps).
 
 ## How Apps can run in Watson Work Services
 
@@ -20,17 +20,17 @@ An App can post using its own identity as shown.
 
 An app can also act on behalf of a user in Watson Work Services.  This means that your App would be a proxy for a user, and the app would interact with Watson Work Services as if it was the user.
 
-For example, let's say you create an App that integrates a CRM tool with Watson Work Services and every time a user creates a new sales opportunity in the CRM tool, it gets posted into a space in Watson Workspace.  The message would show that a user initiated this action yet the message would have been posted via the app.
+For example, let’s say you create an App that integrates a CRM tool with Watson Work Services and every time a user creates a new sales opportunity in the CRM tool, it gets posted into a space in Watson Workspace.  The message would show that a user initiated this action yet the message would have been posted via the app.
 
-When an App entity is added to a space, it is authorized to act in the scope of the space - same as if a person was added to a space.  This means that apps which act as the App entity only have access to the spaces they've been added to (authorized for).
+When an App entity is added to a space, it is authorized to act in the scope of the space - same as if a person was added to a space.  This means that apps which act as the App entity only have access to the spaces they’ve been added to (authorized for).
 
-However, when an App entity is acting on behalf of a user, then the App Entity is a proxy, authorized to act in the scopes in which the user has authorization.  If the app has been designed to post messages to a space, and is authorized by the user, then it will be able to post to any space in which the user is authorized.  
+However, when an App entity is acting on behalf of a user, then the App Entity is a proxy, authorized to act in the scopes in which the user has authorization.  If the app has been designed to post messages to a space, and is authorized by the user, then it will be able to post to any space in which the user is authorized.
 
 ## Calling Watson Work Services as an App Entity
 
 If your app is going to make calls to Watson Work Services under its own identity, you will need to use your App ID and your App Secret to authenticate your App with Watson Work Services.  This will get you an access token in the form of a JWT token.
 
-You have to pass the JWT token to Watson Work Services in order to make secure API calls.  To authenticate you will need to add a call to the Authentication API in your App (See [Authenticate as an application](../references/V1_oauth_token_client_credentials.yml)). You need to do this because the JWT token expires, but your App ID and Secret do not and once the token expires it's no longer valid and calls will fail.   
+You have to pass the JWT token to Watson Work Services in order to make secure API calls.  To authenticate you will need to add a call to the Authentication API in your App (See [Authenticate as an application](../references/V1_oauth_token_client_credentials.yml)). You need to do this because the JWT token expires, but your App ID and Secret do not and once the token expires it’s no longer valid and calls will fail.
 
 <div class="tip">
   <img src="../images/tip.png" />
@@ -48,13 +48,13 @@ And then you have to call the [Authorization Code Grant](../references/V1_oauth_
 
 ## Preparing Webhooks
 
-If you've added Webhooks, you will need
-to enable Webhooks to work. Here's a diagram of what has to occur.
+If you’ve added Webhooks, you will need
+to enable Webhooks to work. Here’s a diagram of what has to occur.
 
 ![Webhooks Sequence Diagram 1](../images/WWSWebhooksDiagram1.png)
 ![Webhooks Sequence Diagram 2](../images/WWSWebhooksDiagram2.png)
 
-Let's break this down.  
+Let’s break this down.
 1.  Create your App
 2.  Add code to your webhook to handle verification.   Watson Work Services will make a verification call out to your callback URL. This verification call is a POST request made to your callback URL. This verification request has a body of:
 
@@ -86,9 +86,9 @@ of the full response body as value. The signature has to be generated using the
 for the raw response body and the webhook secret as signing key. Then it has
 to be hex-encoded to a string of 64 characters, i.e. do not omit the leading zeros.
 
-3.  Your callback will be called with the events you've registered for.
+3.  Your callback will be called with the events you’ve registered for.
 
-It's important to note that your callback will be continuously called whenever events you've registered occur and that your code needs to continually respond as indicated. If it fails to respond, Watson Work Services will trigger the retry logic.
+It’s important to note that your callback will be continuously called whenever events you’ve registered occur and that your code needs to continually respond as indicated. If it fails to respond, Watson Work Services will trigger the retry logic.
 
 ## Webhook Retry Logic
 

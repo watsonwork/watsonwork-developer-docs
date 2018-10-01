@@ -7,7 +7,7 @@ is: 'experimental'
 
 Watson Work Services gives your App two patterns for dealing with events, which take place either due to changes in the data model and/or due to actions humans take using a participating client in Watson Work Services such as the Workspace clients. One of these is called **Implicit Action Handler**, the other is called **Explicit Action Handler**.
 
-We are standardizing patterns in our programming model and thus the existing App Configuration flow, though is being kept for backwards compatibility, is being incorporated into this new ClientActionHandler flow. It will introduce a change to how to make your app configurable. Currently, in the [Your Apps section](https://developer.watsonwork.ibm.com/apps) there is a section called **Additional Information** where you enter a configuration URL (for configuring your app in a space) and Terms of Services for your app. With this change we will move Terms of Service to it's own section, and remove the **Additional Information** section. The rest of this guide explains what you will do to set up your app to handle user actions regarding App configuration. If you had already establised an app with configuration, you will not need to do anything to continue working as is, and can update your app as needed. 
+We are standardizing patterns in our programming model and thus the existing App Configuration flow, though is being kept for backwards compatibility, is being incorporated into this new ClientActionHandler flow. It will introduce a change to how to make your app configurable. Currently, in the [Your Apps section](https://developer.watsonwork.ibm.com/apps) there is a section called **Additional Information** where you enter a configuration URL (for configuring your app in a space) and Terms of Services for your app. With this change we will move Terms of Service to its own section, and remove the **Additional Information** section. The rest of this guide explains what you will do to set up your app to handle user actions regarding App configuration. If you had already establised an app with configuration, you will not need to do anything to continue working as is, and can update your app as needed.
 
 There are three main concepts to Actions
 
@@ -27,7 +27,7 @@ Here you can see how these three concepts come into play via these examples:
 
 **Cognitively detected actions flow**
 
-![Action Selected Flow](../images/actionSelectedFlow.png) 
+![Action Selected Flow](../images/actionSelectedFlow.png)
 
 **Client action handlers**
 
@@ -47,9 +47,9 @@ Please read [Listen to Events](https://github.com/watsonwork/watsonwork-develope
 
 ## Handling Client Actions
 
-Watson Work Services allows your App to provide for actions issued from a Watson Work Services client (like Watson Workspace). 
-Here your App will be invoked directly from the client app and can provide a user experience to guide a user through the 
-fulfillment of that action. This is accomplished in one of two ways, using Commands or Client Action Handlers. 
+Watson Work Services allows your App to provide for actions issued from a Watson Work Services client (like Watson Workspace).
+Here your App will be invoked directly from the client app and can provide a user experience to guide a user through the
+fulfillment of that action. This is accomplished in one of two ways, using Commands or Client Action Handlers.
 
 Watson Work Services allows your App to provide handlers for user actions issued from a Watson Work Services client (like Watson Workspace). User actions can be classified as:
 
@@ -69,7 +69,7 @@ These type of user actions are expected to be handled without the need for apps 
 
 ### Explicit Action Handler
 
-Directly handling a user action allows your App to deliver a user experience via a Watson Work Services client. You will need to register a call back URL that the Work Services client will present typically in a browser/webview context such as a window, iframe, etc. The Work Services client implementation chooses what user gestures and where in the user experience these user actions take place by adhering to a known list of supported user actions by Watson Work Services. The app's handler will get a token code which it will use to obtain context corresponding to the type of action the user took.
+Directly handling a user action allows your App to deliver a user experience via a Watson Work Services client. You will need to register a call back URL that the Work Services client will present typically in a browser/webview context such as a window, iframe, etc. The Work Services client implementation chooses what user gestures and where in the user experience these user actions take place by adhering to a known list of supported user actions by Watson Work Services. The app’s handler will get a token code which it will use to obtain context corresponding to the type of action the user took.
 
 In Summary: this pattern is utilized by Watson Work Services to allow clients adhering to its programming model to be extensible in their user experience by third party applications.
 
@@ -88,7 +88,7 @@ For specific details on these action handlers, read [Configuring an App](./V1_Co
 
 ## Adding a client action handler callback
 
-The current design of the developer experience is simplified and presents the capability to declare handlers for client provided actions as one focused on app configuration as these are currently the only types of actions supported. This experience will evolve as more capabilities such as sharing resources are added. 
+The current design of the developer experience is simplified and presents the capability to declare handlers for client provided actions as one focused on app configuration as these are currently the only types of actions supported. This experience will evolve as more capabilities such as sharing resources are added.
 
 To add a Client Action Handler for Configuring your App, you need to:
 
@@ -126,17 +126,17 @@ To add a Client Action Handler for Configuring your App, you need to:
 
 ## Things to consider when you have an explicit action handler
 
-It's important to think about these things when adding an explicit action handler to your App.
+It’s important to think about these things when adding an explicit action handler to your App.
 
  - The explicit action can be requested by anyone, so the caller and the provided parameters must be verified.
 
- - If your explicit action requires knowledge of the user, then you must obtain the user id and name also to establish a link between the user's ID and the user's name.
+ - If your explicit action requires knowledge of the user, then you must obtain the user id and name also to establish a link between the user’s ID and the user’s name.
 
  - If your explicit action takes into account something to do with the space, then you should display the space name to help the caller verify that it is indeed the space for which this action should take place.
 
  - You should display a continue to space button to complete the process.
 
- Let's walk through these.
+ Let’s walk through these.
 
 ### Protect the explicit action endpoint
 
@@ -153,11 +153,11 @@ If the access to the action data is successful, then you can be sure that the ca
 
 <div class="tip">
   <img src="https://github.com/watsonwork/watsonwork-developer-docs/images/note_pencil.png" />
-  <p><strong>Note:</strong> If the implementation of the your explicit action handler page is still based on a version prior to 1.1.0 of the <a href="https://developer.watsonwork.ibm.com/docs/apps/get-action-context>Get Action Context API</a>, then you have to do the oauth flow to verify the caller as a user of Watson Work Services, to obtain the user id and name, and to establish a link between the user's ID and the user's name.</p>
+  <p><strong>Note:</strong> If the implementation of the your explicit action handler page is still based on a version prior to 1.1.0 of the <a href="https://developer.watsonwork.ibm.com/docs/apps/get-action-context>Get Action Context API</a>, then you have to do the oauth flow to verify the caller as a user of Watson Work Services, to obtain the user id and name, and to establish a link between the user’s ID and the user’s name.</p>
 </div>
 
 
-### Protect the user's sensitive data
+### Protect the user’s sensitive data
 
 You can utilize Watson Work Services to authorize the user as a valid Watson Work Services user by [getting the user details](https://developer.watsonwork.ibm.com/docs/people/get-user-information) and / or you can also authorize the user against your own credential store of users authorized to use your app.
 
@@ -173,7 +173,7 @@ Your app must be authorized to request services from Watson Work Services. There
 
 ### Get the user ID and name
 
-If your explicit action requires knowledge of the user, then you must verify the user's identity before showing, or allowing updates to, the user's sensitive data. Verify the user with Watson Work Services by requesting the [user entity](https://developer.watsonwork.ibm.com/docs/people/get-user-information) on [behalf of the user](https://developer.watsonwork.ibm.com/docs/api-reference/authorize-on-behalf-of-a-user). The resulting object contains the user ID in its `id` field and the user name in its `displayName` field.
+If your explicit action requires knowledge of the user, then you must verify the user’s identity before showing, or allowing updates to, the user’s sensitive data. Verify the user with Watson Work Services by requesting the [user entity](https://developer.watsonwork.ibm.com/docs/people/get-user-information) on [behalf of the user](https://developer.watsonwork.ibm.com/docs/api-reference/authorize-on-behalf-of-a-user). The resulting object contains the user ID in its `id` field and the user name in its `displayName` field.
 
 
 <a id="access-details-on-behalf-of-a-user"></a>
@@ -194,5 +194,5 @@ If your explicit action takes into account something to do with the space, then 
 
 ### Continue to the space
 
-When the user is finished with the explicit action for a space, it's a good idea to include an easy way to quickly return to that space. For example, if your App has been made to work with <a href="https://workspace.ibm.com/" target="_blank">Watson Workspace</a> you can do this by providing a link or button back to the space, using the URL pattern `https://workspace.ibm.com/<spaceId>/`.
+When the user is finished with the explicit action for a space, it’s a good idea to include an easy way to quickly return to that space. For example, if your App has been made to work with <a href="https://workspace.ibm.com/" target="_blank">Watson Workspace</a> you can do this by providing a link or button back to the space, using the URL pattern `https://workspace.ibm.com/<spaceId>/`.
 

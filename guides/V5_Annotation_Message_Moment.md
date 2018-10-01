@@ -7,7 +7,7 @@ is: 'published'
 
 Moment Annotations use the type **conversation-moment** to mark the beginning of a moment.
 
-Here's a sample of an annotation created by the Moments service:  
+Here’s a sample of an annotation created by the Moments service:
 ```json
 
 {
@@ -15,15 +15,15 @@ Here's a sample of an annotation created by the Moments service:
   "momentVersion":6,
   "algorithm":"timegap",
   "annotationId":"5810ed1fe4b04572602fed37",
-  "momentId":"b77cbc8413e94d71914a89cb4044cb19",      
-  "spaceId":"5810d788e4b0f043f15a9db9",   
+  "momentId":"b77cbc8413e94d71914a89cb4044cb19",
+  "spaceId":"5810d788e4b0f043f15a9db9",
   "created":1477504287785,
   "createdBy":"toscana-service-moment-client-id",
   "participants":[{"authorId":"77af0940-d169-102c-9081-f4ee77450791","messageCount":7}],
   "startMessage":{"messageId":"5810dd7be4b04572602fd830","published":1477500283896},
-  "endMessage":{"messageId":"5810de1ce4b04572602fd8f6","published":1477500444098},  
-  "lastUpdatedMessage":{"messageId":"5810de1ce4b04572602fd8f6","published":1477500444098},    
-  "hidden":false,  
+  "endMessage":{"messageId":"5810de1ce4b04572602fd8f6","published":1477500444098},
+  "lastUpdatedMessage":{"messageId":"5810de1ce4b04572602fd8f6","published":1477500444098},
+  "hidden":false,
   "momentSummary": {
        "phrases":[{"label":"Copy Code","source":"keyword","score":0.963834},
                   {"label":"HTML injection","source":"entity","score":0.890297,"count":9,"category":"FieldTerminology"},
@@ -103,7 +103,7 @@ The **MomentSummary** contains information extracted from and derived from the c
 
 ### MomentPhrase
 
-A **MomentPhrase** helps provide a label or summary for the moment.  It's typically a set of key phrases or topics.
+A **MomentPhrase** helps provide a label or summary for the moment.  It’s typically a set of key phrases or topics.
 
 | property      | type          | description  |
 | ------------- |:------------- |:------------ |

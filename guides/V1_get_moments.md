@@ -10,7 +10,7 @@ is: 'beta'
       x-graphql-view: BETA
 
 
-This is a sample GraphQL query to get moments in a space. Be sure to switch "space-id" to the actual id you're curious about.
+This is a sample GraphQL query to get moments in a space. Be sure to switch "space-id" to the actual id you’re curious about.
 
 Additional optional parameters may be included as follows:
 - `oldestTimestamp`: The minimum start time of moments.

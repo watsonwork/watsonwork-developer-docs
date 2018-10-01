@@ -8,7 +8,7 @@ is: 'beta'
 
 API calls to Watson Workspace are authenticated by requiring an identity to be included as part of the call.  Identities are granted permissions which control what they can do.  This is true regardless of whether the API call is made from the command line with a tool like curl, or from the Watson Workspace UI in a browser or a mobile client.
 
-Permissions are represented as a set of strings which can be empty, e.g. for logging in, or have one ore more entries.  For example the API endpoint for [inbound webhooks](../references/V1_InboundWebhooks.yml) that lets you create a new message in a space is guarded by the permission `message_create`.  That means, that if you call this API endpoint but don't have the `message_create` permission, an error would be the result: 403, Forbidden.
+Permissions are represented as a set of strings which can be empty, e.g. for logging in, or have one ore more entries.  For example the API endpoint for [inbound webhooks](../references/V1_InboundWebhooks.yml) that lets you create a new message in a space is guarded by the permission `message_create`.  That means, that if you call this API endpoint but don’t have the `message_create` permission, an error would be the result: 403, Forbidden.
 
 ## Granting Permissions
 Permissions are granted in several different ways:
@@ -17,7 +17,7 @@ Permissions are granted in several different ways:
  - when a user or an app is added to a space
  - when an app acts on behalf of a user
 
-Apps have a base set of permissions that allows them to perform some actions that are not related to spaces, for example accessing their own profiles. However, all the access that an app is given in a space, has to be explicitly granted to the app when it is added to a space. Users can have different permissions based on their subscriptions, roles and so forth. When an app is granted access to act on behalf of a user, the user's permissions are limited to the ones that are approved by the user to be used by apps.
+Apps have a base set of permissions that allows them to perform some actions that are not related to spaces, for example accessing their own profiles. However, all the access that an app is given in a space, has to be explicitly granted to the app when it is added to a space. Users can have different permissions based on their subscriptions, roles and so forth. When an app is granted access to act on behalf of a user, the user’s permissions are limited to the ones that are approved by the user to be used by apps.
 
 When you, as a developer, register an app with Watson Work Services, you define what permissions are required by your app.  When a user adds the app to a space, the list of permissions is displayed in human readable form and the user can either proceed and grant these permissions or stop the process and not add the app.
 

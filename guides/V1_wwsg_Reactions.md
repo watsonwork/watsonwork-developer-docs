@@ -11,7 +11,7 @@ Reaction APIs allow for the association of "reactions" to objects such as "messa
 
 ![Image](https://github.com/watsonwork/watsonwork-developer-docs/blob/master/images/reaction.png)
 
-Reactions are a quick way to respond to someone's message.  The caller can select any reaction (string/emoji) of their preference, and associate it with a message.  The message object will optionally retrieve all the reactions to a message, returning each **reaction** (string/emoji), the current number (**count**) of reactors for each of those reactions and if the caller has already reacted or not (**viewerHasReacted**).  Separately, the caller can get a paginated list of users who reacted with a specific reaction.
+Reactions are a quick way to respond to someone’s message.  The caller can select any reaction (string/emoji) of their preference, and associate it with a message.  The message object will optionally retrieve all the reactions to a message, returning each **reaction** (string/emoji), the current number (**count**) of reactors for each of those reactions and if the caller has already reacted or not (**viewerHasReacted**).  Separately, the caller can get a paginated list of users who reacted with a specific reaction.
 
 ### External APIs
 

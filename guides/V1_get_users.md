@@ -19,7 +19,7 @@ query getProfiles {
 }
 ```
 
-Next, let's just grab the first ten users' information:
+Next, let’s just grab the first ten users’ information:
 
 ```
 query getProfiles {
@@ -37,7 +37,7 @@ query getProfiles {
   <a href="https://developer.watsonwork.ibm.com/tools/graphql?query=query%20getProfiles%20%7B%0A%20%20people(first%3A%2010)%20%7B%0A%20%20%20%20items%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20displayName%0A%20%20%20%20%20%20email%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A" target="_blank"> Try it now</a>
 </div>
 
-Let's say you just want to get a list of users named 'Kevin'.   This example GraphQL query shows how to return the first five users in a space named Kevin.
+Let’s say you just want to get a list of users named 'Kevin'.   This example GraphQL query shows how to return the first five users in a space named Kevin.
 
 ```
 query getProfiles {
