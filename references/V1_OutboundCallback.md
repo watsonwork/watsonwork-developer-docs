@@ -5,7 +5,7 @@
 ## Overview
 This API has to be implemented by the callbacks implementing outbound webhooks.
 
-- Changes in versiaon 1.8.0:
+- Changes in version 1.8.0:
   - New feilds conversationId and conversationType added to `message-created`, `message-deleted` and `message-edited`.
 - Changes in version 1.7.0:
   - New event type and notification format for `message-edited`.
@@ -26,7 +26,7 @@ This API has to be implemented by the callbacks implementing outbound webhooks.
 
 
 ### Version information
-*Version* : 1.2.0
+*Version* : 1.8.0
 
 
 ### URI scheme
@@ -352,6 +352,29 @@ This event is only sent to webhooks that
 - have been added for the reaction-removed event
 - and belong to an app that is a member of the space.
 
+<a name="conversationcreatedbody"></a>
+### ConversationCreatedByody
+Notifies the creation of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
+
+This event is only sent to webhooks that
+- have been added for the conversation-created event.
+- and belong to an app that is a member of the space.
+
+<a name="conversationupdatedbody"></a>
+### ConversationUpdatedByody
+Notifies the creation of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
+
+This event is only sent to webhooks that
+- have been added for the conversation-updated event.
+- and belong to an app that is a member of the space.
+
+<a name="conversationdeletedbody"></a>
+### ConversationDeletedByody
+Notifies the creation of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
+
+This event is only sent to webhooks that
+- have been added for the conversation-deleted event.
+- and belong to an app that is a member of the space.
 
 
 

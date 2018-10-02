@@ -5,7 +5,7 @@ info:
   description: |
     This API has to be implemented by the callbacks implementing outbound webhooks.
 
-    - Changes in versaion 1.8.0:
+    - Changes in version 1.8.0:
       - New feilds conversationId and conversationType added to `message-created`, `message-deleted` and `message-edited`.
 -     Changes in version 1.7.0:
       - New event type and notification format for `message-edited`.
@@ -23,7 +23,7 @@ info:
     - Changes in version 1.1.0:
       - The verification process of outbound webhooks has changed.
       - The `GET` endpoint has been removed.  The `POST` endpoint is now used for the verification of outbound webhooks.
-  version: 1.2.0
+  version: 1.8.0
 host: api.watsonwork.ibm.com
 schemes:
   - https
