@@ -5,6 +5,8 @@
 ## Overview
 This API has to be implemented by the callbacks implementing outbound webhooks.
 
+- Changes in version 1.8.0:
+  - New feilds conversationId and conversationType added to `message-created`, `message-deleted` and `message-edited`.
 - Changes in version 1.7.0:
   - New event type and notification format for `message-edited`.
 - Changes in version 1.6.0:
@@ -24,7 +26,7 @@ This API has to be implemented by the callbacks implementing outbound webhooks.
 
 
 ### Version information
-*Version* : 1.2.0
+*Version* : 1.8.0
 
 
 ### URI scheme
@@ -189,6 +191,8 @@ This event is only sent to webhooks that
 |**messageId**  <br>*required*|Unique id of the message.|string|
 |**spaceId**  <br>*required*|Id of the space in which the message was created.|string|
 |**spaceName**  <br>*required*|Name of the space in which the message was created.|string|
+|**conversationId** <br>*required*|Id of the conversation in which the message was created.|string|
+|**conversationType** <br>*required*|Type of conversation in which the message was created.|string|
 |**time**  <br>*required*|Time and date of message creation, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
 |**type**  <br>*required*|The event type is `message-created`.|string|
 |**userId**  <br>*required*|Id of the user who created the message.|string|
@@ -208,6 +212,8 @@ This event is only sent to webhooks that
 |---|---|---|
 |**messageId**  <br>*required*|Unique id of the message.|string|
 |**spaceId**  <br>*required*|Id of the space in which the message was deleted.|string|
+|**conversationId** <br>*required*|Id of the conversation in which the message was deleted.|string|
+|**conversationType** <br>*required*|Type of conversation in which the message was deleted.|string|
 |**time**  <br>*required*|Time and date of message deletion, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
 |**type**  <br>*required*|The event type is `message-deleted`.|string|
 
@@ -227,6 +233,8 @@ This event is only sent to webhooks that
 |**contentType**  <br>*required*|Mime type of the message content.|string|
 |**messageId**  <br>*required*|Unique id of the message.|string|
 |**spaceId**  <br>*required*|Id of the space in which the message was edited.|string|
+|**conversationId** <br>*required*|Id of the conversation in which the message was edited.|string|
+|**converstaionType** <br>*reqired*|Type of the conversation in which the message was edited.|string|
 |**time**  <br>*required*|Time and date of message edit, in milliseconds since January 1st, 00:00, 1970 UTC|integer(int64)|
 |**type**  <br>*required*|The event type is `message-edited`.|string|
 |**userId**  <br>*required*|Id of the user who edited the message.|string|
@@ -344,6 +352,29 @@ This event is only sent to webhooks that
 - have been added for the reaction-removed event
 - and belong to an app that is a member of the space.
 
+<a name="conversationcreatedbody"></a>
+### ConversationCreatedBody
+Notifies the creation of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
+
+This event is only sent to webhooks that
+- have been added for the conversation-created event.
+- and belong to an app that is a member of the space.
+
+<a name="conversationupdatedbody"></a>
+### ConversationUpdatedBody
+Notifies the update of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
+
+This event is only sent to webhooks that
+- have been added for the conversation-updated event.
+- and belong to an app that is a member of the space.
+
+<a name="conversationdeletedbody"></a>
+### ConversationDeletedBody
+Notifies the deletion of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
+
+This event is only sent to webhooks that
+- have been added for the conversation-deleted event.
+- and belong to an app that is a member of the space.
 
 
 
