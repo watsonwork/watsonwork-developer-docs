@@ -6,7 +6,7 @@ is: 'published'
 # Conversation
 
 A conversation is where people come together and send and receive messages - the conversation also is where
-apps can provide interaction with the people in the conversation. It's the main collaboration area.
+apps can provide interaction with the people in the conversation. It’s the main collaboration area.
 
 Watson Work Services represents a Conversation with this object.
 

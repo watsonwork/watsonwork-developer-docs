@@ -1,17 +1,17 @@
 * ## [Get Started](./V1_GetStarted.md)
   * [What can you build?](./V1_WhatCanYouBuild.md)
-  * [Here's how it works](./V1_HeresHowItWorks.md)
-  * [Watson Work Services object model](./V1_Diagrams.md)  
+  * [Here’s how it works](./V1_HeresHowItWorks.md)
+  * [Watson Work Services object model](./V1_Diagrams.md)
   * [Start coding now!](./V1_StartCodingNow.md)
   * [Next steps](./V1_NextSteps.md)
   * [Engaging with us](./V1_EngagingWithUs.md)
-  * [What's New](./Whats_New.md)
+  * [What’s New](./Whats_New.md)
   * [Coming Next](./Coming_Next.md)
 
-* ## [Developer's Guide](./guides/V1_wwsg_DevelopersGuide.md)
+* ## [Developer’s Guide](./guides/V1_wwsg_DevelopersGuide.md)
   * [GraphQL API](./guides/V1_wwsg_GraphQLAPIIntro.md)
   * [Pagination](./guides/V1_pagination.md)
-  
+
 
 * ## [Space](./guides/V1_spaces_main.md)
   * [Create a space](./guides/V1_create_space.md)
@@ -20,8 +20,8 @@
   * [Get a list of spaces](./guides/V1_get_spaces.md)
   * [Delete a space](./guides/V1_delete_space.md)
   * [Listen to events in a space](./guides/V1_wwsg_Webhooks.md)
-  
-* ## [ Templates - Creating Solutions](./guides/Creating_Solutions.md) 
+
+* ## [ Templates - Creating Solutions](./guides/Creating_Solutions.md)
   * [Create a space template](./guides/V1_create_space_template.md)
   * [Space template](./guides/V1_space_template_main.md)
   * [Space template info](./guides/V1_space_template_info.md)
@@ -40,7 +40,7 @@
   * [Delete a message](./guides/V1_delete_message.md)
   * [Event for message deletion](./guides/V1_wwsg_Webhooks.md)
   * [Retrieving soft-deleted with message](./guides/V1_message_main.md)
-  
+
 
 * ## [Reactions](./guides/V1_wwsg_Reactions.md)
   * [Add a reaction to a message](./guides/V1_Add_Reaction.md)
@@ -48,7 +48,7 @@
   * [Get users reacting to a message](./guides/V1_Reacting_Users.md)
   * [Events for reactions](./guides/V1_wwsg_Webhooks.md)
   * [Retrieving reactions with a message](./guides/V1_message_main.md)
-  
+
 
 * ## [People](./guides/V1_people_main.md)
   * [Get user information](./guides/V1_get_user.md)

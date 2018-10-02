@@ -440,7 +440,7 @@ When a user decides to create a new space of type Deal Room they will;
 
 Once the space is created, the Salesforce App is automatically added to this space. Also the time line is shown in the user experience so all the space members can see and update the timeline in the deal room.
 
-That's the story for creating solutions with Watson Work Services.
+That’s the story for creating solutions with Watson Work Services.
 
 Dive into the details here:
 

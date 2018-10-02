@@ -5,7 +5,7 @@ is: 'published'
 ---
 ### Filter on annotations
 
-Get a specified Space's 10 most recent messages made by 3rd party apps acting as themselves via generic annotation
+Get a specified Space’s 10 most recent messages made by 3rd party apps acting as themselves via generic annotation
 
 
 ```

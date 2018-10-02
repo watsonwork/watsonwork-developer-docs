@@ -22,7 +22,7 @@ You can also create apps that use cognitive capabilities to understand users' co
 
 - Identify [focuses](guides/V1_wwsg_ActionIdentification.md) (key phrases) within the conversation and suggest actions users can take inline with [Action Fulfillment](guides/V1_Action_Fulfillment.md).
 
-Here are a few examples that we've come up with. We can't wait to see what you build!
+Here are a few examples that we’ve come up with. We can’t wait to see what you build!
 
 <table border="0">
  <tr height="64">

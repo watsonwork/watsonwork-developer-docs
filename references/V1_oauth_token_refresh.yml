@@ -55,7 +55,7 @@ definitions:
         description: "ID provider of the JWT token"
       permissions:
         type: string
-        description: "The user's permssion associated with the JWTToken"
+        description: "The user’s permssion associated with the JWTToken"
   Error:
     type: object
     description: "Response entity resulting from a failed API call."

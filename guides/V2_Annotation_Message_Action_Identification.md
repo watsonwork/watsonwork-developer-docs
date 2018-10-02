@@ -4,7 +4,7 @@ link: 'focus-annotation'
 is: 'published'
 ---
 ## Focus Annotation
-Let's break down the annotation structure for a `focus`.  For each message, the text is broken into sentences, and an annotation is created for every identified `focus` within a sentence.  The category is an optional field which further refines the `lens`.
+Let’s break down the annotation structure for a `focus`.  For each message, the text is broken into sentences, and an annotation is created for every identified `focus` within a sentence.  The category is an optional field which further refines the `lens`.
 
 This is an annotation containing a `focus` identified by the `Commitment` lens.
 ````json
@@ -14,7 +14,7 @@ This is an annotation containing a `focus` identified by the `Commitment` lens.
   "focusVersion":2,
   "annotationId":"580fa6b2e4b0fad7dded220d",
   "created":1477420722906,
-  "createdBy":"toscana-aip-nlc-consumer-client-id",  
+  "createdBy":"toscana-aip-nlc-consumer-client-id",
   "start":48,
   "end":82,
   "phrase":"We will put back next week likely.",
@@ -79,8 +79,8 @@ See also [Annotation](../guides/V1_annotations.md) for information on common ann
 | lens          | String        | One of _ActionRequest_, _Question_, and _Commitment_. Watson Work may add lenses at any time, and clients should not depend upon only receiving this set of lenses. |
 | category      | String        | Only ActionRequest currently uses _categories_. These categories are _Schedule_ and _Share_. Watson Work Services may add categories at any time, and clients should not depend upon only receiving this set of categories.
 | focusVersion  | String        | The schema version for this focus |
-| start         | Number        | An inclusive index for the focus's start location in the message's original content (including markdown). In some cases, start and end may be omitted, in which case clients should consider the entire message as the focus. |
-| end           | Number        | An exclusive index for the focus's end location in the message's original content (including markdown). In some cases, start and end may be omitted, in which case clients should consider the entire message as the focus. |
+| start         | Number        | An inclusive index for the focus’s start location in the message’s original content (including markdown). In some cases, start and end may be omitted, in which case clients should consider the entire message as the focus. |
+| end           | Number        | An exclusive index for the focus’s end location in the message’s original content (including markdown). In some cases, start and end may be omitted, in which case clients should consider the entire message as the focus. |
 | phrase        | String        | The plaintext of the passage identified as the focus and classified as the given lens/category (disregarding markdown). In some cases, phrase may be omitted, in which case clients may consider the entire message as the focus or, where feasible, consider the start and end indexes to understand the area within the message designated as the focus. |
 | confidence    | Number        | A decimal value between 0 and 1 denoting how confident the service is in assigning the specified class to the phrase |
 | extractedInfo | FocusExtractedInfo | Information extracted from the focus |
@@ -100,7 +100,7 @@ See also [Annotation](../guides/V1_annotations.md) for information on common ann
 | property      | type          | description  |
 | ------------- |:------------- |:------------ |
 | count         | String        | The number of occurrences of the entity in the focus |
-| relevance     | Number        | The entity's relevance to the focus |
+| relevance     | Number        | The entity’s relevance to the focus |
 | text          | String        | The text referencing the entity |
 | type          | String        | A category or type of the entity, such as Person or Organization. |
 
@@ -108,7 +108,7 @@ See also [Annotation](../guides/V1_annotations.md) for information on common ann
 
 | property      | type          | description  |
 | ------------- |:------------- |:------------ |
-| relevance     | String        | The keyword's relevance to the focus |
+| relevance     | String        | The keyword’s relevance to the focus |
 | text          | String        | The text of the keyword |
 
 ### FocusDate

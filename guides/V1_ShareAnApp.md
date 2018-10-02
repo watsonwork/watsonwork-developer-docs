@@ -5,7 +5,7 @@ is: 'published'
 ---
 ## Share an App
 
-Once you get an app working and you want to share it with others so they can start using it and give you feedback, you can easily do this with the share button. We will generate an HTML snippet you can add to a page or email. You'll get a URL and also, with the snippet, an image button.
+Once you get an app working and you want to share it with others so they can start using it and give you feedback, you can easily do this with the share button. We will generate an HTML snippet you can add to a page or email. You’ll get a URL and also, with the snippet, an image button.
 
 In order to start sharing, you first have to build an app - go to the Apps page to do that, [Register your App](https://developer.watsonwork.ibm.com/apps).
 
@@ -33,20 +33,20 @@ And you will see:
 
 ![My Apps](../images/AppsPage3_ShareFlow.png)
 
-Don't worry when you do it for real, the ID won't be blurry!
+Don’t worry when you do it for real, the ID won’t be blurry!
 
-Now here's an example of a **User Experience** for sharing. If you take that HTML snippet, you can create a page that looks something like this:
+Now here’s an example of a **User Experience** for sharing. If you take that HTML snippet, you can create a page that looks something like this:
 
 ![My Apps](../images/AppsPage6_ShareFlow.png)
 
 And they can click to **Add to Watson Workspace**. If they are not already logged into Workspace, they will be guided to do so.
 Then they will see more details about your app, what it can do and your name and email address. They can
-select a space to add it to, this is scrollable and let's the user use type-ahead to find a space for this app.
+select a space to add it to; this is scrollable and lets the user use type-ahead to find a space for this app.
 
 ![My Apps](../images/AppsPage7_ShareFlow.png)
 
 
-Once they select a space they can click Add App and bingo, it get's added!
+Once they select a space they can click Add App and bingo, it gets added!
 
 ![My Apps](../images/AppsPage8_ShareFlow.png)
 

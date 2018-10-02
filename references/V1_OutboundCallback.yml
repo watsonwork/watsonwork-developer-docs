@@ -465,7 +465,7 @@ definitions:
   AddReactionBody:
     type: object
     description: |
-      Notifies the addition of a reaction to a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
+      Notifies the addition of a reaction to a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our GitHub repo; [see Coming Next section](../get-started/coming-next) for more info_.
 
       This event is only sent to webhooks that
       - have been added for the reaction-added event
@@ -504,7 +504,7 @@ definitions:
   RemoveReactionBody:
     type: object
     description: |
-      Notifies the removal of a reaction from a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
+      Notifies the removal of a reaction from a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our GitHub repo; [see Coming Next section](../get-started/coming-next) for more info_.
 
       This event is only sent to webhooks that
       - have been added for the reaction-removed event

@@ -5,7 +5,7 @@ is: 'published'
 ---
 ## Create a space
 
-Spaces are where the collaboration magic happens. Let's take a look at how a sample GraphQL mutation is used to create a space.
+Spaces are where the collaboration magic happens. Let’s take a look at how a sample GraphQL mutation is used to create a space.
 
 Starting small, the absolute minimum mutation to create a space and get the ID would be:
 
@@ -30,7 +30,7 @@ See it in action with our GraphQL tool and create a space.
   <a href="https://developer.watsonwork.ibm.com/tools/graphql?query=mutation%20createSpace%20%7B%0A%20%20createSpace(input%3A%20%7Btitle%3A%20%22Space%20title%22%2C%20members%3A%20%5B%22user1-id%22%2C%20%22user2-id%22%5D%7D)%20%7B%0A%20%20%20%20space%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A" target="_blank">Try it now</a>
 </div>
 
-If you need more info we've got you covered. Get as much additional information as you want by:
+If you need more info we’ve got you covered. Get as much additional information as you want by:
 
 ```
 mutation createSpace {
