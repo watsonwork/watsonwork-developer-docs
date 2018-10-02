@@ -53,7 +53,7 @@ Name of the node.
 _Triggers_
 
 The `TRIGGERS` tell Watson Assistant which intents, entities, and/or context variables this conversation node should act upon. A good idea is to fill it
-with any of the intents that you want your application to recognize. In the IF statement’s `Enter a condition`, enter in any intents like this: `#INTENT_NAME` These should match data in your `Intents` tab. You can also have chain multiple
+with any of the intents that you want your application to recognize. In the IF statement’s `Enter a condition`, enter in any intents like this: `#INTENT_NAME` These should match data in your `Intents` tab. You can also chain multiple
 intents to the same trigger.
 
 _Responses_

@@ -6,13 +6,13 @@ is: 'published'
 ## Prepare your App to run
 
 This guide will help you to prepare your code to work, once you have registered with Watson Work Services.
-If you haven’t registered yet, you can do so here, [Create your App](https://developer.watsonwork.ibm.com/apps).
+If you haven’t registered yet, you can do so here: [Create your App](https://developer.watsonwork.ibm.com/apps).
 
 ## How Apps can run in Watson Work Services
 
 In Watson Work Services we have defined two types of Entities that can interact.
 
-First there are People, and the **Person Entity**, that can be authorized to act, to do things like create a space, post a message to a space, and so on. There is also the **App entity** which can be authorized to act in much the same way.
+First there are People, and the **Person Entity**, that can be authorized to act, to do things like create a space, post a message to a space, and so on. There is also the **App Entity** which can be authorized to act in much the same way.
 
 An App can post using its own identity as shown.
 
@@ -22,9 +22,9 @@ An app can also act on behalf of a user in Watson Work Services.  This means tha
 
 For example, let’s say you create an App that integrates a CRM tool with Watson Work Services and every time a user creates a new sales opportunity in the CRM tool, it gets posted into a space in Watson Workspace.  The message would show that a user initiated this action yet the message would have been posted via the app.
 
-When an App entity is added to a space, it is authorized to act in the scope of the space - same as if a person was added to a space.  This means that apps which act as the App entity only have access to the spaces they’ve been added to (authorized for).
+When an App Entity is added to a space, it is authorized to act in the scope of the space - same as if a person was added to a space.  This means that apps which act as the App Entity only have access to the spaces they’ve been added to (authorized for).
 
-However, when an App entity is acting on behalf of a user, then the App Entity is a proxy, authorized to act in the scopes in which the user has authorization.  If the app has been designed to post messages to a space, and is authorized by the user, then it will be able to post to any space in which the user is authorized.
+However, when an App Entity is acting on behalf of a user, then the App Entity is a proxy, authorized to act in the scopes in which the user has authorization.  If the app has been designed to post messages to a space, and is authorized by the user, then it will be able to post to any space in which the user is authorized.
 
 ## Calling Watson Work Services as an App Entity
 

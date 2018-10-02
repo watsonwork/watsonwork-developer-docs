@@ -11,7 +11,7 @@ This site [https://developer.watsonwork.ibm.com](https://developer.watsonwork.ib
 
 We put our content into this repository so that you could have access to what we’re working on and to give you a way to give us feedback, fix problems and create issues to connect with us on what you’re seeing here.
 
-In addition to seeing all the content that forms the developer experience, you will see additional things. We will include topics that we call future and experimental, these items will not surface in the developer experience. We include them here so that you can see into what we’re thinking about and working on, so that you can give us your thoughts and feedback while we’re in the process of designing and building it. We want your input to make this platform really great.
+In addition to seeing all the content that forms the developer experience, you will see additional things. We will include topics that we call future and experimental; these items will not surface in the developer experience. We include them here so that you can see into what we’re thinking about and working on, so that you can give us your thoughts and feedback while we’re in the process of designing and building it. We want your input to make this platform really great.
 
 ## Creating issues and using labels
 

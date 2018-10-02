@@ -214,7 +214,7 @@ This event is only sent to webhooks that
 
 <a name="messageeditedbody"></a>
 ### MessageEditedBody
-Notifies the subscribed app that a message has been edited.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our GitHub repo, [see Coming Next section](../get-started/coming-next) for more info_.
+Notifies the subscribed app that a message has been edited.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our GitHub repo; [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
 - have been added for the message-edited event
@@ -329,7 +329,7 @@ Send back the verification challenge to show that the webhook supports this call
 
 <a name="addreactionbody"></a>
 ### AddReactionBody
-Notifies the addition of a reaction to a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our GitHub repo, [see Coming Next section](../get-started/coming-next) for more info_.
+Notifies the addition of a reaction to a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our GitHub repo; [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
 - have been added for the reaction-added event
@@ -338,7 +338,7 @@ This event is only sent to webhooks that
 
 <a name="removereactionbody"></a>
 ### RemoveReactionBody
-Notifies the removal of a reaction from a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our GitHub repo, [see Coming Next section](../get-started/coming-next) for more info_.
+Notifies the removal of a reaction from a message.  _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our GitHub repo; [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
 - have been added for the reaction-removed event

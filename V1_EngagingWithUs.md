@@ -7,10 +7,10 @@ is: 'published'
 ## Engaging with us
 
 We are continually adding value and want to include you as early as possible in our development process so we can include
-your input and feedback. Some features are stable (in that they will not change), others are in progress of being built which we call **beta**
-and others are things we want to try and discover what would work best, we call **experimental**. Additionally, when we are about to
+your input and feedback. Some features are stable (in that they will not change), others are in progress of being built, which we call **beta**,
+and others are things we are trying out to discover what would work best, which we call **experimental**. Additionally, when we are about to
 introduce something new and want to get feedback on the concepts and understanding before we expose APIs, so that your
-feedback can inform and guide the future API, we will call these **future**. Also, **future** may, (but not always), include the ability for you to
+feedback can inform and guide the future API, we will call these **future**. Also, **future** may (but not always) include the ability for you to
 play with an API, through one of our tools (like the GraphQL Explorer), so you can have some experience with it and give us
 feedback to help inform and improve things.
 
@@ -25,7 +25,7 @@ To provide more transparency in how we’re working and what we’re building, w
 the GitHub repo - [github.com/watsonwork/watsonwork-developer-docs](https://github.com/watsonwork/watsonwork-developer-docs) so that you can engage with us through GitHub to inform
 and provide feedback to help make and design great APIs.
 
-In providing feedback let us know what sort of feedback you’re giving us, such as;
+In providing feedback let us know what sort of feedback you’re giving us, such as:
 
 - something wrong or incorrect
 - something confusing with the documentation or results experienced with an API

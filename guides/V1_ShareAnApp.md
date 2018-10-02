@@ -41,7 +41,7 @@ Now here’s an example of a **User Experience** for sharing. If you take that H
 
 And they can click to **Add to Watson Workspace**. If they are not already logged into Workspace, they will be guided to do so.
 Then they will see more details about your app, what it can do and your name and email address. They can
-select a space to add it to, this is scrollable and lets the user use type-ahead to find a space for this app.
+select a space to add it to; this is scrollable and lets the user use type-ahead to find a space for this app.
 
 ![My Apps](../images/AppsPage7_ShareFlow.png)
 
