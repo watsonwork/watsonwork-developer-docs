@@ -362,7 +362,7 @@ This event is only sent to webhooks that
 
 <a name="conversationupdatedbody"></a>
 ### ConversationUpdatedBody
-Notifies the creation of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
+Notifies the update of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
 - have been added for the conversation-updated event.
@@ -370,7 +370,7 @@ This event is only sent to webhooks that
 
 <a name="conversationdeletedbody"></a>
 ### ConversationDeletedBody
-Notifies the creation of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
+Notifies the deletion of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
 - have been added for the conversation-deleted event.
