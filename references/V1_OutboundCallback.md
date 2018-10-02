@@ -353,7 +353,7 @@ This event is only sent to webhooks that
 - and belong to an app that is a member of the space.
 
 <a name="conversationcreatedbody"></a>
-### ConversationCreatedByody
+### ConversationCreatedBody
 Notifies the creation of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
@@ -361,7 +361,7 @@ This event is only sent to webhooks that
 - and belong to an app that is a member of the space.
 
 <a name="conversationupdatedbody"></a>
-### ConversationUpdatedByody
+### ConversationUpdatedBody
 Notifies the creation of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
@@ -369,7 +369,7 @@ This event is only sent to webhooks that
 - and belong to an app that is a member of the space.
 
 <a name="conversationdeletedbody"></a>
-### ConversationDeletedByody
+### ConversationDeletedBody
 Notifies the creation of a conversation. _Since this is an_ `EXPERIMENTAL` _capability, complete information can be found in our github repo, [see Coming Next section](../get-started/coming-next) for more info_.
 
 This event is only sent to webhooks that
