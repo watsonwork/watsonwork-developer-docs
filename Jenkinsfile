@@ -31,22 +31,26 @@ pipeline {
         stage('NPM Publish') {
             steps {
                 script {
-                    checkoutRepo("https://github.ibm.com/toscana/pipeline-tools/", scanWorkspace + "/.jenkins/build-tools", "npm/")
+                    try {
+                        checkoutRepo("https://github.ibm.com/toscana/pipeline-tools/", ".jenkins/build-tools", "npm/")
 
-                    def startedAt = new Date()
-                    def time = startedAt.format('yyyyMMdd-HHmmss')
-                    currentBuild.displayName = time
-                    def path = sh(script: "pwd", returnStdout: true).trim()
+                        def startedAt = new Date()
+                        def time = startedAt.format('yyyyMMdd-HHmmss')
+                        currentBuild.displayName = time
+                        def path = sh(script: "pwd", returnStdout: true).trim()
 
-                    def timestamp = string(name: 'TIMESTAMP', value: time)
-                    def flowWorkspace = string(name: 'WORKSPACE', value: path)
-                    def flowNode = [$class: 'NodeParameterValue', name: 'NODE_NAME',
-                                labels: [env.NODE_NAME],
-                                nodeEligibility: [$class: 'AllNodeEligibility']]
-                    def pipelineBuildNumber = string(name: 'PIPELINE_BUILD_NUMBER', value: env.BUILD_NUMBER)
-                    def recursive = booleanParam(name: 'RECURSIVE', value: false)
+                        def timestamp = string(name: 'TIMESTAMP', value: time)
+                        def flowWorkspace = string(name: 'WORKSPACE', value: path)
+                        def flowNode = [$class: 'NodeParameterValue', name: 'NODE_NAME',
+                                    labels: [env.NODE_NAME],
+                                    nodeEligibility: [$class: 'AllNodeEligibility']]
+                        def pipelineBuildNumber = string(name: 'PIPELINE_BUILD_NUMBER', value: env.BUILD_NUMBER)
+                        def recursive = booleanParam(name: 'RECURSIVE', value: false)
 
-                    build(job: 'NPM/Publish', parameters: timestamp, flowWorkspace, flowNode, pipelineBuildNumber, recursive)
+                        build(job: 'NPM/Publish', parameters: timestamp, flowWorkspace, flowNode, pipelineBuildNumber, recursive)
+                    } finally {
+                        sh "rm -rf ./*"
+                    }
                 }
             }
         }
