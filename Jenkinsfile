@@ -1,12 +1,5 @@
 pipeline {
     agent { node { label 'standard' } }
-    parameters {
-        string(name: 'TIMESTAMP', defaultValue: '')
-        string(name: 'PROJECT_URL', defaultValue: '')
-        string(name: 'REGISTRY_TYPE', defaultValue: 'prod')
-        string(name: 'GITHUB_PR_NUMBER', defaultValue: '')
-        booleanParam(name: 'NPM_BUILD', defaultValue: true)
-    }
     stages {
         stage('NPM Publish') {
             steps {
