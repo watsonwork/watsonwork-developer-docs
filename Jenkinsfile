@@ -47,7 +47,7 @@ pipeline {
                         def pipelineBuildNumber = string(name: 'PIPELINE_BUILD_NUMBER', value: env.BUILD_NUMBER)
                         def recursive = booleanParam(name: 'RECURSIVE', value: false)
 
-                        build(job: 'NPM/Publish', parameters: timestamp, flowWorkspace, flowNode, pipelineBuildNumber, recursive)
+                        build(job: 'NPM/Publish', parameters: [timestamp, flowWorkspace, flowNode, pipelineBuildNumber, recursive])
                     } finally {
                         sh "rm -rf ./*"
                     }
