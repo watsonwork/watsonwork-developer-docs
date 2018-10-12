@@ -23,7 +23,7 @@ query getTeamSpaces {
 }
 ```
 
-A team administrator may need to obtain a list of any spaces without owners (e.g., following an owner's departure from the team)
+A team administrator may need to obtain a list of any spaces without owners (e.g., following an owner’s departure from the team)
 with a view to assigning new owners. This can be achieved by passing some additional optional parameters to the _teamSpaces_
 GraphQL query:
  - `excludingRoles`: List of roles not represented among the membership of the space. In this case, passing a list comprising

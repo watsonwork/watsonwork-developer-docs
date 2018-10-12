@@ -39,7 +39,7 @@ Take a look at the`addMessageFocus` GraphQL mutation.
 | Property | Description |
 | --- | --- |
 | messageId | The id for the message that will get annotated with the `message-focus` annotation. |
-| phrase | The part of the message that is considered to be a focus, based on the 3rd party app's processing. |
+| phrase | The part of the message that is considered to be a focus, based on the 3rd party app’s processing. |
 | lens | The custom lens that was determined from the phrase. For example, `Opportunity`. <br/><br/>Note: This lens will surface in moments unless `hidden` is set to false. |
 | category | [Optional] A further refinement for the detected lens. <br/><br/>Example: If the lens is `Opportunity`, the categories could be `Inquiry`, `Sale`, etc.  |
 | actions | [Optional] A list of actions that can be taken on the phrase, based on the detected lens. This will result in the phrase getting highlighted for the user to initiate the action. <br /><br/>See [Action Fulfillment](https://developer.watsonwork.ibm.com/docs/tutorials/action-fulfillment) tutorial for more details.  |

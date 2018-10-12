@@ -35,8 +35,8 @@ Errors regarding the webhook URL of an outbound webhook:
 
 
 Errors regarding the verification of the webhook URL of an outbound webhook.
-The following errors occur when a webhook is enabled or when the App is being updated (or it's outbound webhook is being updated). These changes will trigger the verification of the webhook URL.
-Also see [Webhooks API Reference](../references/V1_OutboundCallback.yml) for further details on the verification call.  
+The following errors occur when a webhook is enabled or when the App is being updated (or its outbound webhook is being updated). These changes will trigger the verification of the webhook URL.
+Also see [Webhooks API Reference](../references/V1_OutboundCallback.yml) for further details on the verification call.
 
 | error message | error tag/error detail tag | details|
 |------|:-------------|-------------|

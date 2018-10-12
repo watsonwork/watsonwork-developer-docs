@@ -5,7 +5,7 @@ is: 'published'
 ---
 ## Get my user information
 
-We also have a handy GraphQL query for when you're feeling introspective. This will allow you to get information about the user you are currently logged in as.
+We also have a handy GraphQL query for when you’re feeling introspective. This will allow you to get information about the user you are currently logged in as.
 
 ```
 query getMyself {

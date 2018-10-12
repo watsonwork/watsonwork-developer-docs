@@ -11,7 +11,7 @@ Request authorization code to authorize on behalf of a user.
 
 
 ### URI scheme
-*Host* : api.watsonwork.ibm.com  
+*Host* : api.watsonwork.ibm.com
 *Schemes* : HTTPS
 
 
@@ -39,7 +39,7 @@ Example: https://api.watsonwork.ibm.com/oauth/authorize?response_type=code&clien
 
 |Type|Name|Description|Schema|Default|
 |---|---|---|---|---|
-|**Query**|**client_id**  <br>*required*|Your application's id (appId)|string||
+|**Query**|**client_id**  <br>*required*|Your application’s id (appId)|string||
 |**Query**|**redirect_uri**  <br>*required*|Redirect after completing interaction with IdP (Identity Provider).|string||
 |**Query**|**response_type**  <br>*required*|Desired response type. Code grant uses `code`.|enum (code)|`"code"`|
 |**Query**|**scope**  <br>*optional*|Level of access that the app wants the user to authorize. If not specified, the default scopes on app creations will be used.|string||

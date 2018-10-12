@@ -11,7 +11,7 @@ Request an access token for an application
 
 
 ### URI scheme
-*Host* : api.watsonwork.ibm.com  
+*Host* : api.watsonwork.ibm.com
 *Schemes* : HTTPS
 
 
@@ -100,7 +100,7 @@ Client credentials authentication object
 |---|---|---|
 |**access_token**  <br>*optional*|Access token for application, in the form of a JWT token.|string|
 |**expires_in**  <br>*optional*|Time, in seconds, before the access token expires.|integer|
-|**id**  <br>*optional*|UUID for the application or user who's access token is returned.|string|
+|**id**  <br>*optional*|UUID for the application or user who’s access token is returned.|string|
 |**jti**  <br>*optional*|UUID for the JWT token itself.|string|
 |**scope**  <br>*optional*|Access scopes granted to the returned access token.|string|
 |**token_type**  <br>*optional*|Defaults to `bearer` to express the type of access token being returned.|string|

@@ -8,7 +8,7 @@ is: 'published'
 
 **GraphQL** is an easy to use and very powerful method for minimizing round trips and eliminating over fetching of data.  Through a declarative query language using a JSON-like syntax over HTTP, you can request exactly the data you need across any number of micro-services and get back a tailored response in a single round trip. You get access to all the resources you need from Watson Work Services, bundled into a single request. This allows you to build high performing apps using the Watson Work Services Platform.
 
-Here's a quick example to illustrate this. Let's say you wanted to request your first three spaces and their members.  The GraphQL query would look like this.  
+Here’s a quick example to illustrate this. Let’s say you wanted to request your first three spaces and their members.  The GraphQL query would look like this.
 
 ```
 query getSpaces {
@@ -92,7 +92,7 @@ The query is able to scan what would typically be multiple end points, and retur
 }
 ```
 
-The fact that this app could retrieve specific attributes in a single request is what's really awesome about GraphQL.
+The fact that this app could retrieve specific attributes in a single request is what’s really awesome about GraphQL.
 
 GraphQL provides more than queries too. You can create objects and make updates through mutations. With a **mutation** you create or update an object and then also tune the response, just as in a query, to get exactly what you want.
 
@@ -109,7 +109,7 @@ mutation createSpace {
 }
 ```
 
-And here's what is returned. Exactly what we asked for!
+And here’s what is returned. Exactly what we asked for!
 
 ```
 {
@@ -126,7 +126,7 @@ And here's what is returned. Exactly what we asked for!
 
 <div class="tip">
   <img src="../images/tip.png" />
-  <p><strong>Tip:</strong> Throughout the doc you'll see these buttons to "Try it now".  That means you can try the example code using our <a href="https://developer.watsonwork.ibm.com/tools/graphql">GraphQL Explorer</a>.  You can also browse the Watson Work Services data model and make your own GraphQL requests dynamically. Go ahead, run this mutation to create a space.</p>
+  <p><strong>Tip:</strong> Throughout the doc you’ll see these buttons to "Try it now".  That means you can try the example code using our <a href="https://developer.watsonwork.ibm.com/tools/graphql">GraphQL Explorer</a>.  You can also browse the Watson Work Services data model and make your own GraphQL requests dynamically. Go ahead, run this mutation to create a space.</p>
 </div>
 
 <div class="try-it-now">
@@ -134,5 +134,5 @@ And here's what is returned. Exactly what we asked for!
 </div>
 
 You can use the GraphQL endpoint with two different content types:
- - `Content-type: application/graphql`, documented [here:](../references/V1_graphql_raw.yml)
- - `Content-type: application/json`, documented [here:](../references/V1_graphql_json.yml)
+ - `Content-type: application/graphql`, documented [here](../references/V1_graphql_raw.yml)
+ - `Content-type: application/json`, documented [here](../references/V1_graphql_json.yml)

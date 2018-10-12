@@ -5,11 +5,11 @@ is: 'published'
 ---
 ## Make your App configurable
 
-User-specific configurations can benefit your App in many ways. For example, a scheduling app might need calendar access. Having the user's authorization or credentials is essential for coordinating with third-party services.  
+User-specific configurations can benefit your App in many ways. For example, a scheduling app might need calendar access. Having the user’s authorization or credentials is essential for coordinating with third-party services.
 
 Recognizing user-specific preferences can also enhance your App.  For example, the scheduling app can propose better meeting times when user has already entered their preferred times.
 
-You can even consider customizing your app differently for each space it's been added to.   
+You can even consider customizing your app differently for each space it’s been added to.
 
 A configuration can take place at two times:
  - when your App is added to a space
@@ -31,7 +31,7 @@ First, you need to implement your configuration page for your App. Read the [Con
 
 ## Registering the configuration URL of your app
 
-Next, register the configuration URL of your App in the App Dashboard.  
+Next, register the configuration URL of your App in the App Dashboard.
 1. Go to Your Apps and choose an App
 2.  Click Additional Information
 3.  Click Add Configuration URL
@@ -42,16 +42,16 @@ Next, register the configuration URL of your App in the App Dashboard.
 
 ## Steps to configure your app
 
-It's important to think about these things when making your App configurable.
+It’s important to think about these things when making your App configurable.
  - The configuration page can be requested by anyone, so the caller and the provided parameters must be verified.
 
- - If your app is configurable per user and you want to show the user's name, then you must obtain the user id and name also to establish a link between the user's ID and the user's name.
+ - If your app is configurable per user and you want to show the user’s name, then you must obtain the user id and name also to establish a link between the user’s ID and the user’s name.
 
  - If your app is configurable per space, then you should display the space name to help the caller verify that it is indeed the space for which the configuration should take place.
 
  - You should display a continue to space button to complete the process of adding the app to a space.
 
- Let's walk through these.
+ Let’s walk through these.
 
 ### Protect the configuration endpoint
 
@@ -69,11 +69,11 @@ You will also get the configuration data, which includes `spaceId` and `userId`.
 
 <div class="tip">
   <img src="../images/note_pencil.png" />
-  <p><strong>Note:</strong> If the implementation of the your configuration page still base on version prior to 1.1.0 of the <a href="https://developer.watsonwork.ibm.com/docs/apps/app-configuration-callback">Configuration Callback API</a>, then you have to do the oauth flow to verify the caller as a user of Watson Work Services, to obtain the user id and name, and to establish a link between the user's ID and the user's name.</p>
+  <p><strong>Note:</strong> If the implementation of the your configuration page still base on version prior to 1.1.0 of the <a href="https://developer.watsonwork.ibm.com/docs/apps/app-configuration-callback">Configuration Callback API</a>, then you have to do the oauth flow to verify the caller as a user of Watson Work Services, to obtain the user id and name, and to establish a link between the user’s ID and the user’s name.</p>
 </div>
 
 
-### Protect the user's sensitive data
+### Protect the user’s sensitive data
 
 You can utilize Watson Work Services to authorize the user as a valid Watson Work Services user by [getting the user details](https://developer.watsonwork.ibm.com/docs/people/get-user-information) and / or you can also authorize the user against your own credential store of users authorized to use your app.
 
@@ -89,7 +89,7 @@ Your app must be authorized to request services from Watson Work Services. There
 
 ### Get the user ID and name
 
-If your app is configurable per user, then you must verify the user's identity before showing, or allowing updates to, the user's sensitive data. Verify the user with Watson Work Services by requesting the [user entity](https://developer.watsonwork.ibm.com/docs/people/get-user-information) on [behalf of the user](https://developer.watsonwork.ibm.com/docs/api-reference/authorize-on-behalf-of-a-user). The resulting object contains the user ID in its `id` field and the user name in its `displayName` field.
+If your app is configurable per user, then you must verify the user’s identity before showing, or allowing updates to, the user’s sensitive data. Verify the user with Watson Work Services by requesting the [user entity](https://developer.watsonwork.ibm.com/docs/people/get-user-information) on [behalf of the user](https://developer.watsonwork.ibm.com/docs/api-reference/authorize-on-behalf-of-a-user). The resulting object contains the user ID in its `id` field and the user name in its `displayName` field.
 
 
 <a id="access-details-on-behalf-of-a-user"></a>
@@ -110,4 +110,4 @@ If your app is configurable per space, then it is good practice to ensure that t
 
 ### Continue to the space
 
-When the user is finished configuring your App for a space, it's a good idea to include an easy way to quickly return to that space. For example, if your App has been made to work with <a href="https://workspace.ibm.com/" target="_blank">Watson Workspace</a> you can do this by providing a link or button back to the space, using the URL pattern `https://workspace.ibm.com/<spaceId>/`.
+When the user is finished configuring your App for a space, it’s a good idea to include an easy way to quickly return to that space. For example, if your App has been made to work with <a href="https://workspace.ibm.com/" target="_blank">Watson Workspace</a> you can do this by providing a link or button back to the space, using the URL pattern `https://workspace.ibm.com/<spaceId>/`.

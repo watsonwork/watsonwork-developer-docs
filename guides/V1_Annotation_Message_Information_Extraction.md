@@ -5,7 +5,7 @@ is: 'published'
 ---
 ## Information Extraction Annotations
 
-Now that you are familiar with [Annotations](../guides/V1_annotations.md) let's dig deeper and take a look at what sort of information can be extracted from a Message's Annotation list.
+Now that you are familiar with [Annotations](../guides/V1_annotations.md) let’s dig deeper and take a look at what sort of information can be extracted from a Message’s Annotation list.
 
 For each message, the entire text gets processed using [IBM Watson Natural Language Understanding](https://www.ibm.com/watson/services/natural-language-understanding/): **entities**, **keywords**, **doc-sentiment**, **concepts**, and **taxonomy**. Annotations are created if the results are not empty.
 
@@ -14,7 +14,7 @@ See [Annotation](../guides/V1_annotations.md) if you need a refresher on the com
 ### Entities
 Messages are processed to identify `entities` within the text. Entities are simply people, places or organizations. Identifying `entities` provides insight into the subject content.
 
-Let's imagine you sent the following message.
+Let’s imagine you sent the following message.
 
 ![Dennis and Scott have a meeting in Littleton in one hour.](../images/info_extraction_example1.png)
 
@@ -59,7 +59,7 @@ Here is the resulting `entities` annotation structure.
 ### Keywords
 `Keywords` are identified within a message and often can overlap with `entity` identification. They are particularly useful when searching content or indexing. When `keywords` are found, their relevance in the content is also identified.
 
-Using the same example message, let's look at the `keyword` annotation structure.
+Using the same example message, let’s look at the `keyword` annotation structure.
 
 ````json
 {
@@ -95,7 +95,7 @@ Each message is analyzed for sentiment, which can be a opinion or sentiment for 
 Here is the annotation structure for `doc-sentiment`.
 ````json
 {
-	"type": "message-nlp-docSentiment",				   
+	"type": "message-nlp-docSentiment",
 	"annotationId": "58416d89e4b092a88ef3639c",
 	"created": 1480682889871,
 	"createdBy": "toscana-aip-nlc-consumer-client-id",

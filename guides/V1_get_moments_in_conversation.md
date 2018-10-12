@@ -12,7 +12,7 @@ is: 'beta'
 or with <a href="https://developer.watsonwork.ibm.com/tools/graphql?apiType=beta" target="_blank" >apiType=beta on the graphical GraphQL tool URL</a>.
 
 
-This is a sample GraphQL query to get moments in a conversation. Be sure to switch "conversation-id" to the id of the conversation you're curious about.
+This is a sample GraphQL query to get moments in a conversation. Be sure to switch "conversation-id" to the id of the conversation you’re curious about.
 
 ```
 query getMomentsInConversation {
