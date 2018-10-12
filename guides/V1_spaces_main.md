@@ -23,4 +23,4 @@ Watson Work Services represents a Space with this object.
 | members(before: String, after: String, first: Int, last: Int) | PersonCollection | The members of this space provided as a PersonCollection
 | membersUpdated | Date | The date the membership was updated |
 | conversation |Conversation | The conversation object for this space |
-| activeMeeting | Meeting | Indicates that there is a meeting active within this space.  Will only contain a sub-selection of all available meeting details, so this is suitable to use in a list view of spaces.  This requires the `EXPERIMENTAL` value in `x-graphql-view header`. |
+| activeMeeting | JoinInfo | Indicates that there is a meeting active within this space and includes the necessary information to join the meeting.  This requires the `EXPERIMENTAL` value in `x-graphql-view header`. |
