@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'create-space-template'
-is: 'experimental'
+is: 'beta'
 ---
 
 # Create a Space Template
@@ -115,7 +115,7 @@ Below is an example request to create a space template, including sample space s
 ~~~~
 Method: POST
 URL: https://api.watsonwork.ibm.com/graphql
-Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIMENTAL'
+Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, BETA'
 Body:
 {
   mutation {

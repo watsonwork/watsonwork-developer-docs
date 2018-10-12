@@ -5,7 +5,7 @@ is: 'published'
 ---
 ## Get space details
 
-To grab info about a space you can use the _getSpace_ GraphQL query. Be sure to switch "space-id" to the actual id you're curious about.
+To grab info about a space you can use the _getSpace_ GraphQL query. Be sure to switch "space-id" to the actual id you’re curious about.
 
 ```
 query getSpace {

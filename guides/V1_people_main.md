@@ -5,7 +5,7 @@ is: 'published'
 ---
 # People
 
-Well, this is pretty obvious.  You and I are people.  Collaborative tools like Watson Workspace are all about enabling people to work together to achieve something awesome.  
+Well, this is pretty obvious.  You and I are people.  Collaborative tools like Watson Workspace are all about enabling people to work together to achieve something awesome.
 
 A person has a photo, a name, and email address.  They can be mentioned and direct messaged, they send messages and share files.  They can be added and removed from a space.  You can tell if they are online or offline.
 
@@ -24,11 +24,11 @@ The Person object is defined as follows.
 | emailAddresses **DEPRECATED** | [String]     | The array of additional email addresses for the user |
 | photoUrl    | String        | The URL for the photo of the user, intended for display in the user experience |
 | customerId  | String        | The organization for the user |
-| presence  | PresenceStatus        | The user's current status, either 'online' or 'offline' |
+| presence  | PresenceStatus        | The user’s current status, either 'online' or 'offline' |
 | ibmUniqueID | String | Unique internal record identifier assigned when a user first obtains an IBMid (registered users only). Note that this id can be used to connect a Workspace user account to IBMid based accounts in other systems. |
 
 
-Here's a breakdown of the APIs for each capability of the Person object.
+Here’s a breakdown of the APIs for each capability of the Person object.
 
 | | REST APIs | Webhook APIs | GraphQL APIs |
 |-------------------------|:------|:-----|:-----|

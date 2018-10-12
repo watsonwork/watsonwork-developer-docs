@@ -9,7 +9,7 @@ is: 'beta'
       x-graphql-view: BETA
 
 
-This is a sample GraphQL query to get moment by id. Be sure to switch "moment-id" to the actual id you're curious about.
+This is a sample GraphQL query to get moment by id. Be sure to switch "moment-id" to the actual id you’re curious about.
 
 ```
 query getMomentById {

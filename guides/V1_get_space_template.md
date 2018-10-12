@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'get-space-template'
-is: 'experimental'
+is: 'beta'
 ---
 
 # Get Space Template
@@ -25,7 +25,7 @@ type QueryRoot {
 ~~~~
 Method: POST
 URL: https://api.watsonwork.ibm.com/graphql
-Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, EXPERIMENTAL'
+Headers: 'Content-Type: application/graphql' , 'x-graphql-view: PUBLIC, BETA'
 Body:
 {
   spaceTemplate(id: "template-id") {
@@ -70,6 +70,6 @@ Body:
   <a href="https://developer.watsonwork.ibm.com/tools/graphql?query=%7B%0A%20%20spaceTemplate(id:%20%22template-id%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20requiredApps%20%7B%0A%20%20%20%20%20%20items%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20properties%20%7B%0A%20%20%20%20%20%20items%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20type%0A%20%20%20%20%20%20%20%20displayName%0A%20%20%20%20%20%20%20%20...%20on%20SpaceListProperty%20%7B%0A%20%20%20%20%20%20%20%20%20%20defaultValue%0A%20%20%20%20%20%20%20%20%20%20acceptableValues%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20%20%20%20%20displayName%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20...%20on%20SpaceTextProperty%20%7B%0A%20%20%20%20%20%20%20%20%20%20defaultValue%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20...%20on%20SpaceBooleanProperty%20%7B%0A%20%20%20%20%20%20%20%20%20%20defaultStringValue%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20spaceStatus%20%7B%0A%20%20%20%20%20%20defaultValue%0A%20%20%20%20%20%20acceptableValues%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20displayName%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D" target="_blank">Try it now.</a>
 </div>
 
-Don't forget to replace the "template-id" argument with the ID of a real template.
+Don’t forget to replace the "template-id" argument with the ID of a real template.
 
 For more information see [Space Templates](../guides/V1_space_template_main.md)

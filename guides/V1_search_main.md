@@ -20,7 +20,7 @@ objects returned by the respective search types are as detailed below.
 | customerId           | String         | The organization for this person                                                                                                           |
 | created              | Date           | Date this person object was created                                                                                                        |
 | updated              | Date           | Date this person object was last updated                                                                                                   |
-| presence             | PresenceStatus | User's presence status.  One of 'online' or 'offline'                                                                                      |
+| presence             | PresenceStatus | User’s presence status.  One of 'online' or 'offline'                                                                                      |
 | type                 | String         | Either `"user"` or `"app"`                                                                                                                     |
 | directMessageSpaceId | ID             | In the case of a person with whom you have an existing direct message conversation, the id of your direct messaging space with that person |
 
@@ -35,7 +35,7 @@ objects returned by the respective search types are as detailed below.
 | customerId           | String         | The organization for this person                                                                                                           |
 | created              | Date           | Date this person object was created                                                                                                        |
 | updated              | Date           | Date this person object was last updated                                                                                                   |
-| presence             | PresenceStatus | User's presence status.  One of 'online' or 'offline'                                                                                      |
+| presence             | PresenceStatus | User’s presence status.  One of 'online' or 'offline'                                                                                      |
 | type                 | String         | Either `"user"` or `"app"`                                                                                                                     |
 | roles | List<Role>             | The roles the user has in the target space |
 | permissions | List<String>             | The permissions the user has in this space |

@@ -1,7 +1,7 @@
 ---
 copyright: 'Copyright IBM Corp. 2018'
 link: 'space-template-main'
-is: 'experimental'
+is: 'beta'
 ---
 
 # Space Template

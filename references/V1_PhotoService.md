@@ -5,7 +5,7 @@
 ## Overview
 The Photo microservice API supports the storage and retrieval of photos in IBM Watson Workspace. When working with photos in Watson Work Services, the Photo microservice provides the following endpoint:
 *  POST endpoint to upload a custom image to Watson Work Services.
-*  To retrieve a URL for a user's photo please see details for getting their Person object and its PhotoURL at [IBM Watson Work Services People Service Documentation](../people).
+*  To retrieve a URL for a user’s photo please see details for getting their Person object and its PhotoURL at [IBM Watson Work Services People Service Documentation](../people).
 
 
 ### Version information
@@ -13,7 +13,7 @@ The Photo microservice API supports the storage and retrieval of photos in IBM W
 
 
 ### URI scheme
-*Host* : api.watsonwork.ibm.com  
+*Host* : api.watsonwork.ibm.com
 *Schemes* : HTTPS
 
 
@@ -23,7 +23,7 @@ The Photo microservice API supports the storage and retrieval of photos in IBM W
 ## Paths
 
 <a name="updatephoto"></a>
-### Upload a photo.  This endpoint will allow the caller to update its own photo or icon. Updating someone else's photo is not allowed.
+### Upload a photo.  This endpoint will allow the caller to update its own photo or icon. Updating someone else’s photo is not allowed.
 ```
 POST /photos/
 ```
