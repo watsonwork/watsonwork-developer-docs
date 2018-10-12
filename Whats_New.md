@@ -9,6 +9,7 @@ Keep up to date on what’s new in IBM Watson Work Services. We’ll list the la
 
 | Date          | What’s new       |
 | ------------- |:-------------|
+| 12.Oct.2018   | Added [meeting API](./guides/V1_wwsg_Meetings.md). |
 | 07.Sep.2018   | Graduated [Templates](./guides/Creating_Solutions.md) from `EXPERIMENTAL` to `BETA` |
 | 11.Jul.2018   | Published [message reactions](./guides/V1_wwsg_Reactions.md). |
 | 11.Jul.2018   | Published [message deletion](./guides/V1_delete_message.md). |
