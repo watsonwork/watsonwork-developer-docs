@@ -9,6 +9,7 @@ Keep up to date on what’s new in IBM Watson Work Services. We’ll list the la
 
 | Date          | What’s new       |
 | ------------- |:-------------|
+| 04.Feb.2019   | **Important Note:** IBM has announced the end of marketing for the Watson Workspace service .  IBM also anticipates ending the Watson Workspace service on 2/28/19. You can learn more here at [Watson Workspace End of Marketing Announcement FAQs](https://help.workspace.ibm.com/hc/en-us/articles/360015622373) |
 | 07.Sep.2018   | Graduated [Templates](./guides/Creating_Solutions.md) from `EXPERIMENTAL` to `BETA` |
 | 11.Jul.2018   | Published [message reactions](./guides/V1_wwsg_Reactions.md). |
 | 11.Jul.2018   | Published [message deletion](./guides/V1_delete_message.md). |
