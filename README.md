@@ -1,3 +1,7 @@
+# Important Note
+
+IBM has announced the end of marketing for the Watson Workspace service .  IBM also anticipates ending the Watson Workspace service on 2/28/19. You can learn more here at [Watson Workspace End of Marketing Announcement FAQs](https://help.workspace.ibm.com/hc/en-us/articles/360015622373)
+
 # watsonwork-developer-docs
 Developer documentation for IBM’s cognitive collaboration platform Watson Work Services and the Workspace app. Tutorials, guides, API references and more!
 
